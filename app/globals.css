@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 210 25% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 25% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 25% 15%;
+  --primary: 196 100% 31%;
+  --primary-foreground: 60 100% 95%;
+  --secondary: 196 15% 85%;
+  --secondary-foreground: 210 25% 15%;
+  --muted: 196 15% 85%;
+  --muted-foreground: 210 10% 45%;
+  --accent: 196 15% 85%;
+  --accent-foreground: 210 25% 15%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 100% 95%;
+  --border: 196 20% 88%;
+  --input: 196 20% 88%;
+  --ring: 196 100% 31%;
+  --radius: 0.75rem;
+  --industrial-blue: 196 100% 31%;
+  --premium-orange: 25 95% 53%;
+  --premium-teal: 196 100% 31%;
+  --dark-navy: 210 25% 15%;
+  --light-teal: 196 100% 66%;
+  --cream: 60 100% 95%;
+}
+
+.dark {
+  --background: 210 25% 15%;
+  --foreground: 60 100% 95%;
+  --card: 210 25% 15%;
+  --card-foreground: 60 100% 95%;
+  --popover: 210 25% 15%;
+  --popover-foreground: 60 100% 95%;
+  --primary: 196 100% 66%;
+  --primary-foreground: 210 25% 15%;
+  --secondary: 210 20% 25%;
+  --secondary-foreground: 60 100% 95%;
+  --muted: 210 20% 25%;
+  --muted-foreground: 196 15% 70%;
+  --accent: 210 20% 25%;
+  --accent-foreground: 60 100% 95%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 60 100% 95%;
+  --border: 210 20% 25%;
+  --input: 210 20% 25%;
+  --ring: 196 100% 66%;
+  --industrial-blue: 196 100% 66%;
+  --premium-orange: 25 95% 53%;
+  --premium-teal: 196 100% 66%;
+  --dark-navy: 210 25% 15%;
+  --light-teal: 196 100% 66%;
+  --cream: 60 100% 95%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  cursor: default;
+}
+
+/* Custom cursor effects using CSS */
+body * {
+  cursor: default;
+}
+
+a, button, [role="button"], .cursor-hover {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+a:hover, button:hover, [role="button"]:hover, .cursor-hover:hover {
+  transform: scale(1.02);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--industrial-blue)), hsl(var(--premium-teal)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
