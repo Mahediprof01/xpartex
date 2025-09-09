@@ -225,8 +225,8 @@ const RFQDetailPage = () => {
   };
 
   return (
-    <div className="min-h-screen ">
-      <div className="container ">
+    <div className="min-h-screen overflow-x-hidden">
+      <div className="w-full px-6">
         <div className="mb-6">
           <Button
             variant="ghost"
@@ -249,10 +249,6 @@ const RFQDetailPage = () => {
               <Button variant="outline" size="sm">
                 <Edit className="h-4 w-4 mr-2" />
                 Edit
-              </Button>
-              <Button variant="destructive" size="sm">
-                <Trash2 className="h-4 w-4 mr-2" />
-                Delete
               </Button>
             </div>
           </div>
