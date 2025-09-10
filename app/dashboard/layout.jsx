@@ -11,7 +11,7 @@ export default function DashboardLayout({ children }) {
         {/* Main content area with sidebar */}
         <div className="flex flex-1 h-[calc(100vh-4rem)]">
           {/* Desktop Sidebar */}
-          <aside className="hidden md:block w-64 bg-sidebar border-r border-sidebar-border h-full">
+          <aside className="hidden md:block w-72 bg-sidebar border-r border-sidebar-border sticky top-16 h-[calc(100vh-4rem)]">
             <DashboardSidebar />
           </aside>
 

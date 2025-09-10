@@ -8,16 +8,19 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./ui/sheet";
 import { useTheme } from "next-themes";
 import useAuthStore from "../store/authStore";
 import { SidebarContent } from "./DashboardSidebar";
-import { RoleSwitcher } from "./RoleSwitcher";
+import Image from "next/image";
+import { UserProfileDropdown } from "./UserProfileDropdown";
+import Link from "next/link";
 
 export default function DashboardHeader() {
-  const { user, role } = useAuthStore();
+  const { user } = useAuthStore();
   const { theme, setTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-background via-card to-accent dark:from-background dark:via-card dark:to-accent border-b border-border px-4 py-3 shadow-sm">
-      <div className="flex items-center justify-between">
+  // Make header sticky so it stays at top; set fixed height to match layout offsets (4rem)
+  <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-border px-4 shadow-sm h-16">
+      <div className="flex items-center justify-between h-16">
         <div className="flex items-center gap-4">
           {/* Mobile Menu Trigger */}
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -32,14 +35,10 @@ export default function DashboardHeader() {
             </SheetContent>
           </Sheet>
 
-          <div className="hidden sm:flex items-center gap-6">
-            <h1 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white border-l-4 border-[#00BFFF] rounded-md pl-3">
-              {role === "seller" ? "Seller Dashboard" : "Buyer Dashboard"}
-            </h1>
-            {/* Role switcher placed in dashboard header near the title */}
-            <div>
-              <RoleSwitcher />
-            </div>
+          <div className="hidden sm:flex items-center gap-4">
+            <Link href="/" className="flex items-center gap-3">
+              <Image src="/logo.png" alt="Xpartex" width={160} height={40} />
+            </Link>
           </div>
         </div>
 
@@ -65,6 +64,9 @@ export default function DashboardHeader() {
           <Button variant="ghost" size="icon">
             <Bell className="h-5 w-5" />
           </Button>
+
+          {/* User profile dropdown (avatar + name) */}
+          <UserProfileDropdown />
         </div>
       </div>
     </header>
