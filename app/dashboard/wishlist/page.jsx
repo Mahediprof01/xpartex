@@ -1,8 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Card, CardContent } from "../../../components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
 import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
@@ -272,142 +279,162 @@ export default function WishlistPage() {
 
   return (
     <div className="space-y-6">
-      {/* Search and Filters Section */}
-      <div className="space-y-4">
-        <CardContent className="p-4">
-          <div className="flex flex-col lg:flex-row gap-4">
-            {/* Search Bar */}
-            <div className="flex-1">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  placeholder="Search products, sellers, or categories..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-10 h-10"
-                />
-              </div>
-            </div>
+      {/* Header with Search and Action */}
 
-            {/* Quick Actions */}
-            <div className="flex gap-2">
-              <Button size="sm" className="h-10 bg-blue-500 text-white">
-                <ShoppingCart className="h-4 w-4 mr-2" />
-                Add All to Cart ({inStockItems})
-              </Button>
-            </div>
-          </div>
-        </CardContent>
+      <div className="w-1/2">
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            placeholder="Search products, sellers, or categories..."
+            className="pl-10"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
       </div>
 
-      {/* Dashboard Stats */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  Total Items
-                </p>
-                <p className="text-2xl font-bold">{totalItems}</p>
+      {/* Wishlist Stats */}
+      <div className="grid gap-4 md:grid-cols-4">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Total Items</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}
+              >
+                <Heart className="h-4 w-4" />
               </div>
-              <div className="p-2 bg-blue-50 rounded-lg">
-                <Heart className="h-5 w-5 text-blue-600" />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{totalItems}</div>
+              <p className="text-xs text-muted-foreground">In wishlist</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  In Stock
-                </p>
-                <p className="text-2xl font-bold">{inStockItems}</p>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.05,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">In Stock</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}
+              >
+                <Package className="h-4 w-4" />
               </div>
-              <div className="p-2 bg-green-50 rounded-lg">
-                <Package className="h-5 w-5 text-green-600" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-green-600">
+                {inStockItems}
               </div>
-            </div>
-          </CardContent>
-        </Card>
+              <p className="text-xs text-muted-foreground">Available items</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  Total Value
-                </p>
-                <p className="text-2xl font-bold">${totalValue.toFixed(2)}</p>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.1,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Total Value</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}
+              >
+                <TrendingUp className="h-4 w-4" />
               </div>
-              <div className="p-2 bg-purple-50 rounded-lg">
-                <TrendingUp className="h-5 w-5 text-purple-600" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-blue-600">
+                ${totalValue.toFixed(2)}
               </div>
-            </div>
-          </CardContent>
-        </Card>
+              <p className="text-xs text-muted-foreground">Total worth</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  Avg Rating
-                </p>
-                <p className="text-2xl font-bold">{averageRating.toFixed(1)}</p>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.15,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Avg Rating</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}
+              >
+                <Star className="h-4 w-4" />
               </div>
-              <div className="p-2 bg-yellow-50 rounded-lg">
-                <Star className="h-5 w-5 text-yellow-600" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-orange-600">
+                {averageRating.toFixed(1)}
               </div>
-            </div>
-          </CardContent>
-        </Card>
+              <p className="text-xs text-muted-foreground">Average quality</p>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
 
       {/* Filters */}
-      <Card>
-        <CardContent className="p-4">
-          <div className="space-y-4">
-            {/* Filter Header */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Filter className="h-4 w-4 text-muted-foreground" />
-                <h3 className="font-semibold text-foreground">
-                  Filter Options
-                </h3>
-                <Badge variant="outline" className="text-xs">
-                  {filteredItems.length} items
-                </Badge>
-              </div>
-              {hasActiveFilters && (
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={clearFilters}
-                  className="text-xs h-7"
-                >
-                  <X className="h-3 w-3 mr-1" />
-                  Clear All
-                </Button>
-              )}
-            </div>
-
-            {/* Filter Controls Grid */}
-            <div className="flex flex-col md:flex-row items-center gap-4">
-              {/* Category Filter */}
-              <div className="space-y-1">
-                
+      <Card className="border-none">
+        <CardHeader>
+          <CardTitle className="text-lg">Filter Wishlist</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex gap-4 items-center">
+              <div className="w-48">
                 <Select
                   value={filterCategory}
                   onValueChange={setFilterCategory}
                 >
-                  <SelectTrigger className="h-9">
+                  <SelectTrigger className="bg-white w-full">
                     <SelectValue placeholder="All Categories" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white">
                     {categories.map((category) => (
                       <SelectItem key={category} value={category}>
                         {category}
@@ -417,14 +444,12 @@ export default function WishlistPage() {
                 </Select>
               </div>
 
-              {/* Seller Filter */}
-              <div className="space-y-1">
-                
+              <div className="w-48">
                 <Select value={filterSeller} onValueChange={setFilterSeller}>
-                  <SelectTrigger className="h-9">
+                  <SelectTrigger className="bg-white w-full">
                     <SelectValue placeholder="All Sellers" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white">
                     {sellers.map((seller) => (
                       <SelectItem key={seller} value={seller}>
                         {seller}
@@ -434,45 +459,26 @@ export default function WishlistPage() {
                 </Select>
               </div>
 
-              {/* Stock Status Filter */}
-              <div className="space-y-1">
-                
+              <div className="w-48">
                 <Select value={filterStock} onValueChange={setFilterStock}>
-                  <SelectTrigger className="h-9">
-                    <SelectValue placeholder="All Status" />
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="Availability" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white">
                     <SelectItem value="all">All Items</SelectItem>
-                    <SelectItem value="in-stock">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full" />
-                        In Stock
-                      </div>
-                    </SelectItem>
-                    <SelectItem value="out-of-stock">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-red-500 rounded-full" />
-                        Out of Stock
-                      </div>
-                    </SelectItem>
+                    <SelectItem value="in-stock">In Stock</SelectItem>
+                    <SelectItem value="out-of-stock">Out of Stock</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
-              {/* Sort Options */}
-              <div className="space-y-1">
-              
+              <div className="w-44">
                 <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="h-9">
-                    <SelectValue placeholder="Recently Added" />
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="Sort by" />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="newest">
-                      <div className="flex items-center gap-2">
-                        <SortAsc className="h-3 w-3" />
-                        Recently Added
-                      </div>
-                    </SelectItem>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="newest">Recently Added</SelectItem>
                     <SelectItem value="oldest">Oldest First</SelectItem>
                     <SelectItem value="price-low">
                       Price: Low to High
@@ -486,76 +492,10 @@ export default function WishlistPage() {
                 </Select>
               </div>
             </div>
-
-            {/* Active Filters */}
             {hasActiveFilters && (
-              <div className="pt-3 border-t border-border">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-sm font-medium text-muted-foreground">
-                    Active Filters:
-                  </span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {searchQuery && (
-                    <Badge variant="secondary" className="text-xs h-6 gap-1">
-                      Search: "{searchQuery}"
-                      <button
-                        onClick={() => setSearchQuery("")}
-                        className="hover:text-destructive transition-colors"
-                      >
-                        <X className="h-3 w-3" />
-                      </button>
-                    </Badge>
-                  )}
-                  {filterCategory !== "All Categories" && (
-                    <Badge variant="secondary" className="text-xs h-6 gap-1">
-                      {filterCategory}
-                      <button
-                        onClick={() => setFilterCategory("All Categories")}
-                        className="hover:text-destructive transition-colors"
-                      >
-                        <X className="h-3 w-3" />
-                      </button>
-                    </Badge>
-                  )}
-                  {filterSeller !== "All Sellers" && (
-                    <Badge variant="secondary" className="text-xs h-6 gap-1">
-                      {filterSeller}
-                      <button
-                        onClick={() => setFilterSeller("All Sellers")}
-                        className="hover:text-destructive transition-colors"
-                      >
-                        <X className="h-3 w-3" />
-                      </button>
-                    </Badge>
-                  )}
-                  {filterStock !== "all" && (
-                    <Badge variant="secondary" className="text-xs h-6 gap-1">
-                      {filterStock === "in-stock" ? "In Stock" : "Out of Stock"}
-                      <button
-                        onClick={() => setFilterStock("all")}
-                        className="hover:text-destructive transition-colors"
-                      >
-                        <X className="h-3 w-3" />
-                      </button>
-                    </Badge>
-                  )}
-                  {sortBy !== "newest" && (
-                    <Badge variant="secondary" className="text-xs h-6 gap-1">
-                      Sort:{" "}
-                      {sortBy
-                        .replace("-", " ")
-                        .replace(/^\w/, (c) => c.toUpperCase())}
-                      <button
-                        onClick={() => setSortBy("newest")}
-                        className="hover:text-destructive transition-colors"
-                      >
-                        <X className="h-3 w-3" />
-                      </button>
-                    </Badge>
-                  )}
-                </div>
-              </div>
+              <Button variant="outline" onClick={clearFilters}>
+                Clear Filters
+              </Button>
             )}
           </div>
         </CardContent>
@@ -563,29 +503,33 @@ export default function WishlistPage() {
 
       {/* Wishlist Table */}
       <Card>
+        <CardHeader>
+          <CardTitle className="text-lg">Wishlist Items</CardTitle>
+          <CardDescription>
+            Click on any item to view detailed information
+          </CardDescription>
+        </CardHeader>
         <CardContent>
           {filteredItems.length > 0 ? (
             <DataTable columns={columns} data={filteredItems} />
           ) : (
             <div className="py-12 text-center">
               <Heart className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">
-                {hasActiveFilters
-                  ? "No items match your filters"
-                  : "Your wishlist is empty"}
-              </h3>
+              <h3 className="text-lg font-semibold mb-2">No items found</h3>
               <p className="text-muted-foreground mb-4">
-                {hasActiveFilters
-                  ? "Try adjusting your filters to see more results"
-                  : "Start browsing and save items you love for later"}
+                Try adjusting your search criteria or add items to your wishlist
               </p>
-              {hasActiveFilters ? (
-                <Button variant="outline" onClick={clearFilters}>
-                  Clear Filters
-                </Button>
-              ) : (
-                <Button>Browse Products</Button>
-              )}
+              <Button
+                onClick={() => {
+                  setSearchQuery("");
+                  setFilterCategory("All Categories");
+                  setFilterSeller("All Sellers");
+                  setFilterStock("all");
+                  setSortBy("newest");
+                }}
+              >
+                Clear Filters
+              </Button>
             </div>
           )}
         </CardContent>

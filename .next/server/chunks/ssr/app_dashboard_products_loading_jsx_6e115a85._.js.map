@@ -2,5 +2,9 @@
   "version": 3,
   "sources": [],
   "sections": [
+<<<<<<< HEAD
     {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/YOU%20TECH%20BD/Downloads/xpartex/app/dashboard/products/loading.jsx"],"sourcesContent":["export default function Loading() {\n  return null\n}\n"],"names":[],"mappings":";;;AAAe,SAAS;IACtB,OAAO;AACT","debugId":null}}]
+=======
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/Xpartex%20Project/xpartex/app/dashboard/products/loading.jsx"],"sourcesContent":["export default function Loading() {\r\n  return null\r\n}\r\n"],"names":[],"mappings":";;;AAAe,SAAS;IACtB,OAAO;AACT","debugId":null}}]
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
 }

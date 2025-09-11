@@ -2,11 +2,17 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardContent } from "../../../components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
 import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
 import { Textarea } from "../../../components/ui/textarea";
+import { motion } from "framer-motion";
 import {
   Select,
   SelectContent,
@@ -570,209 +576,258 @@ export default function SampleSellerPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-3xl font-bold text-foreground">
-            Sample Management
-          </h1>
-          <p className="text-muted-foreground">
-            Review and manage incoming sample requests
-          </p>
-        </div>
-
-        {/* Search */}
-        <div className="relative flex-1 max-w-sm">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            placeholder="Search requests..."
-            className="pl-10 h-9"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div>
+      {/* Search */}
+      <div className="relative w-1/2">
+        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <Input
+          placeholder="Search requests..."
+          className="pl-10 h-9"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
       </div>
 
-      {/* Sample Stats - Enhanced Dashboard Cards */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        {stats.map((stat, index) => {
-          const Icon = stat.icon;
-          const colors = [
-            {
-              bg: "bg-gradient-to-br from-blue-50 to-indigo-100",
-              iconBg: "bg-blue-500",
-              iconColor: "text-white",
-              accent: "border-blue-200",
-              textGradient:
-                "bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent",
-            },
-            {
-              bg: "bg-gradient-to-br from-amber-50 to-orange-100",
-              iconBg: "bg-amber-500",
-              iconColor: "text-white",
-              accent: "border-amber-200",
-              textGradient:
-                "bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent",
-            },
-            {
-              bg: "bg-gradient-to-br from-emerald-50 to-green-100",
-              iconBg: "bg-emerald-500",
-              iconColor: "text-white",
-              accent: "border-emerald-200",
-              textGradient:
-                "bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent",
-            },
-            {
-              bg: "bg-gradient-to-br from-purple-50 to-violet-100",
-              iconBg: "bg-purple-500",
-              iconColor: "text-white",
-              accent: "border-purple-200",
-              textGradient:
-                "bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent",
-            },
-          ];
-          const color = colors[index % colors.length];
-
-          return (
-            <Card
-              key={stat.title}
-              className={`relative overflow-hidden border-2 ${color.accent} ${color.bg} hover:shadow-lg transition-all duration-300 hover:scale-105`}
-            >
-              {/* Decorative Background Pattern */}
-              <div className="absolute top-0 right-0 w-12 h-12 opacity-10">
-                <div className="absolute inset-0 bg-white rounded-full transform translate-x-4 -translate-y-4"></div>
-                <div className="absolute inset-1 bg-white rounded-full transform translate-x-5 -translate-y-2"></div>
-              </div>
-
-              <CardContent className="p-3">
-                <div className="flex items-center justify-between">
-                  {/* Icon and Stats */}
-                  <div className="flex items-center gap-2.5">
-                    <div
-                      className={`inline-flex items-center justify-center w-8 h-8 rounded-lg ${color.iconBg} shadow-sm transform hover:scale-110 transition-transform duration-200`}
-                    >
-                      <Icon className={`h-4 w-4 ${color.iconColor}`} />
-                    </div>
-
-                    <div>
-                      <h3 className="text-xs font-medium text-gray-600 uppercase tracking-wide leading-tight">
-                        {stat.title}
-                      </h3>
-                      <div
-                        className={`text-xl font-bold ${color.textGradient} leading-tight`}
-                      >
-                        {stat.value}
-                      </div>
-                      <p className="text-xs text-gray-500 flex items-center gap-1 leading-tight">
-                        <span className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></span>
-                        {stat.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-
-              {/* Subtle glow effect */}
+      {/* Sample Stats */}
+      <div className="grid gap-4 md:grid-cols-4">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Total Requests
+              </CardTitle>
               <div
-                className={`absolute inset-0 rounded-lg ${color.iconBg} opacity-0 hover:opacity-5 transition-opacity duration-300`}
-              ></div>
-            </Card>
-          );
-        })}
+                className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}
+              >
+                <Package className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{stats[0].value}</div>
+              <p className="text-xs text-muted-foreground">
+                {stats[0].description}
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.05,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Pending Review
+              </CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}
+              >
+                <Clock className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-blue-600">
+                {stats[1].value}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {stats[1].description}
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.1,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Shipped</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}
+              >
+                <Truck className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-green-600">
+                {stats[2].value}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {stats[2].description}
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.15,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Total Revenue
+              </CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}
+              >
+                <DollarSign className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-orange-600">
+                {stats[3].value}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {stats[3].description}
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
 
       {/* Compact Filters & Search */}
-      <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-end">
-        {/* Filters */}
-        <div className="flex flex-wrap items-center gap-3">
-          {/* Status Filter */}
-          <Select value={filterStatus} onValueChange={setFilterStatus}>
-            <SelectTrigger className="h-9 w-[140px]">
-              <SelectValue placeholder="Status" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Status</SelectItem>
-              <SelectItem value="pending_approval">Pending Review</SelectItem>
-              <SelectItem value="approved">Approved</SelectItem>
-              <SelectItem value="shipped">Shipped</SelectItem>
-              <SelectItem value="delivered">Delivered</SelectItem>
-              <SelectItem value="rejected">Rejected</SelectItem>
-            </SelectContent>
-          </Select>
+      <Card>
+        <CardHeader>
+          <CardTitle>Filter Sample Requests</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-start">
+            {/* Filters */}
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Status Filter */}
+              <Select value={filterStatus} onValueChange={setFilterStatus}>
+                <SelectTrigger className="h-9 w-[140px]">
+                  <SelectValue placeholder="Status" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Status</SelectItem>
+                  <SelectItem value="pending_approval">
+                    Pending Review
+                  </SelectItem>
+                  <SelectItem value="approved">Approved</SelectItem>
+                  <SelectItem value="shipped">Shipped</SelectItem>
+                  <SelectItem value="delivered">Delivered</SelectItem>
+                  <SelectItem value="rejected">Rejected</SelectItem>
+                </SelectContent>
+              </Select>
 
-          {/* Priority Filter */}
-          <Select value={filterPriority} onValueChange={setFilterPriority}>
-            <SelectTrigger className="h-9 w-[120px]">
-              <SelectValue placeholder="Priority" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Priority</SelectItem>
-              <SelectItem value="high">High</SelectItem>
-              <SelectItem value="medium">Medium</SelectItem>
-              <SelectItem value="low">Low</SelectItem>
-            </SelectContent>
-          </Select>
+              {/* Priority Filter */}
+              <Select value={filterPriority} onValueChange={setFilterPriority}>
+                <SelectTrigger className="h-9 w-[120px]">
+                  <SelectValue placeholder="Priority" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Priority</SelectItem>
+                  <SelectItem value="high">High</SelectItem>
+                  <SelectItem value="medium">Medium</SelectItem>
+                  <SelectItem value="low">Low</SelectItem>
+                </SelectContent>
+              </Select>
 
-          {/* Date Range Filter */}
-          <Select value={dateRange} onValueChange={setDateRange}>
-            <SelectTrigger className="h-9 w-[120px]">
-              <SelectValue placeholder="Date" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Time</SelectItem>
-              <SelectItem value="today">Today</SelectItem>
-              <SelectItem value="week">This Week</SelectItem>
-              <SelectItem value="month">This Month</SelectItem>
-              <SelectItem value="quarter">This Quarter</SelectItem>
-              <SelectItem value="year">This Year</SelectItem>
-            </SelectContent>
-          </Select>
+              {/* Date Range Filter */}
+              <Select value={dateRange} onValueChange={setDateRange}>
+                <SelectTrigger className="h-9 w-[120px]">
+                  <SelectValue placeholder="Date" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Time</SelectItem>
+                  <SelectItem value="today">Today</SelectItem>
+                  <SelectItem value="week">This Week</SelectItem>
+                  <SelectItem value="month">This Month</SelectItem>
+                  <SelectItem value="quarter">This Quarter</SelectItem>
+                  <SelectItem value="year">This Year</SelectItem>
+                </SelectContent>
+              </Select>
 
-          {/* Sort By */}
-          <Select value={sortBy} onValueChange={setSortBy}>
-            <SelectTrigger className="h-9 w-[120px]">
-              <SelectValue placeholder="Sort" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="recent">Recent</SelectItem>
-              <SelectItem value="oldest">Oldest</SelectItem>
-              <SelectItem value="priority">Priority</SelectItem>
-              <SelectItem value="status">Status</SelectItem>
-              <SelectItem value="cost">Cost</SelectItem>
-              <SelectItem value="deadline">Deadline</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+              {/* Sort By */}
+              <Select value={sortBy} onValueChange={setSortBy}>
+                <SelectTrigger className="h-9 w-[120px]">
+                  <SelectValue placeholder="Sort" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="recent">Recent</SelectItem>
+                  <SelectItem value="oldest">Oldest</SelectItem>
+                  <SelectItem value="priority">Priority</SelectItem>
+                  <SelectItem value="status">Status</SelectItem>
+                  <SelectItem value="cost">Cost</SelectItem>
+                  <SelectItem value="deadline">Deadline</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-2">
-          {/* Only show Clear button when there are active filters */}
-          {(searchQuery ||
-            filterStatus !== "all" ||
-            filterPriority !== "all" ||
-            dateRange !== "all" ||
-            sortBy !== "recent") && (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => {
-                setSearchQuery("");
-                setFilterStatus("all");
-                setFilterPriority("all");
-                setDateRange("all");
-                setSortBy("recent");
-              }}
-              className="h-9 px-3"
-            >
-              <X className="h-3 w-3 mr-1" />
-              Clear
-            </Button>
-          )}
-          <Button variant="outline" size="sm" className="h-9 px-3">
-            <Download className="h-3 w-3 mr-1" />
-            Export
-          </Button>
-        </div>
-      </div>
+            {/* Action Buttons */}
+            <div className="flex items-center gap-2">
+              {/* Only show Clear button when there are active filters */}
+              {(searchQuery ||
+                filterStatus !== "all" ||
+                filterPriority !== "all" ||
+                dateRange !== "all" ||
+                sortBy !== "recent") && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    setSearchQuery("");
+                    setFilterStatus("all");
+                    setFilterPriority("all");
+                    setDateRange("all");
+                    setSortBy("recent");
+                  }}
+                  className="h-9 px-3"
+                >
+                  <X className="h-3 w-3 mr-1" />
+                  Clear
+                </Button>
+              )}
+              <Button variant="outline" size="sm" className="h-9 px-3">
+                <Download className="h-3 w-3 mr-1" />
+                Export
+              </Button>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Active Filters Display */}
       {(searchQuery ||

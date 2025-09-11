@@ -14,8 +14,13 @@
       "static/chunks/app_layout_tsx_f0e4c1a2._.js",
       "static/chunks/_ae224b50._.js",
       "static/chunks/app_dashboard_layout_jsx_455be481._.js",
+<<<<<<< HEAD
       "static/chunks/_2076f96c._.js",
       "static/chunks/node_modules_21f65ecd._.js",
+=======
+      "static/chunks/_7b009158._.js",
+      "static/chunks/node_modules_badb9464._.js",
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
       "static/chunks/app_dashboard_quotes_page_jsx_5c92e41a._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_49a6ea35._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",

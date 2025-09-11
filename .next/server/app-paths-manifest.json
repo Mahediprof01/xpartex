@@ -1,5 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+<<<<<<< HEAD
   "/dashboard/earnings/page": "app/dashboard/earnings/page.js",
   "/dashboard/messaging/page": "app/dashboard/messaging/page.js",
   "/dashboard/orders/page": "app/dashboard/orders/page.js",
@@ -13,6 +14,23 @@
   "/dashboard/sample-seller/page": "app/dashboard/sample-seller/page.js",
   "/dashboard/seller-orders/[id]/page": "app/dashboard/seller-orders/[id]/page.js",
   "/dashboard/seller-orders/page": "app/dashboard/seller-orders/page.js",
+=======
+  "/custom-products/[id]/page": "app/custom-products/[id]/page.js",
+  "/dashboard/analytics/page": "app/dashboard/analytics/page.js",
+  "/dashboard/buyer-analytics/page": "app/dashboard/buyer-analytics/page.js",
+  "/dashboard/orders/page": "app/dashboard/orders/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/products/page": "app/dashboard/products/page.js",
+  "/dashboard/quotes/page": "app/dashboard/quotes/page.js",
+  "/dashboard/rfqs/page": "app/dashboard/rfqs/page.js",
+  "/dashboard/sample-buyer/page": "app/dashboard/sample-buyer/page.js",
+  "/dashboard/sample-seller/[id]/page": "app/dashboard/sample-seller/[id]/page.js",
+  "/dashboard/sample-seller/page": "app/dashboard/sample-seller/page.js",
+  "/dashboard/samples/page": "app/dashboard/samples/page.js",
+  "/dashboard/seller-analytics/page": "app/dashboard/seller-analytics/page.js",
+  "/dashboard/suppliers/page": "app/dashboard/suppliers/page.js",
+  "/dashboard/wishlist/[id]/page": "app/dashboard/wishlist/[id]/page.js",
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
   "/dashboard/wishlist/page": "app/dashboard/wishlist/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/login/page": "app/login/page.js",

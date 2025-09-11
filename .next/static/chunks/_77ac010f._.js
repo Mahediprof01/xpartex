@@ -2375,7 +2375,10 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "createOrderColumns": (()=>createOrderColumns),
     "createProductColumns": (()=>createProductColumns),
+<<<<<<< HEAD
     "createQuoteColumns": (()=>createQuoteColumns),
+=======
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
     "createRFQColumns": (()=>createRFQColumns),
     "createSampleColumns": (()=>createSampleColumns),
     "createSellerSampleColumns": (()=>createSellerSampleColumns),
@@ -2393,7 +2396,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-client] (ecmascript) <export default as AlertCircle>");
+<<<<<<< HEAD
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>");
+=======
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/download.js [app-client] (ecmascript) <export default as Download>");
@@ -2409,6 +2415,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
+<<<<<<< HEAD
 const createQuoteColumns = (onViewDetails, onRespond)=>[
         {
             accessorKey: "id",
@@ -2651,6 +2658,8 @@ const createQuoteColumns = (onViewDetails, onRespond)=>[
             }
         }
     ];
+=======
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
 // Configuration objects
 const statusConfigs = {
     rfq: {
@@ -2826,12 +2835,20 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                         children: rfq.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 465,
+=======
+                        lineNumber: 353,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 464,
+=======
+                    lineNumber: 352,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2849,7 +2866,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: rfq.title
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 483,
+=======
+                            lineNumber: 371,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2857,13 +2878,21 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: rfq.description
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 484,
+=======
+                            lineNumber: 372,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 482,
+=======
+                    lineNumber: 370,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2877,7 +2906,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: row.getValue("seller")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 495,
+=======
+                    lineNumber: 383,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2896,14 +2929,22 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 508,
+=======
+                            lineNumber: 396,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 507,
+=======
+                    lineNumber: 395,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2919,7 +2960,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: priorityInfo?.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 522,
+=======
+                    lineNumber: 410,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2933,7 +2978,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 530,
+=======
+                    lineNumber: 418,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2951,7 +3000,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 539,
+=======
+                    lineNumber: 427,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2966,7 +3019,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 550,
+=======
+                    lineNumber: 438,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2981,7 +3038,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: new Date(deadline).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 559,
+=======
+                    lineNumber: 447,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3000,7 +3061,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: responses
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 572,
+=======
+                            lineNumber: 460,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         rfq.quote && userRole === "seller" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3010,7 +3075,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 575,
+=======
+                                    lineNumber: 463,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3018,19 +3087,31 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     children: rfq.quote.rating
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 576,
+=======
+                                    lineNumber: 464,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 574,
+=======
+                            lineNumber: 462,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 571,
+=======
+                    lineNumber: 459,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3046,7 +3127,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                         children: "No files"
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 592,
+=======
+                        lineNumber: 480,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 16
                     }, this);
                 }
@@ -3057,7 +3142,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             className: "h-4 w-4 text-muted-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 597,
+=======
+                            lineNumber: 485,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3065,13 +3154,21 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: files.length
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 598,
+=======
+                            lineNumber: 486,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 596,
+=======
+                    lineNumber: 484,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3086,7 +3183,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: new Date(createdAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 609,
+=======
+                    lineNumber: 497,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3109,25 +3210,41 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 625,
+=======
+                                        lineNumber: 513,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 626,
+=======
+                                        lineNumber: 514,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 624,
+=======
+                                lineNumber: 512,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 623,
+=======
+                            lineNumber: 511,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3140,14 +3257,22 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 631,
+=======
+                                            lineNumber: 519,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 630,
+=======
+                                    lineNumber: 518,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3156,7 +3281,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 635,
+=======
+                                            lineNumber: 523,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Response (",
@@ -3165,7 +3294,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 634,
+=======
+                                    lineNumber: 522,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 rfq.status === "open" && onStartNegotiation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3175,26 +3308,42 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 640,
+=======
+                                            lineNumber: 528,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Start Negotiation"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 639,
+=======
+                                    lineNumber: 527,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 629,
+=======
+                            lineNumber: 517,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 622,
+=======
+                    lineNumber: 510,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3215,12 +3364,20 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: order.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 663,
+=======
+                        lineNumber: 551,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 662,
+=======
+                    lineNumber: 550,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3238,7 +3395,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: order.product
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 681,
+=======
+                            lineNumber: 569,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3246,13 +3407,21 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: order.category
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 682,
+=======
+                            lineNumber: 570,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 680,
+=======
+                    lineNumber: 568,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3266,7 +3435,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 693,
+=======
+                    lineNumber: 581,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3285,14 +3458,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 706,
+=======
+                            lineNumber: 594,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 705,
+=======
+                    lineNumber: 593,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3309,7 +3490,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: statusInfo?.label || status
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 722,
+=======
+                    lineNumber: 610,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3324,7 +3509,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 733,
+=======
+                    lineNumber: 621,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3342,7 +3531,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 742,
+=======
+                    lineNumber: 630,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3357,7 +3550,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(orderDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 754,
+=======
+                    lineNumber: 642,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3372,7 +3569,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(estimatedDelivery).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 766,
+=======
+                    lineNumber: 654,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3387,7 +3588,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: trackingNumber || "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 777,
+=======
+                    lineNumber: 665,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3410,25 +3615,41 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 790,
+=======
+                                        lineNumber: 678,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 791,
+=======
+                                        lineNumber: 679,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 789,
+=======
+                                lineNumber: 677,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 788,
+=======
+                            lineNumber: 676,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3441,14 +3662,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 796,
+=======
+                                            lineNumber: 684,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 795,
+=======
+                                    lineNumber: 683,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3458,14 +3687,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 801,
+=======
+                                            lineNumber: 689,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Order"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 800,
+=======
+                                    lineNumber: 688,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3475,26 +3712,42 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 807,
+=======
+                                            lineNumber: 695,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Order"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 806,
+=======
+                                    lineNumber: 694,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 794,
+=======
+                            lineNumber: 682,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 787,
+=======
+                    lineNumber: 675,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3515,12 +3768,20 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: supplier.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 830,
+=======
+                        lineNumber: 718,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 829,
+=======
+                    lineNumber: 717,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3538,7 +3799,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: supplier.name
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 848,
+=======
+                            lineNumber: 736,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3546,13 +3811,21 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: supplier.company
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 849,
+=======
+                            lineNumber: 737,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 847,
+=======
+                    lineNumber: 735,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3566,7 +3839,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("email")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 860,
+=======
+                    lineNumber: 748,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3580,7 +3857,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 867,
+=======
+                    lineNumber: 755,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3597,7 +3878,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 877,
+=======
+                            lineNumber: 765,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3605,13 +3890,21 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: rating.toFixed(1)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 878,
+=======
+                            lineNumber: 766,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 876,
+=======
+                    lineNumber: 764,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3626,7 +3919,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: totalOrders.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 888,
+=======
+                    lineNumber: 776,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3645,14 +3942,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 903,
+=======
+                            lineNumber: 791,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 902,
+=======
+                    lineNumber: 790,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3667,7 +3972,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: verified ? "Verified" : "Unverified"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 915,
+=======
+                    lineNumber: 803,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3681,7 +3990,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("location")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 925,
+=======
+                    lineNumber: 813,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3696,7 +4009,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(joinedDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 934,
+=======
+                    lineNumber: 822,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3719,25 +4036,41 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 950,
+=======
+                                        lineNumber: 838,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 951,
+=======
+                                        lineNumber: 839,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 949,
+=======
+                                lineNumber: 837,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 948,
+=======
+                            lineNumber: 836,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3750,14 +4083,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 956,
+=======
+                                            lineNumber: 844,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 955,
+=======
+                                    lineNumber: 843,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3767,14 +4108,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 961,
+=======
+                                            lineNumber: 849,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 960,
+=======
+                                    lineNumber: 848,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3784,26 +4133,42 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 967,
+=======
+                                            lineNumber: 855,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 966,
+=======
+                                    lineNumber: 854,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 954,
+=======
+                            lineNumber: 842,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 947,
+=======
+                    lineNumber: 835,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3824,12 +4189,20 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: product.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 990,
+=======
+                        lineNumber: 878,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 989,
+=======
+                    lineNumber: 877,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3847,7 +4220,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: product.name
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1008,
+=======
+                            lineNumber: 896,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3855,13 +4232,21 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: product.description
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1009,
+=======
+                            lineNumber: 897,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1007,
+=======
+                    lineNumber: 895,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3875,7 +4260,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1020,
+=======
+                    lineNumber: 908,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3889,7 +4278,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1027,
+=======
+                    lineNumber: 915,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3907,7 +4300,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1036,
+=======
+                    lineNumber: 924,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3922,7 +4319,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: stock.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1047,
+=======
+                    lineNumber: 935,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3941,14 +4342,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1062,
+=======
+                            lineNumber: 950,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1061,
+=======
+                    lineNumber: 949,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3963,7 +4372,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(createdAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1074,
+=======
+                    lineNumber: 962,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3978,7 +4391,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(updatedAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1086,
+=======
+                    lineNumber: 974,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4001,25 +4418,41 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1102,
+=======
+                                        lineNumber: 990,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1103,
+=======
+                                        lineNumber: 991,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1101,
+=======
+                                lineNumber: 989,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1100,
+=======
+                            lineNumber: 988,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4032,14 +4465,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1108,
+=======
+                                            lineNumber: 996,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1107,
+=======
+                                    lineNumber: 995,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4049,14 +4490,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1113,
+=======
+                                            lineNumber: 1001,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1112,
+=======
+                                    lineNumber: 1000,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4066,26 +4515,42 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1119,
+=======
+                                            lineNumber: 1007,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1118,
+=======
+                                    lineNumber: 1006,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1106,
+=======
+                            lineNumber: 994,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1099,
+=======
+                    lineNumber: 987,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4106,12 +4571,20 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1144,
+=======
+                        lineNumber: 1032,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1143,
+=======
+                    lineNumber: 1031,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4129,7 +4602,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1162,
+=======
+                            lineNumber: 1050,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4137,13 +4614,21 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.specifications
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1163,
+=======
+                            lineNumber: 1051,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1161,
+=======
+                    lineNumber: 1049,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4157,7 +4642,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1174,
+=======
+                    lineNumber: 1062,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -4176,14 +4665,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1189,
+=======
+                            lineNumber: 1077,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1188,
+=======
+                    lineNumber: 1076,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4199,7 +4696,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: priorityInfo?.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1203,
+=======
+                    lineNumber: 1091,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4214,7 +4715,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1212,
+=======
+                    lineNumber: 1100,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -4232,7 +4737,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1221,
+=======
+                    lineNumber: 1109,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4247,7 +4756,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1231,
+=======
+                    lineNumber: 1119,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4262,7 +4775,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: deadline ? new Date(deadline).toLocaleDateString() : "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1243,
+=======
+                    lineNumber: 1131,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4282,7 +4799,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: "Rate"
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1258,
+=======
+                        lineNumber: 1146,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this);
                 }
@@ -4294,7 +4815,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1272,
+=======
+                                lineNumber: 1160,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4302,13 +4827,21 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 children: rating.toFixed(1)
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1273,
+=======
+                                lineNumber: 1161,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1271,
+=======
+                        lineNumber: 1159,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this);
                 }
@@ -4317,7 +4850,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1278,
+=======
+                    lineNumber: 1166,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -4340,25 +4877,41 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1291,
+=======
+                                        lineNumber: 1179,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1292,
+=======
+                                        lineNumber: 1180,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1290,
+=======
+                                lineNumber: 1178,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1289,
+=======
+                            lineNumber: 1177,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4371,14 +4924,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1297,
+=======
+                                            lineNumber: 1185,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1296,
+=======
+                                    lineNumber: 1184,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4387,14 +4948,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1301,
+=======
+                                            lineNumber: 1189,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1300,
+=======
+                                    lineNumber: 1188,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4403,14 +4972,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1305,
+=======
+                                            lineNumber: 1193,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Download Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1304,
+=======
+                                    lineNumber: 1192,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4420,14 +4997,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1310,
+=======
+                                            lineNumber: 1198,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1309,
+=======
+                                    lineNumber: 1197,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "delivered" && !sample.feedback && onRate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4437,14 +5022,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1316,
+=======
+                                            lineNumber: 1204,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Rate Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1315,
+=======
+                                    lineNumber: 1203,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "pending_approval" && onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4455,26 +5048,42 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1325,
+=======
+                                            lineNumber: 1213,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Cancel Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1321,
+=======
+                                    lineNumber: 1209,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1295,
+=======
+                            lineNumber: 1183,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1288,
+=======
+                    lineNumber: 1176,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4495,12 +5104,20 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1349,
+=======
+                        lineNumber: 1237,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1348,
+=======
+                    lineNumber: 1236,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4518,7 +5135,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyer || "John Doe"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1367,
+=======
+                            lineNumber: 1255,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4526,13 +5147,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyerCompany || "Fashion Corp"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1370,
+=======
+                            lineNumber: 1258,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1366,
+=======
+                    lineNumber: 1254,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4550,7 +5179,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1384,
+=======
+                            lineNumber: 1272,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4558,13 +5191,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productCategory || "Apparel"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1385,
+=======
+                            lineNumber: 1273,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1383,
+=======
+                    lineNumber: 1271,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4583,14 +5224,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1404,
+=======
+                            lineNumber: 1292,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1403,
+=======
+                    lineNumber: 1291,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4610,14 +5259,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1420,
+=======
+                            lineNumber: 1308,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 28
                         }, this),
                         priorityInfo?.label
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1419,
+=======
+                    lineNumber: 1307,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4635,7 +5292,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1431,
+=======
+                    lineNumber: 1319,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -4653,7 +5314,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1440,
+=======
+                    lineNumber: 1328,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4668,7 +5333,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1452,
+=======
+                    lineNumber: 1340,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4684,7 +5353,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: "-"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1465,
+=======
+                    lineNumber: 1353,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 16
                 }, this);
                 const deadlineDate = new Date(deadline);
@@ -4698,13 +5371,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: "(Overdue)"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1478,
+=======
+                            lineNumber: 1366,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1472,
+=======
+                    lineNumber: 1360,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4727,25 +5408,41 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1493,
+=======
+                                        lineNumber: 1381,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1494,
+=======
+                                        lineNumber: 1382,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1492,
+=======
+                                lineNumber: 1380,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1491,
+=======
+                            lineNumber: 1379,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4758,14 +5455,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1499,
+=======
+                                            lineNumber: 1387,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1498,
+=======
+                                    lineNumber: 1386,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onApproveReject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4775,14 +5480,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1505,
+=======
+                                            lineNumber: 1393,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Review Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1504,
+=======
+                                    lineNumber: 1392,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "approved" && onShip && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4792,14 +5505,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1512,
+=======
+                                            lineNumber: 1400,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Ship Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1511,
+=======
+                                    lineNumber: 1399,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4808,14 +5529,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1518,
+=======
+                                            lineNumber: 1406,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Buyer"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1517,
+=======
+                                    lineNumber: 1405,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4824,14 +5553,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1523,
+=======
+                                            lineNumber: 1411,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Generate Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1522,
+=======
+                                    lineNumber: 1410,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4840,26 +5577,42 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1528,
+=======
+                                            lineNumber: 1416,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Track Package"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1527,
+=======
+                                    lineNumber: 1415,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1497,
+=======
+                            lineNumber: 1385,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1490,
+=======
+                    lineNumber: 1378,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4883,7 +5636,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1567,
+=======
+                                    lineNumber: 1455,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 item.discount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4893,18 +5650,30 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.discount
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1574,
+=======
+                                        lineNumber: 1462,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1573,
+=======
+                                    lineNumber: 1461,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1566,
+=======
+                            lineNumber: 1454,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4919,12 +5688,20 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1586,
+=======
+                                        lineNumber: 1474,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1581,
+=======
+                                    lineNumber: 1469,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4935,24 +5712,40 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.category
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1589,
+=======
+                                        lineNumber: 1477,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1588,
+=======
+                                    lineNumber: 1476,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1580,
+=======
+                            lineNumber: 1468,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1565,
+=======
+                    lineNumber: 1453,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4967,7 +5760,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: seller
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1603,
+=======
+                    lineNumber: 1491,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -4985,7 +5782,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.price
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1613,
+=======
+                            lineNumber: 1501,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         item.originalPrice !== item.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4993,13 +5794,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.originalPrice
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1615,
+=======
+                            lineNumber: 1503,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1612,
+=======
+                    lineNumber: 1500,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -5019,7 +5828,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "h-4 w-4 fill-yellow-400 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1631,
+=======
+                                    lineNumber: 1519,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5027,13 +5840,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     children: item.rating
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1632,
+=======
+                                    lineNumber: 1520,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1630,
+=======
+                            lineNumber: 1518,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5045,13 +5866,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1634,
+=======
+                            lineNumber: 1522,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1629,
+=======
+                    lineNumber: 1517,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -5066,7 +5895,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: inStock ? "In Stock" : "Out of Stock"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1647,
+=======
+                    lineNumber: 1535,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -5081,7 +5914,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: new Date(addedDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1663,
+=======
+                    lineNumber: 1551,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -5104,25 +5941,41 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1679,
+=======
+                                        lineNumber: 1567,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1680,
+=======
+                                        lineNumber: 1568,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1678,
+=======
+                                lineNumber: 1566,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1677,
+=======
+                            lineNumber: 1565,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -5135,14 +5988,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1685,
+=======
+                                            lineNumber: 1573,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1684,
+=======
+                                    lineNumber: 1572,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 item.inStock && onAddToCart && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -5152,14 +6013,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1691,
+=======
+                                            lineNumber: 1579,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Add to Cart"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1690,
+=======
+                                    lineNumber: 1578,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -5168,14 +6037,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1697,
+=======
+                                            lineNumber: 1585,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Seller"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1696,
+=======
+                                    lineNumber: 1584,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -5184,14 +6061,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1702,
+=======
+                                            lineNumber: 1590,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Share Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1701,
+=======
+                                    lineNumber: 1589,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onRemoveFromWishlist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -5202,26 +6087,42 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1711,
+=======
+                                            lineNumber: 1599,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Remove from Wishlist"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1707,
+=======
+                                    lineNumber: 1595,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1683,
+=======
+                            lineNumber: 1571,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1676,
+=======
+                    lineNumber: 1564,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -6225,7 +7126,11 @@ function RFQDetailView({ rfq, isOpen, onClose, onAction }) {
         }, void 0, true, {
             fileName: "[project]/app/dashboard/rfqs/page.jsx",
             lineNumber: 318,
+<<<<<<< HEAD
             columnNumber: 5
+=======
+            columnNumber: 7
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/dashboard/rfqs/page.jsx",
@@ -7622,7 +8527,11 @@ function RFQsPage() {
                                     className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1123,
+=======
+                                    lineNumber: 1127,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -7632,29 +8541,50 @@ function RFQsPage() {
                                     onChange: (e)=>setSearchQuery(e.target.value)
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1124,
+=======
+                                    lineNumber: 1128,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1122,
+=======
+                            lineNumber: 1126,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1121,
                         columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                         onClick: ()=>setCreateDialogOpen(true),
                         className: "flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out will-change-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300",
+=======
+                        lineNumber: 1125,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        onClick: ()=>setCreateDialogOpen(true),
+                        className: "flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out",
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
                                 className: "h-4 w-4 text-white"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                 lineNumber: 1136,
+=======
+                                lineNumber: 1140,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -7662,19 +8592,31 @@ function RFQsPage() {
                                 children: "Create RFQ"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                 lineNumber: 1137,
+=======
+                                lineNumber: 1141,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1132,
+=======
+                        lineNumber: 1136,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1120,
+=======
+                lineNumber: 1124,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7702,7 +8644,11 @@ function RFQsPage() {
                                     className: `absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1150,
+=======
+                                    lineNumber: 1159,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -7713,7 +8659,11 @@ function RFQsPage() {
                                             children: "Total RFQs"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1152,
+=======
+                                            lineNumber: 1163,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7722,18 +8672,30 @@ function RFQsPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                 lineNumber: 1154,
+=======
+                                                lineNumber: 1167,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1153,
+=======
+                                            lineNumber: 1164,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1151,
+=======
+                                    lineNumber: 1162,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7743,7 +8705,11 @@ function RFQsPage() {
                                             children: stats.total
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1158,
+=======
+                                            lineNumber: 1171,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7751,24 +8717,40 @@ function RFQsPage() {
                                             children: "All time"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1159,
+=======
+                                            lineNumber: 1172,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1157,
+=======
+                                    lineNumber: 1170,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1149,
+=======
+                            lineNumber: 1158,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1144,
+=======
+                        lineNumber: 1148,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -7793,7 +8775,11 @@ function RFQsPage() {
                                     className: `absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1170,
+=======
+                                    lineNumber: 1188,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -7804,7 +8790,11 @@ function RFQsPage() {
                                             children: "Open"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1172,
+=======
+                                            lineNumber: 1192,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7813,18 +8803,30 @@ function RFQsPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                 lineNumber: 1174,
+=======
+                                                lineNumber: 1196,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1173,
+=======
+                                            lineNumber: 1193,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1171,
+=======
+                                    lineNumber: 1191,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7834,7 +8836,11 @@ function RFQsPage() {
                                             children: stats.open
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1178,
+=======
+                                            lineNumber: 1200,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7842,24 +8848,40 @@ function RFQsPage() {
                                             children: "Awaiting response"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1179,
+=======
+                                            lineNumber: 1203,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1177,
+=======
+                                    lineNumber: 1199,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1169,
+=======
+                            lineNumber: 1187,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1164,
+=======
+                        lineNumber: 1177,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -7884,7 +8906,11 @@ function RFQsPage() {
                                     className: `absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1190,
+=======
+                                    lineNumber: 1219,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -7895,7 +8921,11 @@ function RFQsPage() {
                                             children: "Negotiating"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1192,
+=======
+                                            lineNumber: 1223,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7904,18 +8934,30 @@ function RFQsPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                 lineNumber: 1194,
+=======
+                                                lineNumber: 1227,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1193,
+=======
+                                            lineNumber: 1224,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1191,
+=======
+                                    lineNumber: 1222,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -7925,7 +8967,11 @@ function RFQsPage() {
                                             children: stats.negotiating
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1198,
+=======
+                                            lineNumber: 1231,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -7933,24 +8979,40 @@ function RFQsPage() {
                                             children: "In progress"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1199,
+=======
+                                            lineNumber: 1234,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1197,
+=======
+                                    lineNumber: 1230,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1189,
+=======
+                            lineNumber: 1218,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1184,
+=======
+                        lineNumber: 1208,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -7975,7 +9037,11 @@ function RFQsPage() {
                                     className: `absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1210,
+=======
+                                    lineNumber: 1250,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -7986,7 +9052,11 @@ function RFQsPage() {
                                             children: "Closed"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1212,
+=======
+                                            lineNumber: 1254,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7995,18 +9065,30 @@ function RFQsPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                 lineNumber: 1214,
+=======
+                                                lineNumber: 1258,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1213,
+=======
+                                            lineNumber: 1255,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1211,
+=======
+                                    lineNumber: 1253,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -8016,7 +9098,11 @@ function RFQsPage() {
                                             children: stats.closed
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1218,
+=======
+                                            lineNumber: 1262,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8024,24 +9110,40 @@ function RFQsPage() {
                                             children: "Completed"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1219,
+=======
+                                            lineNumber: 1265,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1217,
+=======
+                                    lineNumber: 1261,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1209,
+=======
+                            lineNumber: 1249,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1204,
+=======
+                        lineNumber: 1239,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -8066,7 +9168,11 @@ function RFQsPage() {
                                     className: `absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1230,
+=======
+                                    lineNumber: 1281,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -8077,7 +9183,11 @@ function RFQsPage() {
                                             children: "Total Responses"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1232,
+=======
+                                            lineNumber: 1285,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8086,18 +9196,30 @@ function RFQsPage() {
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                 lineNumber: 1234,
+=======
+                                                lineNumber: 1291,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1233,
+=======
+                                            lineNumber: 1288,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1231,
+=======
+                                    lineNumber: 1284,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -8107,7 +9229,11 @@ function RFQsPage() {
                                             children: stats.totalResponses
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1238,
+=======
+                                            lineNumber: 1295,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8115,30 +9241,50 @@ function RFQsPage() {
                                             children: "From suppliers"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1239,
+=======
+                                            lineNumber: 1298,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1237,
+=======
+                                    lineNumber: 1294,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1229,
+=======
+                            lineNumber: 1280,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1224,
+=======
+                        lineNumber: 1270,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1143,
+=======
+                lineNumber: 1147,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -8149,12 +9295,20 @@ function RFQsPage() {
                             children: "Filter RFQs"
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1248,
+=======
+                            lineNumber: 1307,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1247,
+=======
+                        lineNumber: 1306,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -8175,12 +9329,20 @@ function RFQsPage() {
                                                         placeholder: "All Statuses"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                         lineNumber: 1256,
+=======
+                                                        lineNumber: 1315,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1255,
+=======
+                                                    lineNumber: 1314,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -8191,7 +9353,11 @@ function RFQsPage() {
                                                             children: "All Statuses"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1259,
+=======
+                                                            lineNumber: 1318,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8199,7 +9365,11 @@ function RFQsPage() {
                                                             children: "Open"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1260,
+=======
+                                                            lineNumber: 1319,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8207,7 +9377,11 @@ function RFQsPage() {
                                                             children: "Negotiating"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1261,
+=======
+                                                            lineNumber: 1320,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8215,24 +9389,40 @@ function RFQsPage() {
                                                             children: "Closed"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1262,
+=======
+                                                            lineNumber: 1321,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1258,
+=======
+                                                    lineNumber: 1317,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1254,
+=======
+                                            lineNumber: 1313,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                         lineNumber: 1253,
+=======
+                                        lineNumber: 1312,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8247,12 +9437,20 @@ function RFQsPage() {
                                                         placeholder: "All Categories"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                         lineNumber: 1270,
+=======
+                                                        lineNumber: 1332,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1269,
+=======
+                                                    lineNumber: 1331,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -8263,7 +9461,11 @@ function RFQsPage() {
                                                             children: "All Categories"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1273,
+=======
+                                                            lineNumber: 1335,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8271,7 +9473,11 @@ function RFQsPage() {
                                                             children: "Apparel"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1274,
+=======
+                                                            lineNumber: 1336,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8279,7 +9485,11 @@ function RFQsPage() {
                                                             children: "Textiles"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1275,
+=======
+                                                            lineNumber: 1337,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8287,7 +9497,11 @@ function RFQsPage() {
                                                             children: "Electronics"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1276,
+=======
+                                                            lineNumber: 1338,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8295,24 +9509,40 @@ function RFQsPage() {
                                                             children: "Home & Garden"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1277,
+=======
+                                                            lineNumber: 1339,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1272,
+=======
+                                                    lineNumber: 1334,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1268,
+=======
+                                            lineNumber: 1327,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                         lineNumber: 1267,
+=======
+                                        lineNumber: 1326,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8327,12 +9557,20 @@ function RFQsPage() {
                                                         placeholder: "All Priorities"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                         lineNumber: 1285,
+=======
+                                                        lineNumber: 1350,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1284,
+=======
+                                                    lineNumber: 1349,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -8343,7 +9581,11 @@ function RFQsPage() {
                                                             children: "All Priorities"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1288,
+=======
+                                                            lineNumber: 1353,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8351,7 +9593,11 @@ function RFQsPage() {
                                                             children: "High"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1289,
+=======
+                                                            lineNumber: 1354,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8359,7 +9605,11 @@ function RFQsPage() {
                                                             children: "Medium"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1290,
+=======
+                                                            lineNumber: 1355,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -8367,46 +9617,78 @@ function RFQsPage() {
                                                             children: "Low"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                             lineNumber: 1291,
+=======
+                                                            lineNumber: 1356,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                                     lineNumber: 1287,
+=======
+                                                    lineNumber: 1352,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                             lineNumber: 1283,
+=======
+                                            lineNumber: 1345,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                         lineNumber: 1282,
+=======
+                                        lineNumber: 1344,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                 lineNumber: 1252,
+=======
+                                lineNumber: 1311,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1251,
+=======
+                            lineNumber: 1310,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1250,
+=======
+                        lineNumber: 1309,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1246,
+=======
+                lineNumber: 1305,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -8418,20 +9700,32 @@ function RFQsPage() {
                                 children: "RFQ List"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                 lineNumber: 1303,
+=======
+                                lineNumber: 1368,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                                 children: "Click on any RFQ ID to view detailed information"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                 lineNumber: 1304,
+=======
+                                lineNumber: 1369,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1302,
+=======
+                        lineNumber: 1367,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -8440,7 +9734,11 @@ function RFQsPage() {
                             data: filteredRFQs
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1310,
+=======
+                            lineNumber: 1375,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "py-12 text-center",
@@ -8449,7 +9747,11 @@ function RFQsPage() {
                                     className: "h-16 w-16 text-muted-foreground mx-auto mb-4"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1313,
+=======
+                                    lineNumber: 1378,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -8457,7 +9759,11 @@ function RFQsPage() {
                                     children: "No RFQs found"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1314,
+=======
+                                    lineNumber: 1379,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -8465,7 +9771,11 @@ function RFQsPage() {
                                     children: "Try adjusting your search criteria or create a new RFQ"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1315,
+=======
+                                    lineNumber: 1380,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -8478,24 +9788,40 @@ function RFQsPage() {
                                     children: "Clear Filters"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                                     lineNumber: 1318,
+=======
+                                    lineNumber: 1383,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                             lineNumber: 1312,
+=======
+                            lineNumber: 1377,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                         lineNumber: 1308,
+=======
+                        lineNumber: 1373,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1301,
+=======
+                lineNumber: 1366,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CreateRFQDialog$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -8504,7 +9830,11 @@ function RFQsPage() {
                 onSubmit: handleCreateRFQ
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1334,
+=======
+                lineNumber: 1399,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RFQDetailView, {
@@ -8517,7 +9847,11 @@ function RFQsPage() {
                 onAction: handleRFQAction
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1340,
+=======
+                lineNumber: 1405,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(NegotiationDialog, {
@@ -8528,7 +9862,11 @@ function RFQsPage() {
                 setNegotiationData: setNegotiationData
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1350,
+=======
+                lineNumber: 1415,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 7
             }, this),
             orders.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -8538,22 +9876,38 @@ function RFQsPage() {
                     onFulfillmentUpdate: handleOrderFulfillment
                 }, void 0, false, {
                     fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                     lineNumber: 1361,
+=======
+                    lineNumber: 1426,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
                 lineNumber: 1360,
+=======
+                lineNumber: 1425,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard/rfqs/page.jsx",
+<<<<<<< HEAD
         lineNumber: 1119,
         columnNumber: 5
     }, this);
 }
 _s(RFQsPage, "OuBcnzaEAiaOsri0hlt6dd9/hrY=", false, function() {
+=======
+        lineNumber: 1123,
+        columnNumber: 5
+    }, this);
+}
+_s(RFQsPage, "66NOV81mg+8ueKk8RjRV3njWmJY=", false, function() {
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$authStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

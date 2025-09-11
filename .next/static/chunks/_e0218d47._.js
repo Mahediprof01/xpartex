@@ -1735,12 +1735,20 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                         children: rfq.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 465,
+=======
+                        lineNumber: 353,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 464,
+=======
+                    lineNumber: 352,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1758,7 +1766,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: rfq.title
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 483,
+=======
+                            lineNumber: 371,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1766,13 +1778,21 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: rfq.description
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 484,
+=======
+                            lineNumber: 372,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 482,
+=======
+                    lineNumber: 370,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1786,7 +1806,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: row.getValue("seller")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 495,
+=======
+                    lineNumber: 383,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -1805,14 +1829,22 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 508,
+=======
+                            lineNumber: 396,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 507,
+=======
+                    lineNumber: 395,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1828,7 +1860,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: priorityInfo?.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 522,
+=======
+                    lineNumber: 410,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1842,7 +1878,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 530,
+=======
+                    lineNumber: 418,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -1860,7 +1900,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 539,
+=======
+                    lineNumber: 427,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1875,7 +1919,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 550,
+=======
+                    lineNumber: 438,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -1890,7 +1938,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: new Date(deadline).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 559,
+=======
+                    lineNumber: 447,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1909,7 +1961,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: responses
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 572,
+=======
+                            lineNumber: 460,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         rfq.quote && userRole === "seller" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1919,7 +1975,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 575,
+=======
+                                    lineNumber: 463,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1927,19 +1987,31 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     children: rfq.quote.rating
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 576,
+=======
+                                    lineNumber: 464,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 574,
+=======
+                            lineNumber: 462,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 571,
+=======
+                    lineNumber: 459,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1955,7 +2027,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                         children: "No files"
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 592,
+=======
+                        lineNumber: 480,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 16
                     }, this);
                 }
@@ -1966,7 +2042,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             className: "h-4 w-4 text-muted-foreground"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 597,
+=======
+                            lineNumber: 485,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1974,13 +2054,21 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                             children: files.length
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 598,
+=======
+                            lineNumber: 486,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 596,
+=======
+                    lineNumber: 484,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -1995,7 +2083,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                     children: new Date(createdAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 609,
+=======
+                    lineNumber: 497,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2018,25 +2110,41 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 625,
+=======
+                                        lineNumber: 513,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 626,
+=======
+                                        lineNumber: 514,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 624,
+=======
+                                lineNumber: 512,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 623,
+=======
+                            lineNumber: 511,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -2049,14 +2157,22 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 631,
+=======
+                                            lineNumber: 519,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 630,
+=======
+                                    lineNumber: 518,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2065,7 +2181,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 635,
+=======
+                                            lineNumber: 523,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Response (",
@@ -2074,7 +2194,11 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 634,
+=======
+                                    lineNumber: 522,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 rfq.status === "open" && onStartNegotiation && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2084,26 +2208,42 @@ const createRFQColumns = (onViewDetails, onStartNegotiation, userRole)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 640,
+=======
+                                            lineNumber: 528,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Start Negotiation"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 639,
+=======
+                                    lineNumber: 527,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 629,
+=======
+                            lineNumber: 517,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 622,
+=======
+                    lineNumber: 510,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2124,12 +2264,20 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: order.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 663,
+=======
+                        lineNumber: 551,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 662,
+=======
+                    lineNumber: 550,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2147,7 +2295,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: order.product
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 681,
+=======
+                            lineNumber: 569,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2155,13 +2307,21 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: order.category
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 682,
+=======
+                            lineNumber: 570,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 680,
+=======
+                    lineNumber: 568,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2175,7 +2335,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 693,
+=======
+                    lineNumber: 581,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2194,14 +2358,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 706,
+=======
+                            lineNumber: 594,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 705,
+=======
+                    lineNumber: 593,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2218,7 +2390,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: statusInfo?.label || status
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 722,
+=======
+                    lineNumber: 610,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2233,7 +2409,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 733,
+=======
+                    lineNumber: 621,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2251,7 +2431,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 742,
+=======
+                    lineNumber: 630,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2266,7 +2450,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(orderDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 754,
+=======
+                    lineNumber: 642,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2281,7 +2469,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(estimatedDelivery).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 766,
+=======
+                    lineNumber: 654,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2296,7 +2488,11 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: trackingNumber || "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 777,
+=======
+                    lineNumber: 665,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2319,25 +2515,41 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 790,
+=======
+                                        lineNumber: 678,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 791,
+=======
+                                        lineNumber: 679,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 789,
+=======
+                                lineNumber: 677,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 788,
+=======
+                            lineNumber: 676,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -2350,14 +2562,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 796,
+=======
+                                            lineNumber: 684,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 795,
+=======
+                                    lineNumber: 683,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2367,14 +2587,22 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 801,
+=======
+                                            lineNumber: 689,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Order"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 800,
+=======
+                                    lineNumber: 688,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2384,26 +2612,42 @@ const createOrderColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 807,
+=======
+                                            lineNumber: 695,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Order"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 806,
+=======
+                                    lineNumber: 694,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 794,
+=======
+                            lineNumber: 682,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 787,
+=======
+                    lineNumber: 675,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2424,12 +2668,20 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: supplier.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 830,
+=======
+                        lineNumber: 718,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 829,
+=======
+                    lineNumber: 717,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2447,7 +2699,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: supplier.name
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 848,
+=======
+                            lineNumber: 736,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2455,13 +2711,21 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: supplier.company
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 849,
+=======
+                            lineNumber: 737,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 847,
+=======
+                    lineNumber: 735,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2475,7 +2739,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("email")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 860,
+=======
+                    lineNumber: 748,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2489,7 +2757,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 867,
+=======
+                    lineNumber: 755,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2506,7 +2778,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 877,
+=======
+                            lineNumber: 765,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2514,13 +2790,21 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: rating.toFixed(1)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 878,
+=======
+                            lineNumber: 766,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 876,
+=======
+                    lineNumber: 764,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2535,7 +2819,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: totalOrders.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 888,
+=======
+                    lineNumber: 776,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2554,14 +2842,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 903,
+=======
+                            lineNumber: 791,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 902,
+=======
+                    lineNumber: 790,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2576,7 +2872,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: verified ? "Verified" : "Unverified"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 915,
+=======
+                    lineNumber: 803,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2590,7 +2890,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("location")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 925,
+=======
+                    lineNumber: 813,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2605,7 +2909,11 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(joinedDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 934,
+=======
+                    lineNumber: 822,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2628,25 +2936,41 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 950,
+=======
+                                        lineNumber: 838,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 951,
+=======
+                                        lineNumber: 839,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 949,
+=======
+                                lineNumber: 837,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 948,
+=======
+                            lineNumber: 836,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -2659,14 +2983,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 956,
+=======
+                                            lineNumber: 844,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 955,
+=======
+                                    lineNumber: 843,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2676,14 +3008,22 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 961,
+=======
+                                            lineNumber: 849,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 960,
+=======
+                                    lineNumber: 848,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2693,26 +3033,42 @@ const createSupplierColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 967,
+=======
+                                            lineNumber: 855,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 966,
+=======
+                                    lineNumber: 854,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 954,
+=======
+                            lineNumber: 842,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 947,
+=======
+                    lineNumber: 835,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2733,12 +3089,20 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                         children: product.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 990,
+=======
+                        lineNumber: 878,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 989,
+=======
+                    lineNumber: 877,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2756,7 +3120,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: product.name
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1008,
+=======
+                            lineNumber: 896,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2764,13 +3132,21 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             children: product.description
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1009,
+=======
+                            lineNumber: 897,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1007,
+=======
+                    lineNumber: 895,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2784,7 +3160,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("category")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1020,
+=======
+                    lineNumber: 908,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2798,7 +3178,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1027,
+=======
+                    lineNumber: 915,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2816,7 +3200,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1036,
+=======
+                    lineNumber: 924,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2831,7 +3219,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: stock.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1047,
+=======
+                    lineNumber: 935,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -2850,14 +3242,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1062,
+=======
+                            lineNumber: 950,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1061,
+=======
+                    lineNumber: 949,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2872,7 +3272,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(createdAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1074,
+=======
+                    lineNumber: 962,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2887,7 +3291,11 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                     children: new Date(updatedAt).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1086,
+=======
+                    lineNumber: 974,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -2910,25 +3318,41 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1102,
+=======
+                                        lineNumber: 990,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1103,
+=======
+                                        lineNumber: 991,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1101,
+=======
+                                lineNumber: 989,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1100,
+=======
+                            lineNumber: 988,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -2941,14 +3365,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1108,
+=======
+                                            lineNumber: 996,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1107,
+=======
+                                    lineNumber: 995,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2958,14 +3390,22 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1113,
+=======
+                                            lineNumber: 1001,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1112,
+=======
+                                    lineNumber: 1000,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -2975,26 +3415,42 @@ const createProductColumns = (onViewDetails, onEdit, onDelete)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1119,
+=======
+                                            lineNumber: 1007,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Delete Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1118,
+=======
+                                    lineNumber: 1006,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1106,
+=======
+                            lineNumber: 994,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1099,
+=======
+                    lineNumber: 987,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3015,12 +3471,20 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1144,
+=======
+                        lineNumber: 1032,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1143,
+=======
+                    lineNumber: 1031,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3038,7 +3502,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1162,
+=======
+                            lineNumber: 1050,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3046,13 +3514,21 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.specifications
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1163,
+=======
+                            lineNumber: 1051,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1161,
+=======
+                    lineNumber: 1049,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3066,7 +3542,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1174,
+=======
+                    lineNumber: 1062,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3085,14 +3565,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1189,
+=======
+                            lineNumber: 1077,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1188,
+=======
+                    lineNumber: 1076,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3108,7 +3596,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: priorityInfo?.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1203,
+=======
+                    lineNumber: 1091,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3123,7 +3615,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1212,
+=======
+                    lineNumber: 1100,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3141,7 +3637,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1221,
+=======
+                    lineNumber: 1109,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3156,7 +3656,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1231,
+=======
+                    lineNumber: 1119,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3171,7 +3675,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: deadline ? new Date(deadline).toLocaleDateString() : "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1243,
+=======
+                    lineNumber: 1131,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3191,7 +3699,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: "Rate"
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1258,
+=======
+                        lineNumber: 1146,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this);
                 }
@@ -3203,7 +3715,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1272,
+=======
+                                lineNumber: 1160,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3211,13 +3727,21 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 children: rating.toFixed(1)
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1273,
+=======
+                                lineNumber: 1161,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1271,
+=======
+                        lineNumber: 1159,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this);
                 }
@@ -3226,7 +3750,11 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1278,
+=======
+                    lineNumber: 1166,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3249,25 +3777,41 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1291,
+=======
+                                        lineNumber: 1179,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1292,
+=======
+                                        lineNumber: 1180,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1290,
+=======
+                                lineNumber: 1178,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1289,
+=======
+                            lineNumber: 1177,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3280,14 +3824,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1297,
+=======
+                                            lineNumber: 1185,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1296,
+=======
+                                    lineNumber: 1184,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3296,14 +3848,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1301,
+=======
+                                            lineNumber: 1189,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1300,
+=======
+                                    lineNumber: 1188,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3312,14 +3872,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1305,
+=======
+                                            lineNumber: 1193,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Download Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1304,
+=======
+                                    lineNumber: 1192,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3329,14 +3897,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1310,
+=======
+                                            lineNumber: 1198,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Edit Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1309,
+=======
+                                    lineNumber: 1197,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "delivered" && !sample.feedback && onRate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3346,14 +3922,22 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1316,
+=======
+                                            lineNumber: 1204,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Rate Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1315,
+=======
+                                    lineNumber: 1203,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "pending_approval" && onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3364,26 +3948,42 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1325,
+=======
+                                            lineNumber: 1213,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Cancel Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1321,
+=======
+                                    lineNumber: 1209,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1295,
+=======
+                            lineNumber: 1183,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1288,
+=======
+                    lineNumber: 1176,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3404,12 +4004,20 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                         lineNumber: 1349,
+=======
+                        lineNumber: 1237,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1348,
+=======
+                    lineNumber: 1236,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3427,7 +4035,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyer || "John Doe"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1367,
+=======
+                            lineNumber: 1255,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3435,13 +4047,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyerCompany || "Fashion Corp"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1370,
+=======
+                            lineNumber: 1258,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1366,
+=======
+                    lineNumber: 1254,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3459,7 +4079,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1384,
+=======
+                            lineNumber: 1272,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3467,13 +4091,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productCategory || "Apparel"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1385,
+=======
+                            lineNumber: 1273,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1383,
+=======
+                    lineNumber: 1271,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3492,14 +4124,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1404,
+=======
+                            lineNumber: 1292,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1403,
+=======
+                    lineNumber: 1291,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3519,14 +4159,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1420,
+=======
+                            lineNumber: 1308,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 28
                         }, this),
                         priorityInfo?.label
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1419,
+=======
+                    lineNumber: 1307,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3544,7 +4192,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1431,
+=======
+                    lineNumber: 1319,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3562,7 +4214,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1440,
+=======
+                    lineNumber: 1328,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3577,7 +4233,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1452,
+=======
+                    lineNumber: 1340,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3593,7 +4253,11 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: "-"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1465,
+=======
+                    lineNumber: 1353,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 16
                 }, this);
                 const deadlineDate = new Date(deadline);
@@ -3607,13 +4271,21 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: "(Overdue)"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1478,
+=======
+                            lineNumber: 1366,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1472,
+=======
+                    lineNumber: 1360,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3636,25 +4308,41 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1493,
+=======
+                                        lineNumber: 1381,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1494,
+=======
+                                        lineNumber: 1382,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1492,
+=======
+                                lineNumber: 1380,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1491,
+=======
+                            lineNumber: 1379,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3667,14 +4355,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1499,
+=======
+                                            lineNumber: 1387,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1498,
+=======
+                                    lineNumber: 1386,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onApproveReject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3684,14 +4380,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1505,
+=======
+                                            lineNumber: 1393,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Review Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1504,
+=======
+                                    lineNumber: 1392,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "approved" && onShip && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3701,14 +4405,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1512,
+=======
+                                            lineNumber: 1400,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Ship Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1511,
+=======
+                                    lineNumber: 1399,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3717,14 +4429,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1518,
+=======
+                                            lineNumber: 1406,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Buyer"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1517,
+=======
+                                    lineNumber: 1405,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3733,14 +4453,22 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1523,
+=======
+                                            lineNumber: 1411,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Generate Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1522,
+=======
+                                    lineNumber: 1410,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3749,26 +4477,42 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1528,
+=======
+                                            lineNumber: 1416,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Track Package"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1527,
+=======
+                                    lineNumber: 1415,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1497,
+=======
+                            lineNumber: 1385,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1490,
+=======
+                    lineNumber: 1378,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3792,7 +4536,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1567,
+=======
+                                    lineNumber: 1455,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 item.discount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3802,18 +4550,30 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.discount
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1574,
+=======
+                                        lineNumber: 1462,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1573,
+=======
+                                    lineNumber: 1461,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1566,
+=======
+                            lineNumber: 1454,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3828,12 +4588,20 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1586,
+=======
+                                        lineNumber: 1474,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1581,
+=======
+                                    lineNumber: 1469,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3844,24 +4612,40 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.category
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1589,
+=======
+                                        lineNumber: 1477,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1588,
+=======
+                                    lineNumber: 1476,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1580,
+=======
+                            lineNumber: 1468,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1565,
+=======
+                    lineNumber: 1453,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3876,7 +4660,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: seller
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1603,
+=======
+                    lineNumber: 1491,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 14
                 }, this);
             }
@@ -3894,7 +4682,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.price
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1613,
+=======
+                            lineNumber: 1501,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         item.originalPrice !== item.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3902,13 +4694,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.originalPrice
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1615,
+=======
+                            lineNumber: 1503,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1612,
+=======
+                    lineNumber: 1500,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3928,7 +4728,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "h-4 w-4 fill-yellow-400 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1631,
+=======
+                                    lineNumber: 1519,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3936,13 +4740,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     children: item.rating
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1632,
+=======
+                                    lineNumber: 1520,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1630,
+=======
+                            lineNumber: 1518,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3954,13 +4766,21 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1634,
+=======
+                            lineNumber: 1522,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1629,
+=======
+                    lineNumber: 1517,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3975,7 +4795,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: inStock ? "In Stock" : "Out of Stock"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1647,
+=======
+                    lineNumber: 1535,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -3990,7 +4814,11 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: new Date(addedDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1663,
+=======
+                    lineNumber: 1551,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4013,25 +4841,41 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1679,
+=======
+                                        lineNumber: 1567,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                         lineNumber: 1680,
+=======
+                                        lineNumber: 1568,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                 lineNumber: 1678,
+=======
+                                lineNumber: 1566,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1677,
+=======
+                            lineNumber: 1565,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4044,14 +4888,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1685,
+=======
+                                            lineNumber: 1573,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1684,
+=======
+                                    lineNumber: 1572,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 item.inStock && onAddToCart && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4061,14 +4913,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1691,
+=======
+                                            lineNumber: 1579,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Add to Cart"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1690,
+=======
+                                    lineNumber: 1578,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4077,14 +4937,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1697,
+=======
+                                            lineNumber: 1585,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Contact Seller"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1696,
+=======
+                                    lineNumber: 1584,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4093,14 +4961,22 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1702,
+=======
+                                            lineNumber: 1590,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 15
                                         }, this),
                                         "Share Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1701,
+=======
+                                    lineNumber: 1589,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 13
                                 }, this),
                                 onRemoveFromWishlist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4111,26 +4987,42 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                             lineNumber: 1711,
+=======
+                                            lineNumber: 1599,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                             columnNumber: 17
                                         }, this),
                                         "Remove from Wishlist"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                                     lineNumber: 1707,
+=======
+                                    lineNumber: 1595,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                             lineNumber: 1683,
+=======
+                            lineNumber: 1571,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
+<<<<<<< HEAD
                     lineNumber: 1676,
+=======
+                    lineNumber: 1564,
+>>>>>>> 3fa251e3c57bef165fdc9471d3d5d7366925e88d
                     columnNumber: 9
                 }, this);
             }
@@ -4157,6 +5049,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/textarea.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/select.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dialog.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/label.tsx [app-client] (ecmascript)");
@@ -4175,6 +5068,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$columns$2e$tsx
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -4223,7 +5117,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                             children: "Review Sample Request"
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 67,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -4233,13 +5127,13 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 68,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                    lineNumber: 66,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -4255,45 +5149,11 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Product:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 76,
-                                            columnNumber: 15
-                                        }, this),
-                                        " ",
-                                        sample?.productName
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 75,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                            children: "Buyer:"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 79,
-                                            columnNumber: 15
-                                        }, this),
-                                        " ",
-                                        sample?.buyer
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 78,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                            children: "Quantity:"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
                                             lineNumber: 82,
                                             columnNumber: 15
                                         }, this),
                                         " ",
-                                        sample?.quantity
+                                        sample?.productName
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
@@ -4303,10 +5163,44 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                            children: "Specifications:"
+                                            children: "Buyer:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
                                             lineNumber: 85,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        sample?.buyer
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: "Quantity:"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 88,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        sample?.quantity
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 87,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: "Specifications:"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 91,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -4314,7 +5208,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 sample?.buyerNotes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4323,7 +5217,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Buyer Notes:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 95,
                                             columnNumber: 17
                                         }, this),
                                         " ",
@@ -4331,13 +5225,13 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 74,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4347,7 +5241,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     children: "Decision *"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -4360,12 +5254,12 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 110,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -4379,19 +5273,19 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                                 className: "h-4 w-4 text-green-600"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                                lineNumber: 109,
+                                                                lineNumber: 115,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Approve Request"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 108,
+                                                        lineNumber: 114,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 113,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -4403,37 +5297,37 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                                 className: "h-4 w-4 text-red-600"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                                lineNumber: 115,
+                                                                lineNumber: 121,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Reject Request"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 114,
+                                                        lineNumber: 120,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 113,
+                                                    lineNumber: 119,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 112,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 95,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this),
                         approvalData.action === "approve" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -4449,7 +5343,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                     children: "Sample Cost ($) *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 134,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -4466,13 +5360,13 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 129,
+                                                    lineNumber: 135,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 133,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4483,7 +5377,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                     children: "Estimated Shipping (days)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 146,
+                                                    lineNumber: 152,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -4498,19 +5392,19 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                         })
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 155,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 151,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 132,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4521,7 +5415,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Response Notes"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 173,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -4535,13 +5429,13 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 174,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 172,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -4554,7 +5448,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     children: "Rejection Reason *"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 189,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -4569,13 +5463,13 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     required: true
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 184,
+                                    lineNumber: 190,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 188,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4590,7 +5484,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 className: "h-4 w-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 217,
                                                 columnNumber: 19
                                             }, this),
                                             "Approve Request"
@@ -4601,7 +5495,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 className: "h-4 w-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 222,
                                                 columnNumber: 19
                                             }, this),
                                             "Reject Request"
@@ -4609,7 +5503,7 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     }, void 0, true)
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 201,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4619,30 +5513,30 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 227,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 200,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                    lineNumber: 72,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-            lineNumber: 65,
+            lineNumber: 71,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-        lineNumber: 64,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }
@@ -4682,7 +5576,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                             children: "Ship Sample"
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 258,
+                            lineNumber: 264,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
@@ -4692,13 +5586,13 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 259,
+                            lineNumber: 265,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                    lineNumber: 257,
+                    lineNumber: 263,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -4714,7 +5608,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Product:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 267,
+                                            lineNumber: 273,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -4722,7 +5616,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 266,
+                                    lineNumber: 272,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4731,7 +5625,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Buyer:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 270,
+                                            lineNumber: 276,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -4739,7 +5633,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 269,
+                                    lineNumber: 275,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4748,7 +5642,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Quantity:"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 273,
+                                            lineNumber: 279,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -4756,13 +5650,13 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 272,
+                                    lineNumber: 278,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 265,
+                            lineNumber: 271,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4776,7 +5670,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Shipping Carrier *"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 280,
+                                            lineNumber: 286,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
@@ -4789,12 +5683,12 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {}, void 0, false, {
                                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 288,
+                                                        lineNumber: 294,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 287,
+                                                    lineNumber: 293,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -4804,7 +5698,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                             children: "DHL Express"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                            lineNumber: 291,
+                                                            lineNumber: 297,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -4812,7 +5706,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                             children: "FedEx"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                            lineNumber: 292,
+                                                            lineNumber: 298,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -4820,7 +5714,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                             children: "UPS"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                            lineNumber: 293,
+                                                            lineNumber: 299,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -4828,7 +5722,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                             children: "USPS"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                            lineNumber: 294,
+                                                            lineNumber: 300,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -4836,25 +5730,25 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                             children: "Local Courier"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                            lineNumber: 295,
+                                                            lineNumber: 301,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 290,
+                                                    lineNumber: 296,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 281,
+                                            lineNumber: 287,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 279,
+                                    lineNumber: 285,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4865,7 +5759,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Tracking Number *"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 300,
+                                            lineNumber: 306,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -4879,19 +5773,19 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 301,
+                                            lineNumber: 307,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 299,
+                                    lineNumber: 305,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 278,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4905,7 +5799,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Estimated Delivery"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 318,
+                                            lineNumber: 324,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -4918,13 +5812,13 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 319,
+                                            lineNumber: 325,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 317,
+                                    lineNumber: 323,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4935,7 +5829,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             children: "Shipping Cost ($)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 332,
+                                            lineNumber: 338,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -4951,19 +5845,19 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                                 })
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 333,
+                                            lineNumber: 339,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 331,
+                                    lineNumber: 337,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 316,
+                            lineNumber: 322,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4974,7 +5868,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                     children: "Shipping Notes"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 352,
+                                    lineNumber: 358,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -4988,13 +5882,13 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                         })
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 353,
+                                    lineNumber: 359,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 351,
+                            lineNumber: 357,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5008,14 +5902,14 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                             className: "h-4 w-4 mr-2"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 366,
+                                            lineNumber: 372,
                                             columnNumber: 15
                                         }, this),
                                         "Ship Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 365,
+                                    lineNumber: 371,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5025,30 +5919,30 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 369,
+                                    lineNumber: 375,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                            lineNumber: 364,
+                            lineNumber: 370,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                    lineNumber: 263,
+                    lineNumber: 269,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-            lineNumber: 256,
+            lineNumber: 262,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-        lineNumber: 255,
+        lineNumber: 261,
         columnNumber: 5
     }, this);
 }
@@ -5197,596 +6091,805 @@ function SampleSellerPage() {
         className: "space-y-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4",
+                className: "relative w-1/2",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl font-bold text-foreground",
-                                children: "Sample Management"
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 575,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-muted-foreground",
-                                children: "Review and manage incoming sample requests"
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 578,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                        className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                    }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 574,
+                        lineNumber: 581,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative flex-1 max-w-sm",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground"
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 585,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                placeholder: "Search requests...",
-                                className: "pl-10 h-9",
-                                value: searchQuery,
-                                onChange: (e)=>setSearchQuery(e.target.value)
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 586,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                        placeholder: "Search requests...",
+                        className: "pl-10 h-9",
+                        value: searchQuery,
+                        onChange: (e)=>setSearchQuery(e.target.value)
+                    }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 584,
+                        lineNumber: 582,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 573,
+                lineNumber: 580,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid gap-6 md:grid-cols-2 lg:grid-cols-4",
-                children: stats.map((stat, index)=>{
-                    const Icon = stat.icon;
-                    const colors = [
-                        {
-                            bg: "bg-gradient-to-br from-blue-50 to-indigo-100",
-                            iconBg: "bg-blue-500",
-                            iconColor: "text-white",
-                            accent: "border-blue-200",
-                            textGradient: "bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
+                className: "grid gap-4 md:grid-cols-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
                         },
-                        {
-                            bg: "bg-gradient-to-br from-amber-50 to-orange-100",
-                            iconBg: "bg-amber-500",
-                            iconColor: "text-white",
-                            accent: "border-amber-200",
-                            textGradient: "bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent"
+                        animate: {
+                            opacity: 1,
+                            y: 0
                         },
-                        {
-                            bg: "bg-gradient-to-br from-emerald-50 to-green-100",
-                            iconBg: "bg-emerald-500",
-                            iconColor: "text-white",
-                            accent: "border-emerald-200",
-                            textGradient: "bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent"
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0
                         },
-                        {
-                            bg: "bg-gradient-to-br from-purple-50 to-violet-100",
-                            iconBg: "bg-purple-500",
-                            iconColor: "text-white",
-                            accent: "border-purple-200",
-                            textGradient: "bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent"
-                        }
-                    ];
-                    const color = colors[index % colors.length];
-                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                        className: `relative overflow-hidden border-2 ${color.accent} ${color.bg} hover:shadow-lg transition-all duration-300 hover:scale-105`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute top-0 right-0 w-12 h-12 opacity-10",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 bg-white rounded-full transform translate-x-4 -translate-y-4"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 642,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-1 bg-white rounded-full transform translate-x-5 -translate-y-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 643,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 641,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
-                                className: "p-3",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center justify-between",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `inline-flex items-center justify-center w-8 h-8 rounded-lg ${color.iconBg} shadow-sm transform hover:scale-110 transition-transform duration-200`,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                                    className: `h-4 w-4 ${color.iconColor}`
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                    lineNumber: 653,
-                                                    columnNumber: 23
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 650,
-                                                columnNumber: 21
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-xs font-medium text-gray-600 uppercase tracking-wide leading-tight",
-                                                        children: stat.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 657,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: `text-xl font-bold ${color.textGradient} leading-tight`,
-                                                        children: stat.value
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 660,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-xs text-gray-500 flex items-center gap-1 leading-tight",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "w-1 h-1 bg-green-400 rounded-full animate-pulse"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                                lineNumber: 666,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            stat.description
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                        lineNumber: 665,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 656,
-                                                columnNumber: 21
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 649,
-                                        columnNumber: 19
-                                    }, this)
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                    lineNumber: 647,
-                                    columnNumber: 17
+                                    lineNumber: 603,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Total Requests"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 607,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__["Package"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                lineNumber: 613,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 610,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 606,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold",
+                                            children: stats[0].value
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 617,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: stats[0].description
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 618,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 616,
+                                    columnNumber: 13
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 646,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `absolute inset-0 rounded-lg ${color.iconBg} opacity-0 hover:opacity-5 transition-opacity duration-300`
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 675,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, stat.title, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 602,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 636,
-                        columnNumber: 13
-                    }, this);
-                })
-            }, void 0, false, {
-                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 596,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-end",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap items-center gap-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                value: filterStatus,
-                                onValueChange: setFilterStatus,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                        className: "h-9 w-[140px]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                            placeholder: "Status"
+                        lineNumber: 592,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.05
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 636,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Pending Review"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 690,
+                                            lineNumber: 640,
                                             columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 689,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "all",
-                                                children: "All Status"
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 693,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "pending_approval",
-                                                children: "Pending Review"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 694,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "approved",
-                                                children: "Approved"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 695,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "shipped",
-                                                children: "Shipped"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 696,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "delivered",
-                                                children: "Delivered"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 697,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "rejected",
-                                                children: "Rejected"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 698,
-                                                columnNumber: 15
+                                                lineNumber: 646,
+                                                columnNumber: 17
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 692,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 688,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                value: filterPriority,
-                                onValueChange: setFilterPriority,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                        className: "h-9 w-[120px]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                            placeholder: "Priority"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 705,
+                                            lineNumber: 643,
                                             columnNumber: 15
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 704,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "all",
-                                                children: "All Priority"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 639,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-blue-600",
+                                            children: stats[1].value
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 650,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: stats[1].description
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 653,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 649,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 635,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                        lineNumber: 625,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.1
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 671,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Shipped"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 675,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__["Truck"], {
+                                                className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 708,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "high",
-                                                children: "High"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 709,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "medium",
-                                                children: "Medium"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 710,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "low",
-                                                children: "Low"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 711,
-                                                columnNumber: 15
+                                                lineNumber: 679,
+                                                columnNumber: 17
                                             }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 707,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 703,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                value: dateRange,
-                                onValueChange: setDateRange,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                        className: "h-9 w-[120px]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                            placeholder: "Date"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 676,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 674,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-green-600",
+                                            children: stats[2].value
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 683,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: stats[2].description
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 686,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 682,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 670,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                        lineNumber: 660,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.15
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 704,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Total Revenue"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 708,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dollar$2d$sign$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__DollarSign$3e$__["DollarSign"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                lineNumber: 714,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 711,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 707,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-orange-600",
+                                            children: stats[3].value
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
                                             lineNumber: 718,
                                             columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 717,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "all",
-                                                children: "All Time"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 721,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "today",
-                                                children: "Today"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 722,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "week",
-                                                children: "This Week"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 723,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "month",
-                                                children: "This Month"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 724,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "quarter",
-                                                children: "This Quarter"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 725,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "year",
-                                                children: "This Year"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 726,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 720,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 716,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                value: sortBy,
-                                onValueChange: setSortBy,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                        className: "h-9 w-[120px]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                            placeholder: "Sort"
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: stats[3].description
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 733,
+                                            lineNumber: 721,
                                             columnNumber: 15
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 732,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "recent",
-                                                children: "Recent"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 736,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "oldest",
-                                                children: "Oldest"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 737,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "priority",
-                                                children: "Priority"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 738,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "status",
-                                                children: "Status"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 739,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "cost",
-                                                children: "Cost"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 740,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                value: "deadline",
-                                                children: "Deadline"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                                lineNumber: 741,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 735,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 731,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 717,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 703,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 686,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center gap-2",
-                        children: [
-                            (searchQuery || filterStatus !== "all" || filterPriority !== "all" || dateRange !== "all" || sortBy !== "recent") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                variant: "outline",
-                                size: "sm",
-                                onClick: ()=>{
-                                    setSearchQuery("");
-                                    setFilterStatus("all");
-                                    setFilterPriority("all");
-                                    setDateRange("all");
-                                    setSortBy("recent");
-                                },
-                                className: "h-9 px-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                        className: "h-3 w-3 mr-1"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 766,
-                                        columnNumber: 15
-                                    }, this),
-                                    "Clear"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 754,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                variant: "outline",
-                                size: "sm",
-                                className: "h-9 px-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
-                                        className: "h-3 w-3 mr-1"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 771,
-                                        columnNumber: 13
-                                    }, this),
-                                    "Export"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 770,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 747,
+                        lineNumber: 693,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 684,
+                lineNumber: 591,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                            children: "Filter Sample Requests"
+                        }, void 0, false, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 732,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                        lineNumber: 731,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-start",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-wrap items-center gap-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                            value: filterStatus,
+                                            onValueChange: setFilterStatus,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                    className: "h-9 w-[140px]",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                        placeholder: "Status"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                        lineNumber: 741,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 740,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "all",
+                                                            children: "All Status"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 744,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "pending_approval",
+                                                            children: "Pending Review"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 745,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "approved",
+                                                            children: "Approved"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 748,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "shipped",
+                                                            children: "Shipped"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 749,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "delivered",
+                                                            children: "Delivered"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 750,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "rejected",
+                                                            children: "Rejected"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 751,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 743,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 739,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                            value: filterPriority,
+                                            onValueChange: setFilterPriority,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                    className: "h-9 w-[120px]",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                        placeholder: "Priority"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                        lineNumber: 758,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 757,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "all",
+                                                            children: "All Priority"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 761,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "high",
+                                                            children: "High"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 762,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "medium",
+                                                            children: "Medium"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 763,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "low",
+                                                            children: "Low"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 764,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 760,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 756,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                            value: dateRange,
+                                            onValueChange: setDateRange,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                    className: "h-9 w-[120px]",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                        placeholder: "Date"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                        lineNumber: 771,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 770,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "all",
+                                                            children: "All Time"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 774,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "today",
+                                                            children: "Today"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 775,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "week",
+                                                            children: "This Week"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 776,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "month",
+                                                            children: "This Month"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 777,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "quarter",
+                                                            children: "This Quarter"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 778,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "year",
+                                                            children: "This Year"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 779,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 773,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 769,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                            value: sortBy,
+                                            onValueChange: setSortBy,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                    className: "h-9 w-[120px]",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                        placeholder: "Sort"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                        lineNumber: 786,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 785,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "recent",
+                                                            children: "Recent"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 789,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "oldest",
+                                                            children: "Oldest"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 790,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "priority",
+                                                            children: "Priority"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 791,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "status",
+                                                            children: "Status"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 792,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "cost",
+                                                            children: "Cost"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 793,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                            value: "deadline",
+                                                            children: "Deadline"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                            lineNumber: 794,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 788,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 784,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 737,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        (searchQuery || filterStatus !== "all" || filterPriority !== "all" || dateRange !== "all" || sortBy !== "recent") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            variant: "outline",
+                                            size: "sm",
+                                            onClick: ()=>{
+                                                setSearchQuery("");
+                                                setFilterStatus("all");
+                                                setFilterPriority("all");
+                                                setDateRange("all");
+                                                setSortBy("recent");
+                                            },
+                                            className: "h-9 px-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                                    className: "h-3 w-3 mr-1"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 819,
+                                                    columnNumber: 19
+                                                }, this),
+                                                "Clear"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 807,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            variant: "outline",
+                                            size: "sm",
+                                            className: "h-9 px-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
+                                                    className: "h-3 w-3 mr-1"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                                    lineNumber: 824,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Export"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                            lineNumber: 823,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                                    lineNumber: 800,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                            lineNumber: 735,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                        lineNumber: 734,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard/sample-seller/page.tsx",
+                lineNumber: 730,
                 columnNumber: 7
             }, this),
             (searchQuery || filterStatus !== "all" || filterPriority !== "all" || dateRange !== "all") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5797,7 +6900,7 @@ function SampleSellerPage() {
                         children: "Filters:"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 783,
+                        lineNumber: 838,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5817,18 +6920,18 @@ function SampleSellerPage() {
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 792,
+                                            lineNumber: 847,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 788,
+                                        lineNumber: 843,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 786,
+                                lineNumber: 841,
                                 columnNumber: 15
                             }, this),
                             filterStatus !== "all" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -5843,18 +6946,18 @@ function SampleSellerPage() {
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 803,
+                                            lineNumber: 858,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 799,
+                                        lineNumber: 854,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 797,
+                                lineNumber: 852,
                                 columnNumber: 15
                             }, this),
                             filterPriority !== "all" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -5869,18 +6972,18 @@ function SampleSellerPage() {
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 814,
+                                            lineNumber: 869,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 810,
+                                        lineNumber: 865,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 808,
+                                lineNumber: 863,
                                 columnNumber: 15
                             }, this),
                             dateRange !== "all" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -5895,30 +6998,30 @@ function SampleSellerPage() {
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                            lineNumber: 825,
+                                            lineNumber: 880,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                        lineNumber: 821,
+                                        lineNumber: 876,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 819,
+                                lineNumber: 874,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 784,
+                        lineNumber: 839,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 782,
+                lineNumber: 837,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
@@ -5928,7 +7031,7 @@ function SampleSellerPage() {
                         data: filteredSamples
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 837,
+                        lineNumber: 892,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "py-12 text-center",
@@ -5937,7 +7040,7 @@ function SampleSellerPage() {
                                 className: "h-16 w-16 text-muted-foreground mx-auto mb-4"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 840,
+                                lineNumber: 895,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -5945,7 +7048,7 @@ function SampleSellerPage() {
                                 children: "No Sample Requests"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 841,
+                                lineNumber: 896,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5953,7 +7056,7 @@ function SampleSellerPage() {
                                 children: searchQuery || filterStatus !== "all" || filterPriority !== "all" || dateRange !== "all" ? "No requests match your current filters" : "No sample requests received yet"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 842,
+                                lineNumber: 897,
                                 columnNumber: 15
                             }, this),
                             searchQuery || filterStatus !== "all" || filterPriority !== "all" || dateRange !== "all" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -5967,23 +7070,23 @@ function SampleSellerPage() {
                                 children: "Clear Filters"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                                lineNumber: 854,
+                                lineNumber: 909,
                                 columnNumber: 17
                             }, this) : null
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                        lineNumber: 839,
+                        lineNumber: 894,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                    lineNumber: 835,
+                    lineNumber: 890,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 834,
+                lineNumber: 889,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ApprovalDialog, {
@@ -5996,7 +7099,7 @@ function SampleSellerPage() {
                 onSubmit: handleApprovalSubmit
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 872,
+                lineNumber: 927,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ShippingDialog, {
@@ -6009,13 +7112,13 @@ function SampleSellerPage() {
                 onSubmit: handleShippingSubmit
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-                lineNumber: 882,
+                lineNumber: 937,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard/sample-seller/page.tsx",
-        lineNumber: 572,
+        lineNumber: 578,
         columnNumber: 5
     }, this);
 }
