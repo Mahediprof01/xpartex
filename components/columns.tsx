@@ -9,11 +9,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { 
-  Eye, 
-  MessageSquare, 
-  Clock, 
-  CheckCircle, 
+import {
+  Eye,
+  MessageSquare,
+  Clock,
+  CheckCircle,
   AlertCircle,
   Star,
   FileText,
@@ -27,7 +27,7 @@ import {
   DollarSign,
   ShoppingCart,
   Truck,
-  MoreHorizontal
+  MoreHorizontal,
 } from "lucide-react";
 
 // Generic type definitions for different data types
@@ -90,13 +90,24 @@ export type Order = {
   category: string;
   quantity: number;
   price: number;
-  status: "pending" | "confirmed" | "processing" | "shipped" | "delivered" | "cancelled";
+  status:
+    | "pending"
+    | "confirmed"
+    | "processing"
+    | "shipped"
+    | "delivered"
+    | "cancelled";
   orderDate: string;
   deliveryDate?: string;
   paymentTerms: string;
   requirements?: string;
   specifications?: string;
-  fulfillmentStatus: "pending" | "processing" | "shipped" | "delivered" | "cancelled";
+  fulfillmentStatus:
+    | "pending"
+    | "processing"
+    | "shipped"
+    | "delivered"
+    | "cancelled";
   trackingNumber?: string;
   estimatedDelivery: string;
   lastUpdated?: string;
@@ -294,11 +305,7 @@ export const createRFQColumns = (
     accessorKey: "seller",
     header: "Supplier",
     cell: ({ row }) => {
-      return (
-        <div className="font-medium">
-          {row.getValue("seller")}
-        </div>
-      );
+      return <div className="font-medium">{row.getValue("seller")}</div>;
     },
   },
   {
@@ -325,9 +332,7 @@ export const createRFQColumns = (
       const priorityInfo = priorityConfig[priority];
 
       return (
-        <Badge className={priorityInfo?.color}>
-          {priorityInfo?.label}
-        </Badge>
+        <Badge className={priorityInfo?.color}>{priorityInfo?.label}</Badge>
       );
     },
   },
@@ -335,11 +340,7 @@ export const createRFQColumns = (
     accessorKey: "category",
     header: "Category",
     cell: ({ row }) => {
-      return (
-        <div className="text-sm">
-          {row.getValue("category")}
-        </div>
-      );
+      return <div className="text-sm">{row.getValue("category")}</div>;
     },
   },
   {
@@ -359,11 +360,7 @@ export const createRFQColumns = (
     header: "Quantity",
     cell: ({ row }) => {
       const quantity = row.getValue("quantity") as number;
-      return (
-        <div className="text-sm">
-          {quantity.toLocaleString()}
-        </div>
-      );
+      return <div className="text-sm">{quantity.toLocaleString()}</div>;
     },
   },
   {
@@ -372,9 +369,7 @@ export const createRFQColumns = (
     cell: ({ row }) => {
       const deadline = row.getValue("deadline") as string;
       return (
-        <div className="text-sm">
-          {new Date(deadline).toLocaleDateString()}
-        </div>
+        <div className="text-sm">{new Date(deadline).toLocaleDateString()}</div>
       );
     },
   },
@@ -384,7 +379,7 @@ export const createRFQColumns = (
     cell: ({ row }) => {
       const responses = row.getValue("responses") as number;
       const rfq = row.original;
-      
+
       return (
         <div className="flex items-center gap-2">
           <span className="text-sm">{responses}</span>
@@ -405,7 +400,7 @@ export const createRFQColumns = (
     header: "Files",
     cell: ({ row }) => {
       const files = row.getValue("files") as Array<any>;
-      
+
       if (files.length === 0) {
         return <span className="text-muted-foreground text-sm">No files</span>;
       }
@@ -435,7 +430,7 @@ export const createRFQColumns = (
     header: "Actions",
     cell: ({ row }) => {
       const rfq = row.original;
-      
+
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -508,11 +503,7 @@ export const createOrderColumns = (
     accessorKey: "supplier",
     header: "Supplier",
     cell: ({ row }) => {
-      return (
-        <div className="font-medium">
-          {row.getValue("supplier")}
-        </div>
-      );
+      return <div className="font-medium">{row.getValue("supplier")}</div>;
     },
   },
   {
@@ -535,7 +526,9 @@ export const createOrderColumns = (
     accessorKey: "fulfillmentStatus",
     header: "Fulfillment",
     cell: ({ row }) => {
-      const status = row.getValue("fulfillmentStatus") as keyof typeof statusConfigs.order;
+      const status = row.getValue(
+        "fulfillmentStatus"
+      ) as keyof typeof statusConfigs.order;
       const statusInfo = statusConfigs.order[status];
 
       return (
@@ -550,11 +543,7 @@ export const createOrderColumns = (
     header: "Quantity",
     cell: ({ row }) => {
       const quantity = row.getValue("quantity") as number;
-      return (
-        <div className="text-sm">
-          {quantity.toLocaleString()}
-        </div>
-      );
+      return <div className="text-sm">{quantity.toLocaleString()}</div>;
     },
   },
   {
@@ -598,11 +587,7 @@ export const createOrderColumns = (
     header: "Tracking",
     cell: ({ row }) => {
       const trackingNumber = row.getValue("trackingNumber") as string;
-      return (
-        <div className="text-sm">
-          {trackingNumber || "N/A"}
-        </div>
-      );
+      return <div className="text-sm">{trackingNumber || "N/A"}</div>;
     },
   },
   {
@@ -610,7 +595,7 @@ export const createOrderColumns = (
     header: "Actions",
     cell: ({ row }) => {
       const order = row.original;
-      
+
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -685,22 +670,14 @@ export const createSupplierColumns = (
     accessorKey: "email",
     header: "Email",
     cell: ({ row }) => {
-      return (
-        <div className="text-sm">
-          {row.getValue("email")}
-        </div>
-      );
+      return <div className="text-sm">{row.getValue("email")}</div>;
     },
   },
   {
     accessorKey: "category",
     header: "Category",
     cell: ({ row }) => {
-      return (
-        <div className="text-sm">
-          {row.getValue("category")}
-        </div>
-      );
+      return <div className="text-sm">{row.getValue("category")}</div>;
     },
   },
   {
@@ -721,18 +698,16 @@ export const createSupplierColumns = (
     header: "Total Orders",
     cell: ({ row }) => {
       const totalOrders = row.getValue("totalOrders") as number;
-      return (
-        <div className="text-sm">
-          {totalOrders.toLocaleString()}
-        </div>
-      );
+      return <div className="text-sm">{totalOrders.toLocaleString()}</div>;
     },
   },
   {
     accessorKey: "status",
     header: "Status",
     cell: ({ row }) => {
-      const status = row.getValue("status") as keyof typeof statusConfigs.supplier;
+      const status = row.getValue(
+        "status"
+      ) as keyof typeof statusConfigs.supplier;
       const statusInfo = statusConfigs.supplier[status];
       const StatusIcon = statusInfo?.icon;
 
@@ -760,11 +735,7 @@ export const createSupplierColumns = (
     accessorKey: "location",
     header: "Location",
     cell: ({ row }) => {
-      return (
-        <div className="text-sm">
-          {row.getValue("location")}
-        </div>
-      );
+      return <div className="text-sm">{row.getValue("location")}</div>;
     },
   },
   {
@@ -784,7 +755,7 @@ export const createSupplierColumns = (
     header: "Actions",
     cell: ({ row }) => {
       const supplier = row.original;
-      
+
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -859,22 +830,14 @@ export const createProductColumns = (
     accessorKey: "category",
     header: "Category",
     cell: ({ row }) => {
-      return (
-        <div className="text-sm">
-          {row.getValue("category")}
-        </div>
-      );
+      return <div className="text-sm">{row.getValue("category")}</div>;
     },
   },
   {
     accessorKey: "supplier",
     header: "Supplier",
     cell: ({ row }) => {
-      return (
-        <div className="font-medium">
-          {row.getValue("supplier")}
-        </div>
-      );
+      return <div className="font-medium">{row.getValue("supplier")}</div>;
     },
   },
   {
@@ -894,18 +857,16 @@ export const createProductColumns = (
     header: "Stock",
     cell: ({ row }) => {
       const stock = row.getValue("stock") as number;
-      return (
-        <div className="text-sm">
-          {stock.toLocaleString()}
-        </div>
-      );
+      return <div className="text-sm">{stock.toLocaleString()}</div>;
     },
   },
   {
     accessorKey: "status",
     header: "Status",
     cell: ({ row }) => {
-      const status = row.getValue("status") as keyof typeof statusConfigs.product;
+      const status = row.getValue(
+        "status"
+      ) as keyof typeof statusConfigs.product;
       const statusInfo = statusConfigs.product[status];
       const StatusIcon = statusInfo?.icon;
 
@@ -946,7 +907,7 @@ export const createProductColumns = (
     header: "Actions",
     cell: ({ row }) => {
       const product = row.original;
-      
+
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
