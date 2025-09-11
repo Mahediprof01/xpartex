@@ -962,6 +962,10 @@
     height: calc(var(--spacing) * 6);
   }
 
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -1320,6 +1324,10 @@
 
   .max-w-\[260px\] {
     max-width: 260px;
+  }
+
+  .max-w-\[300px\] {
+    max-width: 300px;
   }
 
   .max-w-\[480px\] {
@@ -2445,6 +2453,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .from-blue-500 {
+    --tw-gradient-from: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .from-blue-600 {
     --tw-gradient-from: var(--color-blue-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -2539,6 +2552,11 @@
 
   .to-blue-500 {
     --tw-gradient-to: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-cyan-500 {
+    --tw-gradient-to: var(--color-cyan-500);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -2761,6 +2779,10 @@
 
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
 
   .py-0\.5 {
@@ -3271,6 +3293,10 @@
     color: var(--color-yellow-800);
   }
 
+  .capitalize {
+    text-transform: capitalize;
+  }
+
   .uppercase {
     text-transform: uppercase;
   }
@@ -3633,6 +3659,11 @@
   .file\:font-medium::file-selector-button {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+
+  .last\:border-0:last-child {
+    border-style: var(--tw-border-style);
+    border-width: 0;
   }
 
   .last\:border-b-0:last-child {
@@ -4722,6 +4753,12 @@
   @media (width >= 64rem) {
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
 

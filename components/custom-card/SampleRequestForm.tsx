@@ -9,13 +9,12 @@ import SignupPromptModal from "@/components/SignupPromptModal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  // Select,
-  // SelectContent,
-  // SelectItem,
-  // SelectTrigger,
-  // SelectValue,
-} from "@/components/ui/select";
+import // Select,
+// SelectContent,
+// SelectItem,
+// SelectTrigger,
+// SelectValue,
+"@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Package } from "lucide-react";
 
@@ -23,14 +22,11 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
   const router = useRouter();
   const { isAuthenticated } = useAuthStore();
   const { addSampleRequest } = useSampleStore();
-  const { 
-    getSampleRequestData, 
-    setSampleRequestData, 
-    clearSampleRequestData 
-  } = useFormDataStore();
-  
+  const { getSampleRequestData, setSampleRequestData, clearSampleRequestData } =
+    useFormDataStore();
+
   const [showSignupModal, setShowSignupModal] = useState(false);
-  
+
   // Initialize form data from stored data or defaults
   const [formData, setFormData] = useState(() => {
     const savedData = getSampleRequestData();
@@ -61,13 +57,13 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!isAuthenticated) {
       // Show signup modal instead of redirecting immediately
       setShowSignupModal(true);
       return;
     }
-    
+
     // Submit sample request
     const sampleData = {
       productName: formData.productName,
@@ -77,18 +73,18 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
       specifications: formData.specifications,
       buyerNotes: formData.notes,
     };
-    
+
     // Add the sample request to the store
     addSampleRequest(sampleData);
-    
+
     // Clear stored form data after successful submission
     clearSampleRequestData();
-    
+
     // Close the modal
     onClose();
-    
+
     // Navigate to samples page
-    router.push("/dashboard/samples");
+    router.push("/dashboard/sample-buyer");
   };
 
   const handleCloseSignupModal = () => {
@@ -100,7 +96,10 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-4">
           <div>
-            <Label htmlFor="productName" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="productName"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Product Name
             </Label>
             <Input
@@ -114,7 +113,10 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
           </div>
 
           <div>
-            <Label htmlFor="supplier" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="supplier"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Supplier
             </Label>
             <Input
@@ -128,7 +130,10 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
           </div>
 
           <div>
-            <Label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="quantity"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Quantity
             </Label>
             <div className="relative">
@@ -147,7 +152,10 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
           </div>
 
           <div>
-            <Label htmlFor="specifications" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="specifications"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Specifications
             </Label>
             <Input
@@ -160,7 +168,10 @@ const SampleRequestForm = ({ onClose, productInfo }) => {
           </div>
 
           <div>
-            <Label htmlFor="notes" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="notes"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Additional Notes
             </Label>
             <Textarea
