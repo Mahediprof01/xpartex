@@ -23,6 +23,7 @@ import {
   Package,
   Truck,
   MoreHorizontal,
+  ShoppingCart,
 } from "lucide-react";
 
 // Generic type definitions for different data types
@@ -1415,6 +1416,190 @@ export const createSellerSampleColumns = (
               <Package className="mr-2 h-4 w-4" />
               Track Package
             </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    },
+  },
+];
+
+export type WishlistItem = {
+  id: string;
+  name: string;
+  seller: string;
+  price: string;
+  originalPrice: string;
+  discount: string | null;
+  rating: number;
+  reviews: number;
+  image: string;
+  inStock: boolean;
+  addedDate: string;
+  category: string;
+};
+
+// Wishlist Columns - for wishlist module
+export const createWishlistColumns = (
+  onViewDetails: (item: WishlistItem) => void,
+  onRemoveFromWishlist?: (item: WishlistItem) => void,
+  onAddToCart?: (item: WishlistItem) => void
+): ColumnDef<WishlistItem>[] => [
+  {
+    accessorKey: "name",
+    header: "Product",
+    cell: ({ row }) => {
+      const item = row.original;
+      return (
+        <div className="flex items-center gap-3 max-w-[300px]">
+          <div className="relative w-12 h-12 rounded-lg overflow-hidden bg-muted">
+            <img
+              src={item.image || "/placeholder.svg"}
+              alt={item.name}
+              className="w-full h-full object-cover"
+            />
+            {item.discount && (
+              <div className="absolute -top-1 -right-1">
+                <Badge className="bg-red-500 text-white text-[10px] px-1 py-0">
+                  {item.discount}
+                </Badge>
+              </div>
+            )}
+          </div>
+          <div className="min-w-0 flex-1">
+            <Button
+              variant="link"
+              className="p-0 h-auto font-semibold text-left justify-start text-blue-600 hover:text-blue-800"
+              onClick={() => onViewDetails(item)}
+            >
+              <span className="truncate">{item.name}</span>
+            </Button>
+            <div className="text-sm text-muted-foreground">
+              <Badge variant="outline" className="text-xs">
+                {item.category}
+              </Badge>
+            </div>
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "seller",
+    header: "Seller",
+    cell: ({ row }) => {
+      const seller = row.getValue("seller") as string;
+      return <div className="font-medium">{seller}</div>;
+    },
+  },
+  {
+    accessorKey: "price",
+    header: "Price",
+    cell: ({ row }) => {
+      const item = row.original;
+      return (
+        <div className="space-y-1">
+          <div className="font-semibold text-green-600">{item.price}</div>
+          {item.originalPrice !== item.price && (
+            <div className="text-xs text-muted-foreground line-through">
+              {item.originalPrice}
+            </div>
+          )}
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "rating",
+    header: "Rating",
+    cell: ({ row }) => {
+      const item = row.original;
+      return (
+        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <span className="font-medium">{item.rating}</span>
+          </div>
+          <span className="text-sm text-muted-foreground">
+            ({item.reviews})
+          </span>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "inStock",
+    header: "Status",
+    cell: ({ row }) => {
+      const inStock = row.getValue("inStock") as boolean;
+      return (
+        <Badge
+          className={
+            inStock ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+          }
+        >
+          {inStock ? "In Stock" : "Out of Stock"}
+        </Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "addedDate",
+    header: "Added",
+    cell: ({ row }) => {
+      const addedDate = row.getValue("addedDate") as string;
+      return (
+        <div className="text-sm">
+          {new Date(addedDate).toLocaleDateString()}
+        </div>
+      );
+    },
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const item = row.original;
+
+      return (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="h-8 w-8 p-0">
+              <span className="sr-only">Open menu</span>
+              <MoreHorizontal className="h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => onViewDetails(item)}>
+              <Eye className="mr-2 h-4 w-4" />
+              View Details
+            </DropdownMenuItem>
+
+            {item.inStock && onAddToCart && (
+              <DropdownMenuItem onClick={() => onAddToCart(item)}>
+                <ShoppingCart className="mr-2 h-4 w-4" />
+                Add to Cart
+              </DropdownMenuItem>
+            )}
+
+            <DropdownMenuItem>
+              <MessageSquare className="mr-2 h-4 w-4" />
+              Contact Seller
+            </DropdownMenuItem>
+
+            <DropdownMenuItem>
+              <Download className="mr-2 h-4 w-4" />
+              Share Product
+            </DropdownMenuItem>
+
+            {onRemoveFromWishlist && (
+              <DropdownMenuItem
+                onClick={() => onRemoveFromWishlist(item)}
+                className="text-red-600"
+              >
+                <Trash2 className="mr-2 h-4 w-4" />
+                Remove from Wishlist
+              </DropdownMenuItem>
+            )}
           </DropdownMenuContent>
         </DropdownMenu>
       );
