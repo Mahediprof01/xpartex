@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/custom-products/[id]/page": "app/custom-products/[id]/page.js",
+  "/dashboard/orders/page": "app/dashboard/orders/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/rfqs/page": "app/dashboard/rfqs/page.js",
+  "/dashboard/sample-buyer/page": "app/dashboard/sample-buyer/page.js",
+  "/dashboard/samples/page": "app/dashboard/samples/page.js",
+  "/dashboard/suppliers/page": "app/dashboard/suppliers/page.js",
+  "/dashboard/wishlist/[id]/page": "app/dashboard/wishlist/[id]/page.js",
+  "/dashboard/wishlist/page": "app/dashboard/wishlist/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
+}
