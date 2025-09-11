@@ -54,7 +54,7 @@ export default function DashboardPage() {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Textile & RMG Dashboard
+            Dashboard
           </h2>
           <p className="text-muted-foreground mt-1">Key metrics for textile, yarn, knitwear and RMG product performance</p>
         </div>

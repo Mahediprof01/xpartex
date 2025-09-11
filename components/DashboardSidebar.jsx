@@ -16,6 +16,8 @@ import {
   Target,
   ChevronDown,
   ChevronRight,
+  PanelLeftClose,
+  PanelLeftOpen,
   Store,
   Users,
 } from "lucide-react";
@@ -43,7 +45,7 @@ const menuItems = {
   ],
 };
 
-export function SidebarContent({ onItemClick }) {
+export function SidebarContent({ onItemClick, collapsed = false, onToggleCollapse }) {
   const { user, logout } = useAuthStore();
   const pathname = usePathname();
   const [expandedSections, setExpandedSections] = useState({
@@ -69,23 +71,26 @@ export function SidebarContent({ onItemClick }) {
     const isExpanded = expandedSections[sectionKey];
 
     return (
-      <div className="mb-4">
+      <div className={`mb-4 ${collapsed ? 'px-2' : ''}`}>
         <button
-          onClick={() => toggleSection(sectionKey)}
-          className="group flex items-center justify-between w-full px-3 py-2 text-sm font-semibold text-sidebar-foreground hover:bg-sidebar-accent rounded-lg transition-colors"
+          onClick={() => !collapsed && toggleSection(sectionKey)}
+          className="group flex items-center justify-between w-full px-3 py-2 text-sm font-semibold text-gray-400 hover:text-white hover:bg-sidebar-accent rounded-lg transition-all duration-300"
+          disabled={collapsed}
         >
           <div className="flex items-center gap-2">
             <Icon className={`h-4 w-4 transition-colors ${isExpanded ? 'text-sky-700' : 'text-sky-500 group-hover:text-sky-600'}`} />
-            <span>{title}</span>
+            {!collapsed && <span>{title}</span>}
           </div>
-          {isExpanded ? (
-            <ChevronDown className="h-4 w-4" />
-          ) : (
-            <ChevronRight className="h-4 w-4" />
+          {!collapsed && (
+            isExpanded ? (
+              <ChevronDown className="h-4 w-4 text-sidebar-foreground" />
+            ) : (
+              <ChevronRight className="h-4 w-4 text-sidebar-foreground" />
+            )
           )}
         </button>
-        {isExpanded && (
-          <ul className="mt-2 space-y-1 ml-4">
+        {(isExpanded || collapsed) && (
+          <ul className={`mt-2 space-y-1 ${collapsed ? '' : 'ml-4'}`}>
             {items.map((item) => (
               <li key={item.href}>
                 <NavLink
@@ -93,6 +98,8 @@ export function SidebarContent({ onItemClick }) {
                   icon={item.icon}
                   isActive={pathname === item.href}
                   onClick={onItemClick}
+                  collapsed={collapsed}
+                  forceTextWhite={true}
                 >
                   {item.label}
                 </NavLink>
@@ -105,10 +112,47 @@ export function SidebarContent({ onItemClick }) {
   };
 
   return (
-    // Sidebar wrapper: fill parent height (controlled by layout) and allow inner nav to scroll.
-    <div className="flex flex-col h-full min-h-0">
-      {/* Sidebar navigation only - branding and user moved to header */}
-  <nav className="flex-1 p-4 overflow-y-auto min-h-0">
+    <div className="flex flex-col h-full bg-[#323C55] text-gray-400">
+      {/* Branding + collapse button (logo centered) */}
+      <div className="relative p-6 border-b border-sidebar-border flex-shrink-0">
+  <div className="flex items-center justify-start gap-3 min-w-0 pl-4">
+          {collapsed ? null : (
+            <img 
+              src="/logo.png" 
+              alt="Xpartex" 
+              className="w-32 h-8 object-contain" 
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'block';
+              }}
+            />
+          )}
+          {!collapsed && (
+            <span 
+              className="text-xl font-bold text-sky-700 hidden" 
+              style={{display: 'none'}}
+            >
+              Xpartex
+            </span>
+          )}
+        </div>
+        {onToggleCollapse && (
+          <button
+            aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+            onClick={onToggleCollapse}
+            className="hidden md:flex items-center justify-center w-8 h-8 text-gray-400 hover:text-white rounded-md hover:bg-sidebar-accent transition-all duration-200 absolute right-4 top-1/2 transform -translate-y-1/2"
+          >
+            {collapsed ? (
+              <PanelLeftOpen className="h-5 w-5 text-sky-600" />
+            ) : (
+              <PanelLeftClose className="h-5 w-5 text-sky-600" />
+            )}
+          </button>
+        )}
+      </div>
+
+      {/* Navigation - scrollable */}
+      <nav className="flex-1 p-4 overflow-y-auto">
         <div className="space-y-4">
           <CollapsibleSection
             title="Buyer Management"
@@ -116,7 +160,7 @@ export function SidebarContent({ onItemClick }) {
             sectionKey="buyerManagement"
             icon={Users}
           />
-          
+
           <CollapsibleSection
             title="Seller Management"
             items={menuItems.sellerManagement}
@@ -126,7 +170,7 @@ export function SidebarContent({ onItemClick }) {
 
           {/* Common items */}
           {menuItems.common && menuItems.common.length > 0 && (
-            <div className="border-t border-sidebar-border pt-4">
+            <div className="border-t border-sidebar-border pt-4 mt-6">
               <ul className="space-y-2">
                 {menuItems.common.map((item) => (
                   <li key={item.href}>
@@ -135,6 +179,8 @@ export function SidebarContent({ onItemClick }) {
                       icon={item.icon}
                       isActive={pathname === item.href}
                       onClick={onItemClick}
+                      collapsed={collapsed}
+                      forceTextWhite={true}
                     >
                       {item.label}
                     </NavLink>
@@ -146,12 +192,18 @@ export function SidebarContent({ onItemClick }) {
         </div>
       </nav>
 
-  {/* Footer area kept empty since profile/logout moved to header dropdown */}
-  <div className="p-4 border-t border-sidebar-border flex-shrink-0" />
+      {/* Footer spacer */}
+      <div className="p-4 border-t border-sidebar-border flex-shrink-0">
+        {!collapsed && (
+          <div className="text-xs text-gray-400 text-center">
+            © 2024 Xpartex
+          </div>
+        )}
+      </div>
     </div>
   );
 }
 
-export default function DashboardSidebar() {
-  return <SidebarContent />;
+export default function DashboardSidebar({ collapsed = false, onToggleCollapse }) {
+  return <SidebarContent collapsed={collapsed} onToggleCollapse={onToggleCollapse} />;
 }

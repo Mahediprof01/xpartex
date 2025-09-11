@@ -98,7 +98,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden mr-3 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="lg:hidden mr-3 p-2 hover:bg-gray-100 rounded-lg transition-colors focus:outline-none focus:ring-0"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 <Menu className="h-5 w-5 text-gray-600" />
@@ -116,7 +116,7 @@ export function Header() {
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-teal-500 transition-colors" />
                 <Input
                   placeholder="Search raw materials, garment Accessories and more..."
-                  className="pl-12 pr-4 h-12 bg-gray-50 border border-gray-300 rounded-lg text-base focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:bg-white transition-all shadow-sm hover:shadow-md"
+                  className="pl-12 pr-4 h-12 bg-gray-50 border border-gray-300 rounded-lg text-base focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:bg-white transition-all shadow-sm hover:shadow-md focus:outline-none"
                 />
               </div>
             </div>
@@ -128,7 +128,7 @@ export function Header() {
                 <Link href="/login">
                   <Button
                     variant="ghost"
-                    className="hidden lg:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium"
+                    className="hidden lg:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium focus:outline-none focus:ring-0"
                   >
                     <User className="h-5 w-5" />
                     <span className="text-sm">Sign Up/Sign In</span>
@@ -139,7 +139,7 @@ export function Header() {
               <Link href="/cart">
                 <Button
                   variant="ghost"
-                  className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium"
+                  className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium focus:outline-none focus:ring-0"
                 >
                   <div className="relative">
                     <ShoppingCart className="h-5 w-5" />
@@ -166,10 +166,10 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`flex items-center gap-1 px-5 py-2 text-base font-medium transition-all duration-200 whitespace-nowrap rounded-full border-0 focus:outline-none focus:ring-2 focus:ring-sky-300 ${
+                    className={`flex items-center gap-1 px-5 py-2 text-base font-medium transition-all duration-200 whitespace-nowrap rounded-full border-0 focus:outline-none focus:ring-0 ${
                       item.active
                         ? "text-white bg-sky-400 hover:bg-sky-500 shadow-md"
-                        : "text-gray-700 bg-gray-50 hover:bg-sky-50 border border-transparent"
+                        : "text-gray-700 bg-gray-50 hover:bg-sky-50 border border-transparent hover:border-transparent"
                     }`}
                     style={{ boxShadow: item.active ? '0 2px 8px 0 rgba(0,180,255,0.15)' : undefined }}
                   >
@@ -197,7 +197,7 @@ export function Header() {
               }`}
             >
               <div className="py-4 space-y-2">
-                <div className="px-4 pb-4 border-b border-gray-100">
+                <div className="px-4 pb-4 ">
                   {isAuthenticated ? (
                     <div className="flex items-center gap-3 p-2">
                       <UserProfileDropdown />
@@ -206,7 +206,7 @@ export function Header() {
                     <Link href="/login">
                       <Button
                         variant="ghost"
-                        className="flex items-center gap-2 text-gray-700 py-2 px-2 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-all w-full justify-start"
+                        className="flex items-center gap-2 text-gray-700 py-2 px-2 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-all w-full justify-start focus:outline-none focus:ring-0"
                       >
                         <User className="h-5 w-5" />
                         <span className="font-medium">Sign Up/Sign In</span>
@@ -219,7 +219,7 @@ export function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`flex items-center justify-between py-3 px-3 rounded-lg transition-all duration-200 ${
+                      className={`flex items-center justify-between py-3 px-3 rounded-lg transition-all duration-200 focus:outline-none focus:ring-0 ${
                         item.active
                           ? "bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-sm"
                           : "text-gray-700 hover:bg-teal-50 hover:text-teal-600"
