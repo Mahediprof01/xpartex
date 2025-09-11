@@ -114,7 +114,7 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
   return (
     <div className="flex flex-col h-full bg-[#323C55] text-gray-400">
       {/* Branding + collapse button (logo centered) */}
-      <div className="relative p-6 border-b border-sidebar-border flex-shrink-0">
+      <div className="relative p-6 border-b border-dotted border-sidebar-border flex-shrink-0">
   <div className="flex items-center justify-start gap-3 min-w-0 pl-4">
           {collapsed ? null : (
             <img 
@@ -193,7 +193,7 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
       </nav>
 
       {/* Footer spacer */}
-      <div className="p-4 border-t border-sidebar-border flex-shrink-0">
+      <div className="p-4 border-t border-dotted border-sidebar-border flex-shrink-0">
         {!collapsed && (
           <div className="text-xs text-gray-400 text-center">
             © 2024 Xpartex
