@@ -594,6 +594,10 @@ function CreateRFQDialog({ open, onOpenChange, onSubmit }) {
       responses: 0,
       quote: null,
       files: files,
+      // Coerce numeric fields
+      budget: Number(formData.budget) || 0,
+      quantity: Number(formData.quantity) || 0,
+      negotiationRounds: Number(formData.negotiationRounds) || 0,
       buyer: "Current Buyer", // This would come from auth
       contactInfo: {
         name: "Current User",
@@ -883,6 +887,9 @@ const RFQCard = ({ rfq, onViewDetails, onEdit, onDelete }) => {
   const statusInfo = statusConfig[rfq.status];
   const priorityInfo = priorityConfig[rfq.priority];
 
+  // Resolve icon safely to avoid JSX parsing issues for dynamic components
+  const Icon = statusInfo?.icon || null;
+
   return (
     <Card>
       <CardHeader>
@@ -899,7 +906,7 @@ const RFQCard = ({ rfq, onViewDetails, onEdit, onDelete }) => {
               variant={statusInfo?.variant || "secondary"}
               className="flex items-center gap-1"
             >
-              {statusInfo?.icon && <statusInfo.icon className="h-3 w-3" />}
+              {Icon && <Icon className="h-3 w-3" />}
               {statusInfo?.label || rfq.status}
             </Badge>
           </div>
@@ -1304,7 +1311,17 @@ function OrdersSection({ orders, onFulfillmentUpdate }) {
 export default function RFQsPage() {
   const { role } = useAuthStore();
   const router = useRouter();
-  const [rfqList, setRfqList] = useState(rfqs);
+  const [rfqList, setRfqList] = useState(() => {
+    try {
+      if (typeof window !== "undefined") {
+        const stored = localStorage.getItem("rfqs");
+        return stored ? JSON.parse(stored) : rfqs;
+      }
+    } catch (e) {
+      // ignore
+    }
+    return rfqs;
+  });
   const [createDialogOpen, setCreateDialogOpen] = useState(false);
   const [detailViewOpen, setDetailViewOpen] = useState(false);
   const [selectedRFQ, setSelectedRFQ] = useState(null);
@@ -1324,8 +1341,31 @@ export default function RFQsPage() {
   const [orders, setOrders] = useState([]);
 
   const handleCreateRFQ = (newRFQ) => {
-    setRfqList([newRFQ, ...rfqList]);
+    // Use functional update to avoid stale closures and ensure latest state
+    setRfqList((prev) => [newRFQ, ...prev]);
   };
+
+  // Persist RFQs to localStorage whenever list changes
+  React.useEffect(() => {
+    try {
+      if (typeof window !== "undefined") {
+        localStorage.setItem("rfqs", JSON.stringify(rfqList));
+      }
+    } catch (e) {}
+  }, [rfqList]);
+
+  // Listen for cross-window/component updates (dispatched by other components)
+  React.useEffect(() => {
+    const handler = () => {
+      try {
+        const stored = localStorage.getItem("rfqs");
+        if (stored) setRfqList(JSON.parse(stored));
+      } catch (e) {}
+    };
+
+    window.addEventListener("rfqs-updated", handler);
+    return () => window.removeEventListener("rfqs-updated", handler);
+  }, []);
 
   const handleViewDetails = (rfq) => {
     // Navigate to the detailed view page

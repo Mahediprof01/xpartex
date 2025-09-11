@@ -83,14 +83,9 @@ export function Header() {
       </div>
 
       {/* Main Header */}
-      <motion.header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
+      <header className={`sticky top-0 z-50 transition-all duration-300 ease-linear ${
           isScrolled ? "bg-white/80 backdrop-blur-md" : "bg-white"
-        }`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+        }`}>
         <div className="container mx-auto px-4 mb-2">
           <div className="flex items-center justify-between h-16">
             {/* Logo with Menu */}
@@ -98,7 +93,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden mr-3 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                className="lg:hidden mr-3 p-2 hover:bg-gray-100 rounded-lg transition-colors focus:outline-none focus:ring-0"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 <Menu className="h-5 w-5 text-gray-600" />
@@ -114,9 +109,9 @@ export function Header() {
             <div className="flex-1 flex justify-center mx-8 max-w-2xl">
               <div className="relative w-full group">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-teal-500 transition-colors" />
-                <Input
+                  <Input
                   placeholder="Search raw materials, garment Accessories and more..."
-                  className="pl-12 pr-4 h-12 bg-gray-50 border border-gray-300 rounded-lg text-base focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:bg-white transition-all shadow-sm hover:shadow-md"
+                  className="pl-12 pr-4 h-12 bg-gray-50 border border-gray-300 rounded-lg text-base focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:bg-white transition-all shadow-sm hover:shadow-md focus:outline-none"
                 />
               </div>
             </div>
@@ -128,7 +123,7 @@ export function Header() {
                 <Link href="/login">
                   <Button
                     variant="ghost"
-                    className="hidden lg:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium"
+                    className="hidden lg:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 ease-linear font-medium focus:outline-none focus:ring-0"
                   >
                     <User className="h-5 w-5" />
                     <span className="text-sm">Sign Up/Sign In</span>
@@ -137,9 +132,9 @@ export function Header() {
               )}
 
               <Link href="/cart">
-                <Button
+                  <Button
                   variant="ghost"
-                  className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 font-medium"
+                    className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-all duration-200 ease-linear font-medium focus:outline-none focus:ring-0"
                 >
                   <div className="relative">
                     <ShoppingCart className="h-5 w-5" />
@@ -162,20 +157,20 @@ export function Header() {
           <div className="container mx-auto px-4 mt-2">
             <div className="w-full max-w-full overflow-x-auto scrollbar-hide">
               <nav className="flex items-center h-12 gap-2 py-1 min-w-max">
-                {navItems.map((item) => (
+        {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`flex items-center gap-1 px-5 py-2 text-base font-medium transition-all duration-200 whitespace-nowrap rounded-full border-0 focus:outline-none focus:ring-2 focus:ring-sky-300 ${
+          className={`flex items-center gap-1 px-5 py-2 text-base font-medium transition-all duration-200 ease-linear whitespace-nowrap rounded-full border-0 focus:outline-none focus:ring-0 ${
                       item.active
                         ? "text-white bg-sky-400 hover:bg-sky-500 shadow-md"
-                        : "text-gray-700 bg-gray-50 hover:bg-sky-50 border border-transparent"
+                        : "text-gray-700 bg-gray-50 hover:bg-sky-50 border border-transparent hover:border-transparent"
                     }`}
                     style={{ boxShadow: item.active ? '0 2px 8px 0 rgba(0,180,255,0.15)' : undefined }}
                   >
                     <span>{item.name}</span>
-                    <ChevronDown
-                      className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+                      <ChevronDown
+                      className={`w-4 h-4 ml-1 transition-transform duration-200 ease-linear ${
                         item.active ? "text-white" : "text-sky-400"
                       }`}
                     />
@@ -192,12 +187,13 @@ export function Header() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className={`lg:hidden border-t transition-all duration-300 ${
+              transition={{ duration: 0.3, ease: "linear" }}
+              className={`lg:hidden border-t transition-all duration-300 ease-linear ${
                 isScrolled ? "bg-white/95 backdrop-blur-md" : "bg-white"
               }`}
             >
               <div className="py-4 space-y-2">
-                <div className="px-4 pb-4 border-b border-gray-100">
+                <div className="px-4 pb-4 ">
                   {isAuthenticated ? (
                     <div className="flex items-center gap-3 p-2">
                       <UserProfileDropdown />
@@ -206,7 +202,7 @@ export function Header() {
                     <Link href="/login">
                       <Button
                         variant="ghost"
-                        className="flex items-center gap-2 text-gray-700 py-2 px-2 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-all w-full justify-start"
+                        className="flex items-center gap-2 text-gray-700 py-2 px-2 hover:bg-teal-50 hover:text-teal-600 rounded-lg transition-all ease-linear w-full justify-start focus:outline-none focus:ring-0"
                       >
                         <User className="h-5 w-5" />
                         <span className="font-medium">Sign Up/Sign In</span>
@@ -219,7 +215,7 @@ export function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`flex items-center justify-between py-3 px-3 rounded-lg transition-all duration-200 ${
+                      className={`flex items-center justify-between py-3 px-3 rounded-lg transition-all duration-200 ease-linear focus:outline-none focus:ring-0 ${
                         item.active
                           ? "bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-sm"
                           : "text-gray-700 hover:bg-teal-50 hover:text-teal-600"
@@ -235,7 +231,7 @@ export function Header() {
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.header>
+  </header>
     </>
   )
 }

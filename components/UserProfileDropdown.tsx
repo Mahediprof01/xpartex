@@ -40,7 +40,7 @@ export function UserProfileDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="flex items-center gap-2 px-3 py-2 h-auto hover:bg-teal-50 rounded-lg">
+        <Button variant="ghost" className="flex items-center gap-2 px-3 py-2 h-auto hover:bg-teal-50 rounded-lg focus:outline-none focus:ring-0 focus:bg-transparent focus-visible:ring-0">
           <Avatar className="h-8 w-8">
             <AvatarImage src={user.avatar} alt={user.name} />
             <AvatarFallback className="bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-medium">
@@ -54,7 +54,7 @@ export function UserProfileDropdown() {
           </div>
         </Button>
       </DropdownMenuTrigger>
-  <DropdownMenuContent className="w-56 bg-white dark:bg-gray-900" align="end" forceMount>
+  <DropdownMenuContent className="w-56 bg-white dark:bg-gray-900 " align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-2">
             <p className="text-sm font-medium leading-none">{user.name}</p>
@@ -66,21 +66,21 @@ export function UserProfileDropdown() {
         <DropdownMenuSeparator />
         
         <DropdownMenuItem asChild>
-          <Link href="/dashboard" className="flex items-center cursor-pointer">
+          <Link href="/dashboard" className="flex items-center cursor-pointer  rounded-sm px-2 py-1">
             <BarChart className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
           </Link>
         </DropdownMenuItem>
         
         <DropdownMenuItem asChild>
-          <Link href="/dashboard/profile" className="flex items-center cursor-pointer">
+          <Link href="/dashboard/profile" className="flex items-center cursor-pointer  rounded-sm px-2 py-1">
             <User className="mr-2 h-4 w-4" />
             <span>Profile</span>
           </Link>
         </DropdownMenuItem>
         
         <DropdownMenuItem asChild>
-          <Link href="/dashboard/settings" className="flex items-center cursor-pointer">
+          <Link href="/dashboard/settings" className="flex items-center cursor-pointer rounded-sm px-2 py-1">
             <Settings className="mr-2 h-4 w-4" />
             <span>Settings</span>
           </Link>
@@ -88,7 +88,7 @@ export function UserProfileDropdown() {
         
         <DropdownMenuSeparator />
         
-        <DropdownMenuItem onClick={handleLogout} className="cursor-pointer text-red-600 focus:text-red-600">
+        <DropdownMenuItem onClick={handleLogout} className="cursor-pointer text-red-600 focus:text-red-600 focus:outline-none">
           <LogOut className="mr-2 h-4 w-4" />
           <span>Log out</span>
         </DropdownMenuItem>

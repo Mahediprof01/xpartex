@@ -500,6 +500,26 @@ export const createOrderColumns = (
     },
   },
   {
+    accessorKey: "type",
+    header: "Order Type",
+    cell: ({ row }) => {
+      const type = (row.getValue("type") as string) || "unknown";
+      const label = type.charAt(0).toUpperCase() + type.slice(1);
+      const typeStyles: Record<string, string> = {
+        custom: "bg-green-100 text-green-800",
+        retail: "bg-blue-100 text-blue-800",
+        wholesale: "bg-indigo-100 text-indigo-800",
+        unknown: "bg-gray-100 text-gray-800",
+      };
+
+      return (
+        <Badge className={typeStyles[type] || typeStyles.unknown}>
+          {label}
+        </Badge>
+      );
+    },
+  },
+  {
     accessorKey: "supplier",
     header: "Supplier",
     cell: ({ row }) => {

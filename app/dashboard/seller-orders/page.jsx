@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "../../../components/ui/card";
 import { Badge } from "../../../components/ui/badge";
-import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
 import {
   Select,
@@ -18,16 +17,6 @@ import {
   SelectValue,
 } from "../../../components/ui/select";
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../../../components/ui/dialog";
-import { Label } from "../../../components/ui/label";
-import { Textarea } from "../../../components/ui/textarea";
-import {
   Tabs,
   TabsContent,
   TabsList,
@@ -35,25 +24,22 @@ import {
 } from "../../../components/ui/tabs";
 import {
   Search,
-  Eye,
-  MessageSquare,
   Package,
   Truck,
   CheckCircle,
   Clock,
   AlertCircle,
-  DollarSign,
   Users,
   Target,
-  Calendar,
-  FileText,
   Award,
-  Plus,
   TrendingUp,
   Factory,
   ShoppingBag,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { useRouter } from "next/navigation";
+import { DataTable } from "../../../components/ui/data-table";
+import { createOrderColumns } from "../../../components/columns";
 
 // Available custom orders for sellers to bid on
 const availableOrders = [
@@ -351,6 +337,7 @@ const FilterSection = ({ type }) => (
 );
 
 export default function SellerOrdersPage() {
+  const router = useRouter();
   const [bidForm, setBidForm] = useState({
     orderId: null,
     price: "",
@@ -376,6 +363,61 @@ export default function SellerOrdersPage() {
     });
   };
 
+  // Normalize data for the table columns used across tabs
+  // Navigate to seller-specific detail page so the correct mock data is found
+  const columns = useMemo(() => createOrderColumns((order) => router.push(`/dashboard/seller-orders/${order.id}`)), [router]);
+
+  const availableTableData = useMemo(() =>
+    availableOrders.map((o) => ({
+      id: o.id,
+      product: o.product,
+      category: "",
+      type: "custom",
+      supplier: o.buyerName,
+      status: o.status === "bidding_active" ? "pending" : "confirmed",
+      fulfillmentStatus: o.samples?.requested ? "processing" : "pending",
+      quantity: o.quantity,
+      price: o.budget,
+      orderDate: o.date,
+      estimatedDelivery: o.deadline,
+      trackingNumber: null,
+      raw: o,
+    })), []);
+
+  const bidsTableData = useMemo(() =>
+    submittedBids.map((b) => ({
+      id: b.orderId,
+      product: b.orderProduct,
+      category: "",
+      type: "custom",
+      supplier: b.buyer,
+      status: b.status,
+      fulfillmentStatus: "pending",
+      quantity: 0,
+      price: b.price,
+      orderDate: b.submittedDate,
+      estimatedDelivery: b.timeline?.end || b.timeline?.start || new Date().toISOString(),
+      trackingNumber: null,
+      raw: b,
+    })), []);
+
+  const retailTableData = useMemo(() =>
+    retailOrders.map((r) => ({
+      id: r.id,
+      product: r.items ? r.items.map((i) => i.name).join(", ") : "Retail Order",
+      category: "",
+      type: "retail",
+      supplier: "Retail",
+      status: r.status,
+      fulfillmentStatus: r.status,
+      quantity: r.items ? r.items.reduce((s, it) => s + (it.quantity || 0), 0) : r.items.length || 0,
+      price: Number(String(r.total || "").replace(/[^0-9.-]+/g, "")) || 0,
+      orderDate: r.date,
+      estimatedDelivery: r.date,
+      trackingNumber: r.trackingNumber || null,
+      raw: r,
+    })), []);
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -387,10 +429,6 @@ export default function SellerOrdersPage() {
             Manage your bids and retail orders
           </p>
         </div>
-        <Button className="flex items-center gap-2">
-          <Plus className="h-4 w-4" />
-          Browse More Orders
-        </Button>
       </div>
 
       {/* Stats Overview */}
@@ -477,236 +515,18 @@ export default function SellerOrdersPage() {
           <FilterSection type="custom" />
 
           <div className="space-y-4">
-            {availableOrders.map((order) => (
-              <Card key={order.id} className="border-2">
-                <CardHeader>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div>
-                      <CardTitle className="text-base">
-                        {order.product}
-                      </CardTitle>
-                      <CardDescription>
-                        {order.buyerName} •{" "}
-                        {new Date(order.date).toLocaleDateString()}
-                      </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Badge variant="outline" className="text-green-600">
-                        Budget: ${order.budget.toFixed(2)}
-                      </Badge>
-                      <Badge
-                        variant="secondary"
-                        className="border border-[#00BFFF] bg-white text-[#00BFFF]"
-                      >
-                        {order.bidsReceived} bids
-                      </Badge>
-                      <Badge variant="default">
-                        {order.status === "bidding_active"
-                          ? "Active"
-                          : "Closed"}
-                      </Badge>
-                    </div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Orders</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="bg-white rounded-lg overflow-hidden">
+                  <div className="p-4">
+                    <DataTable columns={columns} data={availableTableData} />
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div>
-                      <h4 className="font-medium mb-2 flex items-center gap-2">
-                        <Target className="h-4 w-4" />
-                        Requirements
-                      </h4>
-                      <p className="text-sm text-muted-foreground bg-muted p-3 rounded">
-                        {order.requirements}
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-2 flex items-center gap-2">
-                        <FileText className="h-4 w-4" />
-                        Specifications
-                      </h4>
-                      <p className="text-sm text-muted-foreground bg-muted p-3 rounded">
-                        {order.specifications}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span className="flex items-center gap-1">
-                      <Package className="h-3 w-3" />
-                      Quantity: {order.quantity} units
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Calendar className="h-3 w-3" />
-                      Deadline: {new Date(order.deadline).toLocaleDateString()}
-                    </span>
-                    {order.samples.requested && (
-                      <span className="flex items-center gap-1">
-                        <FileText className="h-3 w-3" />
-                        Sample: ${order.samples.cost.toFixed(2)}
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="flex gap-2">
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button size="sm" className="flex-1">
-                          Submit Bid
-                        </Button>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-2xl">
-                        <DialogHeader>
-                          <DialogTitle>
-                            Submit Bid for {order.product}
-                          </DialogTitle>
-                          <DialogDescription>
-                            Provide your competitive offer for this custom order
-                          </DialogDescription>
-                        </DialogHeader>
-                        <div className="space-y-4">
-                          <div className="grid gap-4 md:grid-cols-2">
-                            <div className="space-y-2">
-                              <Label htmlFor="price">
-                                Bid Price ({order.currency})
-                              </Label>
-                              <Input
-                                id="price"
-                                type="number"
-                                step="0.01"
-                                placeholder="0.00"
-                                value={bidForm.price}
-                                onChange={(e) =>
-                                  setBidForm({
-                                    ...bidForm,
-                                    price: e.target.value,
-                                  })
-                                }
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label htmlFor="quality">Quality Level</Label>
-                              <Select
-                                value={bidForm.quality}
-                                onValueChange={(v) =>
-                                  setBidForm({ ...bidForm, quality: v })
-                                }
-                              >
-                                <SelectTrigger>
-                                  <SelectValue />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  <SelectItem value="Standard">
-                                    Standard
-                                  </SelectItem>
-                                  <SelectItem value="Premium">
-                                    Premium
-                                  </SelectItem>
-                                  <SelectItem value="Luxury">Luxury</SelectItem>
-                                </SelectContent>
-                              </Select>
-                            </div>
-                          </div>
-
-                          <div className="space-y-2">
-                            <Label htmlFor="materials">
-                              Materials & Specifications
-                            </Label>
-                            <Textarea
-                              id="materials"
-                              placeholder="Describe the materials and quality you'll use..."
-                              value={bidForm.materials}
-                              onChange={(e) =>
-                                setBidForm({
-                                  ...bidForm,
-                                  materials: e.target.value,
-                                })
-                              }
-                            />
-                          </div>
-
-                          <div className="grid gap-4 md:grid-cols-2">
-                            <div className="space-y-2">
-                              <Label htmlFor="startDate">
-                                Production Start Date
-                              </Label>
-                              <Input
-                                id="startDate"
-                                type="date"
-                                value={bidForm.timeline.start}
-                                onChange={(e) =>
-                                  setBidForm({
-                                    ...bidForm,
-                                    timeline: {
-                                      ...bidForm.timeline,
-                                      start: e.target.value,
-                                    },
-                                  })
-                                }
-                              />
-                            </div>
-                            <div className="space-y-2">
-                              <Label htmlFor="endDate">Delivery Date</Label>
-                              <Input
-                                id="endDate"
-                                type="date"
-                                value={bidForm.timeline.end}
-                                onChange={(e) =>
-                                  setBidForm({
-                                    ...bidForm,
-                                    timeline: {
-                                      ...bidForm.timeline,
-                                      end: e.target.value,
-                                    },
-                                  })
-                                }
-                              />
-                            </div>
-                          </div>
-
-                          <div className="space-y-2">
-                            <Label htmlFor="note">Additional Notes</Label>
-                            <Textarea
-                              id="note"
-                              placeholder="Any additional information about your offer..."
-                              value={bidForm.note}
-                              onChange={(e) =>
-                                setBidForm({ ...bidForm, note: e.target.value })
-                              }
-                            />
-                          </div>
-
-                          <div className="flex gap-2">
-                            <Button
-                              className="flex-1"
-                              onClick={() => submitBid(order.id)}
-                              disabled={
-                                !bidForm.price ||
-                                !bidForm.timeline.start ||
-                                !bidForm.timeline.end
-                              }
-                            >
-                              Submit Bid
-                            </Button>
-                            <Button variant="outline" className="flex-1">
-                              Save Draft
-                            </Button>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-
-                    <Button variant="outline" size="sm">
-                      <MessageSquare className="h-4 w-4 mr-2" />
-                      Contact Buyer
-                    </Button>
-                    <Button variant="outline" size="sm">
-                      <Eye className="h-4 w-4 mr-2" />
-                      View Details
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </TabsContent>
 
@@ -715,113 +535,18 @@ export default function SellerOrdersPage() {
           <FilterSection type="custom" />
 
           <div className="space-y-4">
-            {submittedBids.map((bid) => (
-              <Card
-                key={bid.id}
-                className={`border-2 ${
-                  bid.status === "accepted"
-                    ? "border-green-200 bg-green-50"
-                    : bid.status === "rejected"
-                    ? "border-red-200 bg-red-50"
-                    : "border-gray-200"
-                }`}
-              >
-                <CardHeader>
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div>
-                      <CardTitle className="text-base">
-                        {bid.orderProduct}
-                      </CardTitle>
-                      <CardDescription>
-                        {bid.buyer} • Submitted on{" "}
-                        {new Date(bid.submittedDate).toLocaleDateString()}
-                      </CardDescription>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Badge
-                        variant={
-                          bidStatusConfig[bid.status]?.variant || "secondary"
-                        }
-                      >
-                        {bidStatusConfig[bid.status]?.label || bid.status}
-                      </Badge>
-                      <div className="text-right">
-                        <div className="text-sm text-muted-foreground">
-                          Bid Price
-                        </div>
-                        <div className="font-semibold text-lg">
-                          ${bid.price.toFixed(2)}
-                        </div>
-                      </div>
-                    </div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Orders</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="bg-white rounded-lg overflow-hidden">
+                  <div className="p-4">
+                    <DataTable columns={columns} data={bidsTableData} />
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <div>
-                      <h4 className="font-medium mb-2">Bid Details</h4>
-                      <div className="text-sm space-y-1">
-                        <p>
-                          <span className="font-medium">Quality:</span>{" "}
-                          {bid.quality}
-                        </p>
-                        <p>
-                          <span className="font-medium">Materials:</span>{" "}
-                          {bid.materials}
-                        </p>
-                        <p>
-                          <span className="font-medium">Timeline:</span>{" "}
-                          {bid.timeline.start} → {bid.timeline.end}
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-2">Sample Status</h4>
-                      <div className="text-sm space-y-1">
-                        <p>
-                          <span className="font-medium">Provided:</span>{" "}
-                          {bid.samples.provided ? "Yes" : "No"}
-                        </p>
-                        {bid.samples.provided && (
-                          <>
-                            <p>
-                              <span className="font-medium">Cost:</span> $
-                              {bid.samples.cost.toFixed(2)}
-                            </p>
-                            <p>
-                              <span className="font-medium">Status:</span>{" "}
-                              {bid.samples.status}
-                            </p>
-                          </>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-
-                  {bid.note && (
-                    <div className="p-3 bg-white rounded border">
-                      <p className="text-sm text-muted-foreground">
-                        {bid.note}
-                      </p>
-                    </div>
-                  )}
-
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm">
-                      <Eye className="h-4 w-4 mr-2" />
-                      View Order
-                    </Button>
-                    <Button variant="outline" size="sm">
-                      <MessageSquare className="h-4 w-4 mr-2" />
-                      Contact Buyer
-                    </Button>
-                    {bid.status === "accepted" && (
-                      <Button size="sm">Start Production</Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </TabsContent>
 
@@ -830,194 +555,18 @@ export default function SellerOrdersPage() {
           <FilterSection type="retail" />
 
           <div className="space-y-4">
-            {retailOrders.map((order) => {
-              const statusInfo = statusConfig[order.status];
-              const StatusIcon = statusInfo.icon;
-
-              return (
-                <Card key={order.id}>
-                  <CardHeader>
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                      <div>
-                        <CardTitle className="text-lg">
-                          Order {order.id}
-                        </CardTitle>
-                        <CardDescription>
-                          {order.customer} • {order.customerEmail} •{" "}
-                          {new Date(order.date).toLocaleDateString()}
-                        </CardDescription>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Badge
-                          variant={statusInfo.variant}
-                          className="flex items-center gap-1"
-                        >
-                          <StatusIcon className="h-3 w-3" />
-                          {statusInfo.label}
-                        </Badge>
-                        <Badge variant="outline" className="text-green-600">
-                          {order.paymentStatus}
-                        </Badge>
-                        <span className="font-semibold text-lg">
-                          {order.total}
-                        </span>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-medium mb-2">
-                          Items ({order.items.length})
-                        </h4>
-                        <div className="space-y-2">
-                          {order.items.map((item, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center justify-between p-2 bg-muted rounded"
-                            >
-                              <span className="font-medium">{item.name}</span>
-                              <div className="flex items-center gap-2">
-                                <span className="text-sm text-muted-foreground">
-                                  Qty: {item.quantity}
-                                </span>
-                                <span className="font-medium">
-                                  {item.price}
-                                </span>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div className="grid gap-4 md:grid-cols-2">
-                        <div className="p-3 bg-accent rounded-lg">
-                          <p className="text-sm font-medium mb-1">
-                            Shipping Address
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            {order.shippingAddress}
-                          </p>
-                        </div>
-
-                        {order.trackingNumber && (
-                          <div className="p-3 bg-muted rounded-lg">
-                            <p className="text-sm font-medium mb-1">
-                              Tracking Number
-                            </p>
-                            <p className="text-sm text-muted-foreground font-mono">
-                              {order.trackingNumber}
-                            </p>
-                          </div>
-                        )}
-                      </div>
-
-                      {order.notes && (
-                        <div className="p-3 bg-accent rounded-lg">
-                          <p className="text-sm font-medium mb-1">
-                            Customer Notes
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            {order.notes}
-                          </p>
-                        </div>
-                      )}
-
-                      <div className="flex flex-col sm:flex-row gap-2">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="flex items-center gap-2 bg-transparent"
-                        >
-                          <Eye className="h-4 w-4" />
-                          View Details
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="flex items-center gap-2 bg-transparent"
-                        >
-                          <MessageSquare className="h-4 w-4" />
-                          Contact Customer
-                        </Button>
-
-                        {order.status === "pending" && (
-                          <Button size="sm">Mark as Processing</Button>
-                        )}
-
-                        {order.status === "processing" && (
-                          <Dialog>
-                            <DialogTrigger asChild>
-                              <Button size="sm">Mark as Shipped</Button>
-                            </DialogTrigger>
-                            <DialogContent>
-                              <DialogHeader>
-                                <DialogTitle>Mark Order as Shipped</DialogTitle>
-                                <DialogDescription>
-                                  Provide tracking information for order{" "}
-                                  {order.id}
-                                </DialogDescription>
-                              </DialogHeader>
-                              <div className="space-y-4">
-                                <div className="space-y-2">
-                                  <Label htmlFor="carrier">
-                                    Shipping Carrier
-                                  </Label>
-                                  <Select>
-                                    <SelectTrigger>
-                                      <SelectValue placeholder="Select carrier" />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                      <SelectItem value="ups">UPS</SelectItem>
-                                      <SelectItem value="fedex">
-                                        FedEx
-                                      </SelectItem>
-                                      <SelectItem value="usps">USPS</SelectItem>
-                                      <SelectItem value="dhl">DHL</SelectItem>
-                                    </SelectContent>
-                                  </Select>
-                                </div>
-                                <div className="space-y-2">
-                                  <Label htmlFor="tracking">
-                                    Tracking Number
-                                  </Label>
-                                  <Input
-                                    id="tracking"
-                                    placeholder="Enter tracking number"
-                                  />
-                                </div>
-                                <div className="space-y-2">
-                                  <Label htmlFor="notes">
-                                    Additional Notes
-                                  </Label>
-                                  <Textarea
-                                    id="notes"
-                                    placeholder="Optional shipping notes..."
-                                    rows={2}
-                                  />
-                                </div>
-                                <div className="flex gap-2">
-                                  <Button className="flex-1">
-                                    Update Order
-                                  </Button>
-                                  <Button variant="outline">Cancel</Button>
-                                </div>
-                              </div>
-                            </DialogContent>
-                          </Dialog>
-                        )}
-
-                        {order.trackingNumber && (
-                          <Button variant="outline" size="sm">
-                            Update Tracking
-                          </Button>
-                        )}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+            <Card>
+              <CardHeader>
+                <CardTitle>Orders</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="overflow-hidden">
+                  <div className="p-4">
+                    <DataTable columns={columns} data={retailTableData} />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </TabsContent>
       </Tabs>
