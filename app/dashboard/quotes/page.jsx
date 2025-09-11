@@ -56,6 +56,8 @@ import {
   Users,
   FileText,
 } from "lucide-react";
+import { createQuoteColumns } from "../../../components/columns";
+import { DataTable } from "../../../components/ui/data-table";
 
 // Enhanced quote requests data with proper flow states - One-to-One with Buyer
 const quoteRequests = [
@@ -545,7 +547,8 @@ export default function QuotesPage() {
   };
 
   const handleViewDetails = (quote) => {
-    console.log("View details for:", quote.id);
+  setSelectedQuote(quote);
+  setIsQuoteModalOpen(true);
   };
 
   const handleContact = (quote) => {
@@ -572,22 +575,23 @@ export default function QuotesPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">Quote Requests</h1>
-          <p className="text-muted-foreground">
-            Manage and respond to RFQ quote requests from buyers
-          </p>
+      <div className="flex items-center justify-between">
+        <div className="w-full md:w-96 min-w-0">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search quotes..."
+              className="pl-10"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ml-4">
           <Button variant="outline" size="sm">
             <Download className="h-4 w-4 mr-2" />
-            Export Quotes
-          </Button>
-          <Button size="sm">
-            <Target className="h-4 w-4 mr-2" />
-            View All RFQs
+            submit Quote
           </Button>
         </div>
       </div>
@@ -668,15 +672,7 @@ export default function QuotesPage() {
         <CardContent>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             <div className="lg:col-span-2">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input
-                  placeholder="Search quotes, products, buyers..."
-                  className="pl-10"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
+              
             </div>
 
             <Select value={filterStatus} onValueChange={setFilterStatus}>
@@ -739,18 +735,16 @@ export default function QuotesPage() {
         </CardContent>
       </Card>
 
-      {/* Quotes Grid */}
-      <div className="grid gap-6 md:grid-cols-2">
-        {sortedQuotes.map((quote) => (
-          <QuoteCard
-            key={quote.id}
-            quote={quote}
-            onRespond={handleRespond}
-            onViewDetails={handleViewDetails}
-            onContact={handleContact}
-          />
-        ))}
-      </div>
+      {/* Quotes Table (matches RFQs table design) */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Quote Requests</CardTitle>
+          <CardDescription>Manage and respond to RFQ quote requests from buyers</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <DataTable columns={createQuoteColumns(handleViewDetails, handleRespond)} data={sortedQuotes} />
+        </CardContent>
+      </Card>
 
       {/* Load More */}
       {filteredQuotes.length > 0 && (

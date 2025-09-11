@@ -90,7 +90,7 @@ export const Modal: React.FC<ModalProps> = ({
             headerClassName
           )}>
             {title && (
-              <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
+              <h2 className="text-lg font-semibold text-current">{title}</h2>
             )}
             {showCloseButton && (
               <Button

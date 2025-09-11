@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
 import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "../../../components/ui/select";
-import { Search, Plus, Target } from "lucide-react";
+import { Search, Plus, Target, Clock, CheckCircle, Users } from "lucide-react";
 import Modal from "../../../components/Modal";
 import CustomOrderForm from "../../../components/custom-card/CustomOrderForm";
 import { DataTable } from "../../../components/ui/data-table";
@@ -117,6 +118,15 @@ export default function OrdersPage() {
 
   const allOrders = useMemo(() => normalizeOrders(customOrders, retailOrders, userCustomOrders), [userCustomOrders]);
 
+  const stats = useMemo(() => {
+    const total = allOrders.length;
+    const processing = allOrders.filter((o) => o.fulfillmentStatus === "processing").length;
+    const shipped = allOrders.filter((o) => o.fulfillmentStatus === "shipped").length;
+    const delivered = allOrders.filter((o) => o.fulfillmentStatus === "delivered").length;
+    const revenue = allOrders.reduce((acc, o) => acc + (o.price || 0), 0);
+    return { total, processing, shipped, delivered, revenue };
+  }, [allOrders]);
+
   const filtered = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     let list = allOrders.filter((o) => {
@@ -152,26 +162,133 @@ export default function OrdersPage() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">My Orders</h1>
-          <p className="text-muted-foreground">Manage your custom manufacturing orders and retail purchases</p>
+        <div className="w-full md:w-96 min-w-0">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search orders..."
+              className="pl-10"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
-        <Button className="flex items-center gap-2" onClick={() => setIsCustomOrderModalOpen(true)}>
-          <Plus className="h-4 w-4" /> Place Custom Order
+        <Button
+          onClick={() => setIsCustomOrderModalOpen(true)}
+          className="flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out will-change-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300"
+        >
+          <Plus className="h-4 w-4 text-white" />
+          <span className="font-medium">Place Custom Order</span>
         </Button>
       </div>
+{/* Orders Stats - visually match RFQs dashboard style */}
+      <div className="grid gap-4 md:grid-cols-5">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Total Orders</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+                <Target className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{stats.total}</div>
+              <p className="text-xs text-muted-foreground">All time</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.05 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Processing</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}>
+                <Clock className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-blue-600">{stats.processing}</div>
+              <p className="text-xs text-muted-foreground">Awaiting fulfillment</p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.1 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Shipped</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}>
+                <Target className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-orange-600">{stats.shipped}</div>
+              <p className="text-xs text-muted-foreground">On the way</p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.15 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Delivered</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}>
+                <CheckCircle className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-green-600">{stats.delivered}</div>
+              <p className="text-xs text-muted-foreground">Completed</p>
+            </CardContent>
+          </Card>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.2 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Revenue</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+                <Users className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-purple-600">${stats.revenue.toLocaleString()}</div>
+              <p className="text-xs text-muted-foreground">Estimated</p>
+            </CardContent>
+          </Card>
+        </motion.div>
+      </div>
       <Card>
         <CardHeader>
           <CardTitle>Filters</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col md:flex-row gap-3 items-center">
-            <div className="relative w-72">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="pl-10" placeholder="Search orders by id, product or supplier..." />
-            </div>
-
             <div className="w-48">
               <Select value={filterType} onValueChange={setFilterType}>
                 <SelectTrigger className="w-full"><SelectValue placeholder="All Types" /></SelectTrigger>
@@ -235,6 +352,9 @@ export default function OrdersPage() {
         onClose={() => setIsCustomOrderModalOpen(false)}
         title="Place Custom Order"
         size="lg"
+        headerClassName="bg-gradient-to-r from-sky-600 to-cyan-500 text-white !border-0"
+        contentClassName="bg-white/95"
+        className="rounded-xl shadow-2xl"
       >
         <CustomOrderForm onClose={() => setIsCustomOrderModalOpen(false)} productInfo={{ title: "", id: "" }} />
       </Modal>

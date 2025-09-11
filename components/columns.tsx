@@ -15,6 +15,7 @@ import {
   Clock,
   CheckCircle,
   AlertCircle,
+  Send,
   Star,
   FileText,
   Download,
@@ -74,6 +75,117 @@ export type RFQ = {
     rejectionReason?: string;
   };
 };
+
+// Columns for Quote Requests
+export const createQuoteColumns = (
+  onViewDetails: (quote: any) => void,
+  onRespond?: (quote: any) => void
+): ColumnDef<any>[] => [
+  {
+    accessorKey: "id",
+    header: "Quote ID",
+    cell: ({ row }) => {
+      const quote = row.original;
+      return (
+        <div className="font-medium">
+          <Button
+            variant="link"
+            className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
+            onClick={() => onViewDetails(quote)}
+          >
+            {quote.id}
+          </Button>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "product",
+    header: "Product",
+    cell: ({ row }) => {
+      const quote = row.original;
+      return (
+        <div className="max-w-[240px]">
+          <div className="font-medium truncate">{quote.product}</div>
+          <div className="text-sm text-muted-foreground truncate">
+            {quote.specifications}
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "buyer",
+    header: "Buyer",
+    cell: ({ row }) => <div className="font-medium">{row.getValue("buyer")}</div>,
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ row }) => {
+      const status = row.getValue("status") as string;
+      return <Badge className={status === "pending" ? "bg-yellow-100 text-yellow-800" : status === "responded" ? "bg-blue-100 text-blue-800" : status === "accepted" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}>{status.charAt(0).toUpperCase() + status.slice(1)}</Badge>;
+    },
+  },
+  {
+    accessorKey: "priority",
+    header: "Priority",
+    cell: ({ row }) => {
+      const p = row.getValue("priority") as string;
+      const m = p === "high" ? "bg-red-100 text-red-800" : p === "medium" ? "bg-yellow-100 text-yellow-800" : "bg-green-100 text-green-800";
+      return <Badge className={m}>{p.charAt(0).toUpperCase() + p.slice(1)}</Badge>;
+    },
+  },
+  {
+    accessorKey: "category",
+    header: "Category",
+    cell: ({ row }) => <div className="text-sm">{row.getValue("category")}</div>,
+  },
+  {
+    accessorKey: "budget",
+    header: "Budget",
+    cell: ({ row }) => <div className="font-medium text-green-600">${(row.getValue("budget") as number).toLocaleString()}</div>,
+  },
+  {
+    accessorKey: "quantity",
+    header: "Qty",
+    cell: ({ row }) => <div className="text-sm">{(row.getValue("quantity") as number).toLocaleString()}</div>,
+  },
+  {
+    accessorKey: "requestDate",
+    header: "Requested",
+    cell: ({ row }) => <div className="text-sm text-muted-foreground">{new Date(row.getValue("requestDate") as string).toLocaleDateString()}</div>,
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const quote = row.original;
+      return (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="h-8 w-8 p-0">
+              <span className="sr-only">Open menu</span>
+              <MoreHorizontal className="h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => onViewDetails(quote)}>
+              <Eye className="mr-2 h-4 w-4" />
+              View Details
+            </DropdownMenuItem>
+            {quote.status === "pending" && onRespond && (
+              <DropdownMenuItem onClick={() => onRespond(quote)}>
+                <Send className="mr-2 h-4 w-4" />
+                Respond
+              </DropdownMenuItem>
+            )}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    },
+  },
+];
 
 export type Order = {
   id: string;

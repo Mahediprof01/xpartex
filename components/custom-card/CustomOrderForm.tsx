@@ -30,7 +30,7 @@ const CustomOrderForm = ({ onClose, productInfo }) => {
   } = useFormDataStore();
   
   const [showSignupModal, setShowSignupModal] = useState(false);
-  const [products, setProducts] = useState([productInfo?.title || ""]);
+  const [products, setProducts] = useState(() => (productInfo?.title ? [productInfo.title] : []));
   const [newProduct, setNewProduct] = useState("");
   
   // Initialize form data from stored data or defaults
@@ -41,11 +41,11 @@ const CustomOrderForm = ({ onClose, productInfo }) => {
     }
     return {
       buyer: "Your Company Name",
-      items: 1,
+      items: productInfo?.title ? 1 : 0,
       budget: "",
       requirements: "",
       deadline: "",
-      products: [productInfo?.title || ""],
+      products: productInfo?.title ? [productInfo.title] : [],
     };
   });
 
@@ -229,7 +229,10 @@ const CustomOrderForm = ({ onClose, productInfo }) => {
         </div>
 
         <div className="pt-2">
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300"
+          >
             Submit Custom Order
           </Button>
         </div>
