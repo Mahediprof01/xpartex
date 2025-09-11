@@ -21,11 +21,6 @@ import {
   Edit,
   Trash2,
   Package,
-  User,
-  Building,
-  Calendar,
-  DollarSign,
-  ShoppingCart,
   Truck,
   MoreHorizontal,
 } from "lucide-react";
@@ -144,6 +139,41 @@ export type Product = {
   specifications: Record<string, any>;
 };
 
+export type SampleRequest = {
+  id: string;
+  productName: string;
+  supplier: string;
+  buyer: string;
+  buyerCompany?: string;
+  productCategory?: string;
+  status:
+    | "pending_approval"
+    | "approved"
+    | "shipped"
+    | "delivered"
+    | "rejected";
+  requestDate: string;
+  approvalDate?: string;
+  shippingDate?: string;
+  deliveryDate?: string;
+  cost: number;
+  quantity: number;
+  specifications: string;
+  buyerNotes?: string;
+  sellerResponse?: string;
+  rejectionReason?: string;
+  priority?: "high" | "medium" | "low";
+  deadline?: string;
+  feedback?: string;
+  rating?: number;
+  shippingDetails?: {
+    carrier: string;
+    trackingNumber: string;
+    estimatedDelivery?: string;
+    deliveredDate?: string;
+  };
+};
+
 // Configuration objects
 const statusConfigs = {
   rfq: {
@@ -254,12 +284,56 @@ const statusConfigs = {
       bgColor: "bg-gray-100 text-gray-800",
     },
   },
+  sample: {
+    pending_approval: {
+      label: "Pending Approval",
+      icon: Clock,
+      variant: "default" as const,
+      bgColor: "bg-yellow-100 text-yellow-800",
+    },
+    approved: {
+      label: "Approved",
+      icon: CheckCircle,
+      variant: "default" as const,
+      bgColor: "bg-green-100 text-green-800",
+    },
+    shipped: {
+      label: "Shipped",
+      icon: Truck,
+      variant: "default" as const,
+      bgColor: "bg-blue-100 text-blue-800",
+    },
+    delivered: {
+      label: "Delivered",
+      icon: Package,
+      variant: "default" as const,
+      bgColor: "bg-green-100 text-green-800",
+    },
+    rejected: {
+      label: "Rejected",
+      icon: AlertCircle,
+      variant: "destructive" as const,
+      bgColor: "bg-red-100 text-red-800",
+    },
+  },
 };
 
 const priorityConfig = {
-  high: { label: "High", color: "bg-red-100 text-red-800" },
-  medium: { label: "Medium", color: "bg-yellow-100 text-yellow-800" },
-  low: { label: "Low", color: "bg-green-100 text-green-800" },
+  high: {
+    label: "High",
+    color: "bg-red-100 text-red-800",
+    icon: AlertCircle,
+  },
+  medium: {
+    label: "Medium",
+    color: "bg-yellow-100 text-yellow-800",
+    icon: Clock,
+  },
+  low: {
+    label: "Low",
+    color: "bg-green-100 text-green-800",
+    icon: CheckCircle,
+  },
 };
 
 // Column creators for different data types
@@ -496,26 +570,6 @@ export const createOrderColumns = (
             {order.category}
           </div>
         </div>
-      );
-    },
-  },
-  {
-    accessorKey: "type",
-    header: "Order Type",
-    cell: ({ row }) => {
-      const type = (row.getValue("type") as string) || "unknown";
-      const label = type.charAt(0).toUpperCase() + type.slice(1);
-      const typeStyles: Record<string, string> = {
-        custom: "bg-green-100 text-green-800",
-        retail: "bg-blue-100 text-blue-800",
-        wholesale: "bg-indigo-100 text-indigo-800",
-        unknown: "bg-gray-100 text-gray-800",
-      };
-
-      return (
-        <Badge className={typeStyles[type] || typeStyles.unknown}>
-          {label}
-        </Badge>
       );
     },
   },
@@ -953,6 +1007,414 @@ export const createProductColumns = (
                 Delete Product
               </DropdownMenuItem>
             )}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    },
+  },
+];
+
+// Sample Columns - for sample-buyer module
+export const createSampleColumns = (
+  onViewDetails: (sample: SampleRequest) => void,
+  onEdit?: (sample: SampleRequest) => void,
+  onDelete?: (sample: SampleRequest) => void,
+  onRate?: (sample: SampleRequest) => void
+): ColumnDef<SampleRequest>[] => [
+  {
+    accessorKey: "id",
+    header: "Sample ID",
+    cell: ({ row }) => {
+      const sample = row.original;
+      return (
+        <div className="font-medium">
+          <Button
+            variant="link"
+            className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
+            onClick={() => onViewDetails(sample)}
+          >
+            {sample.id}
+          </Button>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "productName",
+    header: "Product",
+    cell: ({ row }) => {
+      const sample = row.original;
+      return (
+        <div className="max-w-[200px]">
+          <div className="font-medium truncate">{sample.productName}</div>
+          <div className="text-sm text-muted-foreground truncate">
+            {sample.specifications}
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "supplier",
+    header: "Supplier",
+    cell: ({ row }) => {
+      return <div className="font-medium">{row.getValue("supplier")}</div>;
+    },
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ row }) => {
+      const status = row.getValue(
+        "status"
+      ) as keyof typeof statusConfigs.sample;
+      const statusInfo = statusConfigs.sample[status];
+      const StatusIcon = statusInfo?.icon;
+
+      return (
+        <Badge className={statusInfo?.bgColor}>
+          {StatusIcon && <StatusIcon className="h-3 w-3 mr-1" />}
+          {statusInfo?.label || status}
+        </Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "priority",
+    header: "Priority",
+    cell: ({ row }) => {
+      const priority = row.getValue("priority") as keyof typeof priorityConfig;
+      const priorityInfo = priorityConfig[priority || "medium"];
+
+      return (
+        <Badge className={priorityInfo?.color}>{priorityInfo?.label}</Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "quantity",
+    header: "Quantity",
+    cell: ({ row }) => {
+      const quantity = row.getValue("quantity") as number;
+      return <div className="text-sm">{quantity.toLocaleString()}</div>;
+    },
+  },
+  {
+    accessorKey: "cost",
+    header: "Cost",
+    cell: ({ row }) => {
+      const cost = row.getValue("cost") as number;
+      return (
+        <div className="font-medium text-green-600">${cost.toFixed(2)}</div>
+      );
+    },
+  },
+  {
+    accessorKey: "requestDate",
+    header: "Requested",
+    cell: ({ row }) => {
+      const requestDate = row.getValue("requestDate") as string;
+      return (
+        <div className="text-sm">
+          {new Date(requestDate).toLocaleDateString()}
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "deadline",
+    header: "Deadline",
+    cell: ({ row }) => {
+      const deadline = row.getValue("deadline") as string;
+      return (
+        <div className="text-sm">
+          {deadline ? new Date(deadline).toLocaleDateString() : "N/A"}
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "rating",
+    header: "Rating",
+    cell: ({ row }) => {
+      const rating = row.getValue("rating") as number;
+      const sample = row.original;
+
+      if (!rating && sample.status === "delivered" && !sample.feedback) {
+        return (
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => onRate?.(sample)}
+            className="text-xs"
+          >
+            Rate
+          </Button>
+        );
+      }
+
+      if (rating) {
+        return (
+          <div className="flex items-center gap-1">
+            <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+            <span className="text-sm">{rating.toFixed(1)}</span>
+          </div>
+        );
+      }
+
+      return <span className="text-muted-foreground text-sm">N/A</span>;
+    },
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const sample = row.original;
+
+      return (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="h-8 w-8 p-0">
+              <span className="sr-only">Open menu</span>
+              <MoreHorizontal className="h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => onViewDetails(sample)}>
+              <Eye className="mr-2 h-4 w-4" />
+              View Details
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <MessageSquare className="mr-2 h-4 w-4" />
+              Contact Supplier
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Download className="mr-2 h-4 w-4" />
+              Download Invoice
+            </DropdownMenuItem>
+            {sample.status === "pending_approval" && onEdit && (
+              <DropdownMenuItem onClick={() => onEdit(sample)}>
+                <Edit className="mr-2 h-4 w-4" />
+                Edit Request
+              </DropdownMenuItem>
+            )}
+            {sample.status === "delivered" && !sample.feedback && onRate && (
+              <DropdownMenuItem onClick={() => onRate(sample)}>
+                <Star className="mr-2 h-4 w-4" />
+                Rate Sample
+              </DropdownMenuItem>
+            )}
+            {sample.status === "pending_approval" && onDelete && (
+              <DropdownMenuItem
+                onClick={() => onDelete(sample)}
+                className="text-red-600"
+              >
+                <Trash2 className="mr-2 h-4 w-4" />
+                Cancel Request
+              </DropdownMenuItem>
+            )}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    },
+  },
+];
+
+// Seller Sample Columns - for sample-seller module
+export const createSellerSampleColumns = (
+  onViewDetails: (sample: SampleRequest) => void,
+  onApproveReject?: (sample: SampleRequest) => void,
+  onShip?: (sample: SampleRequest) => void
+): ColumnDef<SampleRequest>[] => [
+  {
+    accessorKey: "id",
+    header: "Sample ID",
+    cell: ({ row }) => {
+      const sample = row.original;
+      return (
+        <div className="font-medium">
+          <Button
+            variant="link"
+            className="p-0 h-auto font-medium text-blue-600 hover:text-blue-800"
+            onClick={() => onViewDetails(sample)}
+          >
+            {sample.id}
+          </Button>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "buyer",
+    header: "Buyer",
+    cell: ({ row }) => {
+      const sample = row.original;
+      return (
+        <div className="max-w-[200px]">
+          <div className="font-medium truncate">
+            {sample.buyer || "John Doe"}
+          </div>
+          <div className="text-sm text-muted-foreground truncate">
+            {sample.buyerCompany || "Fashion Corp"}
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "productName",
+    header: "Product",
+    cell: ({ row }) => {
+      const sample = row.original;
+      return (
+        <div className="max-w-[200px]">
+          <div className="font-medium truncate">{sample.productName}</div>
+          <div className="text-sm text-muted-foreground truncate">
+            {sample.productCategory || "Apparel"}
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ row }) => {
+      const status = row.getValue(
+        "status"
+      ) as keyof typeof statusConfigs.sample;
+      const statusInfo = statusConfigs.sample[status];
+      const StatusIcon = statusInfo?.icon;
+
+      return (
+        <Badge className={statusInfo?.bgColor}>
+          {StatusIcon && <StatusIcon className="h-3 w-3 mr-1" />}
+          {statusInfo?.label || status}
+        </Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "priority",
+    header: "Priority",
+    cell: ({ row }) => {
+      const priority = row.getValue("priority") as keyof typeof priorityConfig;
+      const priorityInfo = priorityConfig[priority];
+      const PriorityIcon = priorityInfo?.icon;
+
+      return (
+        <Badge variant="outline" className={priorityInfo?.color}>
+          {PriorityIcon && <PriorityIcon className="h-3 w-3 mr-1" />}
+          {priorityInfo?.label}
+        </Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "quantity",
+    header: "Quantity",
+    cell: ({ row }) => {
+      const quantity = row.getValue("quantity") as number;
+      return <div className="font-medium">{quantity} pcs</div>;
+    },
+  },
+  {
+    accessorKey: "cost",
+    header: "Sample Cost",
+    cell: ({ row }) => {
+      const cost = row.getValue("cost") as number;
+      return (
+        <div className="font-medium text-green-600">
+          ${cost > 0 ? cost.toFixed(2) : "Free"}
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "requestDate",
+    header: "Request Date",
+    cell: ({ row }) => {
+      const requestDate = row.getValue("requestDate") as string;
+      return (
+        <div className="text-sm text-muted-foreground">
+          {new Date(requestDate).toLocaleDateString()}
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "deadline",
+    header: "Deadline",
+    cell: ({ row }) => {
+      const sample = row.original;
+      const deadline = sample.deadline;
+      if (!deadline)
+        return <div className="text-sm text-muted-foreground">-</div>;
+
+      const deadlineDate = new Date(deadline);
+      const isOverdue =
+        deadlineDate < new Date() && sample.status === "pending_approval";
+
+      return (
+        <div
+          className={`text-sm ${
+            isOverdue ? "text-red-600 font-medium" : "text-muted-foreground"
+          }`}
+        >
+          {deadlineDate.toLocaleDateString()}
+          {isOverdue && <span className="ml-1">(Overdue)</span>}
+        </div>
+      );
+    },
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const sample = row.original;
+
+      return (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="h-8 w-8 p-0">
+              <span className="sr-only">Open menu</span>
+              <MoreHorizontal className="h-4 w-4" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => onViewDetails(sample)}>
+              <Eye className="mr-2 h-4 w-4" />
+              View Details
+            </DropdownMenuItem>
+
+            {sample.status === "pending_approval" && onApproveReject && (
+              <DropdownMenuItem onClick={() => onApproveReject(sample)}>
+                <CheckCircle className="mr-2 h-4 w-4" />
+                Review Request
+              </DropdownMenuItem>
+            )}
+
+            {sample.status === "approved" && onShip && (
+              <DropdownMenuItem onClick={() => onShip(sample)}>
+                <Truck className="mr-2 h-4 w-4" />
+                Ship Sample
+              </DropdownMenuItem>
+            )}
+
+            <DropdownMenuItem>
+              <MessageSquare className="mr-2 h-4 w-4" />
+              Contact Buyer
+            </DropdownMenuItem>
+
+            <DropdownMenuItem>
+              <FileText className="mr-2 h-4 w-4" />
+              Generate Invoice
+            </DropdownMenuItem>
+
+            <DropdownMenuItem>
+              <Package className="mr-2 h-4 w-4" />
+              Track Package
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );
