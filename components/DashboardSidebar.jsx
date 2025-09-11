@@ -28,7 +28,7 @@ const menuItems = {
   buyerManagement: [
     { href: "/dashboard/rfqs", label: "My RFQs", icon: FileText },
     { href: "/dashboard/orders", label: "Orders", icon: ShoppingCart },
-    { href: "/dashboard/samples", label: "Sample Requests", icon: Award },
+    { href: "/dashboard/sample-buyer", label: "Sample Requests", icon: Award },
     { href: "/dashboard/suppliers", label: "Suppliers", icon: Building2 },
     { href: "/dashboard/wishlist", label: "Wishlist", icon: Heart },
     { href: "/dashboard/messaging", label: "Messages", icon: MessageSquare },
@@ -37,8 +37,8 @@ const menuItems = {
   sellerManagement: [
     { href: "/dashboard/products", label: "Products", icon: Package },
     { href: "/dashboard/quotes", label: "Quote Requests", icon: Target },
-    { href: "/dashboard/seller-orders", label: "Seller Orders", icon: ListOrdered },
-    { href: "/dashboard/samples", label: "Sample Management", icon: Award },
+    { href: "/dashboard/seller-orders", label: "Orders", icon: ListOrdered },
+    { href: "/dashboard/sample-seller", label: "Sample Management", icon: Award },
     { href: "/dashboard/messaging", label: "Messages", icon: MessageSquare },
     { href: "/dashboard/earnings", label: "Earnings", icon: DollarSign },
     { href: "/dashboard/analytics", label: "Seller Analytics", icon: BarChart3 },
