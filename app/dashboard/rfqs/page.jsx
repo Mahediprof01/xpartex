@@ -315,7 +315,7 @@ function RFQDetailView({ rfq, isOpen, onClose, onAction }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-    <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto bg-white">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto bg-white">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             {rfq.title}
@@ -986,7 +986,7 @@ export default function RFQsPage() {
       // Add order to orders list
       setOrders((prev) => [newOrder, ...prev]);
 
-  // Show success notification (removed toast)
+      // Show success notification (removed toast)
 
       // Close detail view
       setDetailViewOpen(false);
@@ -1004,7 +1004,7 @@ export default function RFQsPage() {
         )
       );
 
-  // Show rejection notification (removed toast)
+      // Show rejection notification (removed toast)
     } else if (action === "negotiate") {
       // Open negotiation dialog
       setNegotiationDialogOpen(true);
@@ -1060,7 +1060,7 @@ export default function RFQsPage() {
       )
     );
 
-  // Show negotiation notification (removed toast)
+    // Show negotiation notification (removed toast)
 
     // Close negotiation dialog
     setNegotiationDialogOpen(false);
@@ -1082,7 +1082,7 @@ export default function RFQsPage() {
       )
     );
 
-  // Show fulfillment notification (removed toast)
+    // Show fulfillment notification (removed toast)
   };
 
   const filteredRFQs = rfqList.filter((rfq) => {
@@ -1113,12 +1113,16 @@ export default function RFQsPage() {
   const stats = getStats();
 
   // Create columns with handlers
-  const columns = createRFQColumns(handleViewDetails, handleStartNegotiation, role);
+  const columns = createRFQColumns(
+    handleViewDetails,
+    handleStartNegotiation,
+    role
+  );
 
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-  <div className="w-full md:w-96 min-w-0">
+        <div className="w-full md:w-96 min-w-0">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
@@ -1131,7 +1135,7 @@ export default function RFQsPage() {
         </div>
         <Button
           onClick={() => setCreateDialogOpen(true)}
-          className="flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out will-change-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300"
+          className="flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out"
         >
           <Plus className="h-4 w-4 text-white" />
           <span className="font-medium">Create RFQ</span>
@@ -1144,13 +1148,22 @@ export default function RFQsPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0,
+          }}
         >
           <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-            <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Total RFQs</CardTitle>
-              <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}
+              >
                 <Target className="h-4 w-4" />
               </div>
             </CardHeader>
@@ -1164,18 +1177,29 @@ export default function RFQsPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.05 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.05,
+          }}
         >
           <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-            <div className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Open</CardTitle>
-              <div className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}
+              >
                 <Clock className="h-4 w-4" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-blue-600">{stats.open}</div>
+              <div className="text-2xl font-bold text-blue-600">
+                {stats.open}
+              </div>
               <p className="text-xs text-muted-foreground">Awaiting response</p>
             </CardContent>
           </Card>
@@ -1184,18 +1208,29 @@ export default function RFQsPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.1 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.1,
+          }}
         >
           <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-            <div className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Negotiating</CardTitle>
-              <div className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}
+              >
                 <MessageSquare className="h-4 w-4" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-orange-600">{stats.negotiating}</div>
+              <div className="text-2xl font-bold text-orange-600">
+                {stats.negotiating}
+              </div>
               <p className="text-xs text-muted-foreground">In progress</p>
             </CardContent>
           </Card>
@@ -1204,18 +1239,29 @@ export default function RFQsPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.15 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.15,
+          }}
         >
           <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-            <div className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Closed</CardTitle>
-              <div className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}
+              >
                 <CheckCircle className="h-4 w-4" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-green-600">{stats.closed}</div>
+              <div className="text-2xl font-bold text-green-600">
+                {stats.closed}
+              </div>
               <p className="text-xs text-muted-foreground">Completed</p>
             </CardContent>
           </Card>
@@ -1224,18 +1270,31 @@ export default function RFQsPage() {
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.2 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.2,
+          }}
         >
           <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
-            <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Responses</CardTitle>
-              <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+              <CardTitle className="text-sm font-medium">
+                Total Responses
+              </CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}
+              >
                 <Users className="h-4 w-4" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-purple-600">{stats.totalResponses}</div>
+              <div className="text-2xl font-bold text-purple-600">
+                {stats.totalResponses}
+              </div>
               <p className="text-xs text-muted-foreground">From suppliers</p>
             </CardContent>
           </Card>
@@ -1265,7 +1324,10 @@ export default function RFQsPage() {
               </div>
 
               <div className="w-48">
-                <Select value={filterCategory} onValueChange={setFilterCategory}>
+                <Select
+                  value={filterCategory}
+                  onValueChange={setFilterCategory}
+                >
                   <SelectTrigger className="bg-white w-full">
                     <SelectValue placeholder="All Categories" />
                   </SelectTrigger>
@@ -1280,7 +1342,10 @@ export default function RFQsPage() {
               </div>
 
               <div className="w-44">
-                <Select value={filterPriority} onValueChange={setFilterPriority}>
+                <Select
+                  value={filterPriority}
+                  onValueChange={setFilterPriority}
+                >
                   <SelectTrigger className="bg-white w-full">
                     <SelectValue placeholder="All Priorities" />
                   </SelectTrigger>
