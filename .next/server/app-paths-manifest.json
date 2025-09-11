@@ -5,6 +5,7 @@
   "/dashboard/buyer-analytics/page": "app/dashboard/buyer-analytics/page.js",
   "/dashboard/orders/page": "app/dashboard/orders/page.js",
   "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/products/[id]/page": "app/dashboard/products/[id]/page.js",
   "/dashboard/products/page": "app/dashboard/products/page.js",
   "/dashboard/quotes/page": "app/dashboard/quotes/page.js",
   "/dashboard/rfqs/page": "app/dashboard/rfqs/page.js",
