@@ -1,6 +1,6 @@
 {
   "pages": {
-    "/dashboard/products/page": [
+    "/dashboard/products/[id]/page": [
       "static/chunks/node_modules_next_dist_1a6ee436._.js",
       "static/chunks/app_favicon_ico_mjs_1579f9cb._.js",
       "static/chunks/[root of the server]__120970c5._.css",
@@ -14,9 +14,9 @@
       "static/chunks/app_layout_tsx_f0e4c1a2._.js",
       "static/chunks/_ae224b50._.js",
       "static/chunks/app_dashboard_layout_jsx_455be481._.js",
-      "static/chunks/_7a167c58._.js",
-      "static/chunks/node_modules_5f334cf6._.js",
-      "static/chunks/app_dashboard_products_page_jsx_5c92e41a._.js",
+      "static/chunks/_74dfc0c7._.js",
+      "static/chunks/node_modules_f72db6b5._.js",
+      "static/chunks/app_dashboard_products_[id]_page_jsx_5c92e41a._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_49a6ea35._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_43e3ffb8._.js",

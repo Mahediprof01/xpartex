@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -28,27 +30,17 @@ import {
 } from "../../../components/ui/dialog";
 import { Label } from "../../../components/ui/label";
 import { Textarea } from "../../../components/ui/textarea";
-import { Checkbox } from "../../../components/ui/checkbox";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "../../../components/ui/dropdown-menu";
+import { DataTable } from "../../../components/ui/data-table";
 import {
   Search,
   Plus,
-  Edit,
-  Trash2,
-  Eye,
   Package,
   TrendingUp,
   AlertTriangle,
   Star,
-  MoreHorizontal,
+  ShoppingCart,
 } from "lucide-react";
+// import { createProductColumns } from "../../../components/columns";
 
 const products = [
   {
@@ -165,6 +157,22 @@ const products = [
   },
 ];
 
+const categories = [
+  "All Categories",
+  "Jackets",
+  "Hoodies",
+  "Dresses",
+  "Pants",
+  "Coats",
+  "Tops",
+  "Activewear",
+  "Shirts",
+  "Skirts",
+  "Accessories",
+];
+
+const statuses = ["All Statuses", "Active", "Out of Stock", "Draft", "Paused"];
+
 const statusConfig = {
   active: { label: "Active", variant: "default", color: "text-green-600" },
   out_of_stock: {
@@ -176,53 +184,287 @@ const statusConfig = {
   paused: { label: "Paused", variant: "outline", color: "text-yellow-600" },
 };
 
+// Temporary inline product columns
+const createProductColumns = (
+  onViewDetails,
+  onEdit,
+  onDelete,
+  onToggleStatus
+) => [
+  {
+    accessorKey: "image",
+    header: "Product",
+    cell: ({ row }) => {
+      const product = row.original;
+      const lowStock = product.stock < 15 && product.stock > 0;
+
+      return (
+        <div className="flex items-center gap-3">
+          <div className="relative w-12 h-12 flex-shrink-0">
+            <img
+              src={product.image || "/placeholder.svg"}
+              alt={product.name}
+              className="w-full h-full object-cover rounded-md"
+            />
+            {lowStock && (
+              <Badge
+                variant="outline"
+                className="absolute -bottom-1 -right-1 bg-yellow-50 px-1 py-0 text-[10px]"
+              >
+                Low
+              </Badge>
+            )}
+          </div>
+          <div className="min-w-0">
+            <div className="font-medium text-sm truncate">{product.name}</div>
+            <div className="text-xs text-muted-foreground">
+              {product.category}
+            </div>
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "price",
+    header: "Price",
+    cell: ({ row }) => {
+      const product = row.original;
+      return <div className="font-semibold text-lg">{product.price}</div>;
+    },
+  },
+  {
+    accessorKey: "stock",
+    header: "Stock",
+    cell: ({ row }) => {
+      const product = row.original;
+      const stockLevel = product.stock;
+      const isLowStock = stockLevel < 15 && stockLevel > 0;
+      const isOutOfStock = stockLevel === 0;
+
+      return (
+        <div className="flex flex-col">
+          <span
+            className={`font-medium ${
+              isOutOfStock
+                ? "text-red-600"
+                : isLowStock
+                ? "text-orange-600"
+                : "text-green-600"
+            }`}
+          >
+            {stockLevel} units
+          </span>
+          <span className="text-xs text-muted-foreground">
+            Sold: {product.sold}
+          </span>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "rating",
+    header: "Rating",
+    cell: ({ row }) => {
+      const product = row.original;
+      return (
+        <div className="flex items-center gap-1">
+          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          <span className="font-medium">{product.rating}</span>
+          <span className="text-xs text-muted-foreground">
+            ({product.reviews})
+          </span>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "status",
+    header: "Status",
+    cell: ({ row }) => {
+      const product = row.original;
+      const statusConfigs = {
+        active: { label: "Active", variant: "default" },
+        out_of_stock: { label: "Out of Stock", variant: "destructive" },
+        draft: { label: "Draft", variant: "secondary" },
+        paused: { label: "Paused", variant: "outline" },
+      };
+
+      const config = statusConfigs[product.status];
+
+      return (
+        <Badge variant={config.variant} className="whitespace-nowrap">
+          {config.label}
+        </Badge>
+      );
+    },
+  },
+  {
+    accessorKey: "lastUpdated",
+    header: "Last Updated",
+    cell: ({ row }) => {
+      const product = row.original;
+      return (
+        <div className="text-sm">
+          {new Date(product.lastUpdated).toLocaleDateString()}
+        </div>
+      );
+    },
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const product = row.original;
+
+      return (
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={() => onViewDetails(product)}
+        >
+          View Details
+        </Button>
+      );
+    },
+  },
+];
+
 export default function ProductsPage() {
+  const router = useRouter();
   const [isAddProductOpen, setIsAddProductOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filterCategory, setFilterCategory] = useState("All Categories");
+  const [filterStatus, setFilterStatus] = useState("All Statuses");
+  const [sortBy, setSortBy] = useState("newest");
 
-  // Seller dashboard states
-  const [selectedProductIds, setSelectedProductIds] = useState(new Set());
-  const [activeProduct, setActiveProduct] = useState(null);
+  // Filter and sort logic
+  const filteredProducts = products
+    .filter((product) => {
+      const matchesSearch =
+        product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.category.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesCategory =
+        filterCategory === "All Categories" ||
+        product.category === filterCategory;
+      const matchesStatus =
+        filterStatus === "All Statuses" ||
+        (filterStatus === "Active" && product.status === "active") ||
+        (filterStatus === "Out of Stock" &&
+          product.status === "out_of_stock") ||
+        (filterStatus === "Draft" && product.status === "draft") ||
+        (filterStatus === "Paused" && product.status === "paused");
 
-  // Seller action dialogs
-  const [inventoryOpen, setInventoryOpen] = useState(false);
-  const [pricingOpen, setPricingOpen] = useState(false);
-  const [moqLeadOpen, setMoqLeadOpen] = useState(false);
-  const [sampleSettingsOpen, setSampleSettingsOpen] = useState(false);
-
-  // Simple filters
-  const [filterMOQ, setFilterMOQ] = useState(0);
-  const [filterLead, setFilterLead] = useState("any");
-  const [filterCert, setFilterCert] = useState("any");
-  const [filterRegion, setFilterRegion] = useState("any");
-
-  const toggleSelect = (id) => {
-    setSelectedProductIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
+      return matchesSearch && matchesCategory && matchesStatus;
+    })
+    .sort((a, b) => {
+      switch (sortBy) {
+        case "newest":
+          return (
+            new Date(b.lastUpdated).getTime() -
+            new Date(a.lastUpdated).getTime()
+          );
+        case "oldest":
+          return (
+            new Date(a.lastUpdated).getTime() -
+            new Date(b.lastUpdated).getTime()
+          );
+        case "price-low":
+          return (
+            parseFloat(a.price.replace("$", "")) -
+            parseFloat(b.price.replace("$", ""))
+          );
+        case "price-high":
+          return (
+            parseFloat(b.price.replace("$", "")) -
+            parseFloat(a.price.replace("$", ""))
+          );
+        case "rating":
+          return b.rating - a.rating;
+        case "name":
+          return a.name.localeCompare(b.name);
+        case "stock-low":
+          return a.stock - b.stock;
+        case "stock-high":
+          return b.stock - a.stock;
+        default:
+          return 0;
+      }
     });
+
+  // Calculate statistics
+  const totalProducts = products.length;
+  const activeProducts = products.filter((p) => p.status === "active").length;
+  const lowStockProducts = products.filter((p) => p.stock < 15).length;
+  const averageRating =
+    products.reduce((sum, p) => sum + p.rating, 0) / products.length;
+
+  // Check if any filters are active
+  const hasActiveFilters =
+    searchQuery ||
+    filterCategory !== "All Categories" ||
+    filterStatus !== "All Statuses" ||
+    sortBy !== "newest";
+
+  // Clear all filters
+  const clearFilters = () => {
+    setSearchQuery("");
+    setFilterCategory("All Categories");
+    setFilterStatus("All Statuses");
+    setSortBy("newest");
   };
 
-  const selectedCount = selectedProductIds.size;
+  // Column handlers
+  const handleViewDetails = (product) => {
+    router.push(`/dashboard/products/${product.id}`);
+  };
+
+  const handleEditProduct = (product) => {
+    // TODO: Implement edit functionality
+    console.log("Edit product:", product.id);
+  };
+
+  const handleDeleteProduct = (product) => {
+    // TODO: Implement delete functionality
+    console.log("Delete product:", product.id);
+  };
+
+  const handleToggleStatus = (product) => {
+    // TODO: Implement status toggle functionality
+    console.log("Toggle status:", product.id);
+  };
+
+  // Create table columns
+  const columns = createProductColumns(
+    handleViewDetails,
+    handleEditProduct,
+    handleDeleteProduct,
+    handleToggleStatus
+  );
 
   return (
     <div className="space-y-6">
+      {/* Header with Search and Add Product */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">My Products</h1>
-          <p className="text-muted-foreground">
-            Manage your clothing listings and inventory
-          </p>
+        <div className="w-1/2">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search products, categories..."
+              className="pl-10"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
         <Dialog open={isAddProductOpen} onOpenChange={setIsAddProductOpen}>
           <DialogTrigger asChild>
-            <Button className="flex items-center gap-2">
+            <Button className="flex items-center gap-2 bg-gradient-to-b from-sky-500 to-cyan-500 text-white">
               <Plus className="h-4 w-4" />
               Add Product
             </Button>
           </DialogTrigger>
-          <DialogContent className="max-w-2xl">
+          <DialogContent className="max-w-2xl bg-white p-6 rounded-lg">
             <DialogHeader>
               <DialogTitle>Add New Product</DialogTitle>
               <DialogDescription>
@@ -257,7 +499,7 @@ export default function ProductsPage() {
                 </div>
               </div>
 
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-3">
                 <div className="space-y-2">
                   <Label htmlFor="price">Price</Label>
                   <Input id="price" type="number" placeholder="0.00" />
@@ -265,6 +507,19 @@ export default function ProductsPage() {
                 <div className="space-y-2">
                   <Label htmlFor="stock">Stock Quantity</Label>
                   <Input id="stock" type="number" placeholder="0" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="category">Types</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="jackets">B2B</SelectItem>
+                      <SelectItem value="hoodies">Wholesale</SelectItem>
+                      <SelectItem value="dresses">Retail</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 
@@ -278,7 +533,9 @@ export default function ProductsPage() {
               </div>
 
               <div className="flex gap-2 pt-4">
-                <Button className="flex-1">Create Product</Button>
+                <Button className="flex-1 bg-gradient-to-b from-sky-500 to-cyan-500 text-white">
+                  Create Product
+                </Button>
                 <Button
                   variant="outline"
                   onClick={() => setIsAddProductOpen(false)}
@@ -291,501 +548,238 @@ export default function ProductsPage() {
         </Dialog>
       </div>
 
-      {/* Product Stats */}
+      {/* Product Stats - Enhanced Dashboard Cards */}
       <div className="grid gap-4 md:grid-cols-4">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              Total Products
-            </CardTitle>
-            <Package className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{products.length}</div>
-            <p className="text-xs text-muted-foreground">+3 from last month</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Total Products
+              </CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}
+              >
+                <Package className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{totalProducts}</div>
+              <p className="text-xs text-muted-foreground">In inventory</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              Active Listings
-            </CardTitle>
-            <TrendingUp className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {products.filter((p) => p.status === "active").length}
-            </div>
-            <p className="text-xs text-muted-foreground">
-              87% of total products
-            </p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.05,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Active Listings
+              </CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}
+              >
+                <TrendingUp className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-green-600">
+                {activeProducts}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Published products
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Low Stock</CardTitle>
-            <AlertTriangle className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {products.filter((p) => p.stock < 15).length}
-            </div>
-            <p className="text-xs text-muted-foreground">Need restocking</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.1,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Low Stock</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}
+              >
+                <AlertTriangle className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-orange-600">
+                {lowStockProducts}
+              </div>
+              <p className="text-xs text-muted-foreground">Need restocking</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Avg. Rating</CardTitle>
-            <Star className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">4.7</div>
-            <p className="text-xs text-muted-foreground">Across all products</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "tween",
+            ease: "easeOut",
+            duration: 0.45,
+            delay: 0.15,
+          }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div
+              className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`}
+            />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Avg Rating</CardTitle>
+              <div
+                className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}
+              >
+                <Star className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold text-blue-600">
+                {averageRating.toFixed(1)}
+              </div>
+              <p className="text-xs text-muted-foreground">Product quality</p>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
 
       {/* Filters */}
-      <Card>
+      <Card className="border-none">
         <CardHeader>
           <CardTitle className="text-lg">Filter Products</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Search clothing products..."
-                className="pl-10"
-              />
-            </div>
-            <Select defaultValue="all">
-              <SelectTrigger className="w-full sm:w-48">
-                <SelectValue placeholder="Filter by status" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Products</SelectItem>
-                <SelectItem value="active">Active</SelectItem>
-                <SelectItem value="out_of_stock">Out of Stock</SelectItem>
-                <SelectItem value="draft">Draft</SelectItem>
-                <SelectItem value="paused">Paused</SelectItem>
-              </SelectContent>
-            </Select>
-            <Select defaultValue="all-categories">
-              <SelectTrigger className="w-full sm:w-48">
-                <SelectValue placeholder="Filter by category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all-categories">All Categories</SelectItem>
-                <SelectItem value="jackets">Jackets</SelectItem>
-                <SelectItem value="hoodies">Hoodies</SelectItem>
-                <SelectItem value="dresses">Dresses</SelectItem>
-                <SelectItem value="pants">Pants</SelectItem>
-                <SelectItem value="coats">Coats</SelectItem>
-                <SelectItem value="tops">Tops</SelectItem>
-                <SelectItem value="activewear">Activewear</SelectItem>
-                <SelectItem value="shirts">Shirts</SelectItem>
-                <SelectItem value="skirts">Skirts</SelectItem>
-                <SelectItem value="accessories">Accessories</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex gap-4 items-center">
+              <div className="w-48">
+                <Select
+                  value={filterCategory}
+                  onValueChange={setFilterCategory}
+                >
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="All Categories" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    {categories.map((category) => (
+                      <SelectItem key={category} value={category}>
+                        {category}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
 
-          {/* Seller sourcing params */}
-          <div className="grid gap-4 sm:grid-cols-4 mt-4">
-            <div className="space-y-2">
-              <Label htmlFor="moq">Min. Order Qty</Label>
-              <Input
-                id="moq"
-                type="number"
-                min={0}
-                placeholder="0"
-                value={filterMOQ}
-                onChange={(e) => setFilterMOQ(Number(e.target.value || 0))}
-              />
+              <div className="w-48">
+                <Select value={filterStatus} onValueChange={setFilterStatus}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="All Statuses" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    {statuses.map((status) => (
+                      <SelectItem key={status} value={status}>
+                        {status}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="w-44">
+                <Select value={sortBy} onValueChange={setSortBy}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="Sort by" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="newest">Recently Updated</SelectItem>
+                    <SelectItem value="oldest">Oldest First</SelectItem>
+                    <SelectItem value="price-low">
+                      Price: Low to High
+                    </SelectItem>
+                    <SelectItem value="price-high">
+                      Price: High to Low
+                    </SelectItem>
+                    <SelectItem value="rating">Highest Rated</SelectItem>
+                    <SelectItem value="name">Name A-Z</SelectItem>
+                    <SelectItem value="stock-low">
+                      Stock: Low to High
+                    </SelectItem>
+                    <SelectItem value="stock-high">
+                      Stock: High to Low
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
-            <div className="space-y-2">
-              <Label>Lead Time</Label>
-              <Select value={filterLead} onValueChange={setFilterLead}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="any">Any</SelectItem>
-                  <SelectItem value="lt_15">Under 15 days</SelectItem>
-                  <SelectItem value="d15_30">15-30 days</SelectItem>
-                  <SelectItem value="gt_30">Over 30 days</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="space-y-2">
-              <Label>Certifications</Label>
-              <Select value={filterCert} onValueChange={setFilterCert}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="any">Any</SelectItem>
-                  <SelectItem value="gots">GOTS</SelectItem>
-                  <SelectItem value="oeko">OEKO-TEX</SelectItem>
-                  <SelectItem value="recycled">Recycled</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="space-y-2">
-              <Label>Region</Label>
-              <Select value={filterRegion} onValueChange={setFilterRegion}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="any">Any</SelectItem>
-                  <SelectItem value="na">North America</SelectItem>
-                  <SelectItem value="eu">Europe</SelectItem>
-                  <SelectItem value="asia">Asia</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
+            {hasActiveFilters && (
+              <Button variant="outline" onClick={clearFilters}>
+                Clear Filters
+              </Button>
+            )}
           </div>
         </CardContent>
       </Card>
 
-      {/* Bulk selection toolbar */}
-      {selectedCount > 0 && (
-        <Card>
-          <CardContent className="py-3 flex items-center justify-between">
-            <span className="text-sm text-muted-foreground">
-              {selectedCount} selected
-            </span>
-            <div className="flex gap-2">
-              <Button variant="outline">Publish</Button>
-              <Button variant="outline">Unpublish</Button>
-              <Button variant="destructive">Delete</Button>
+      {/* Products Table */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-lg">Product Inventory</CardTitle>
+          <CardDescription>
+            Click on any product to view detailed information and manage
+            settings
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          {filteredProducts.length > 0 ? (
+            <DataTable columns={columns} data={filteredProducts} />
+          ) : (
+            <div className="py-12 text-center">
+              <Package className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">No products found</h3>
+              <p className="text-muted-foreground mb-4">
+                Try adjusting your search criteria or add new products to your
+                inventory
+              </p>
+              <Button onClick={clearFilters}>Clear Filters</Button>
             </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {/* Products List View */}
-      <div className="space-y-3">
-        {products.map((product, idx) => {
-          const statusInfo = statusConfig[product.status];
-          const lowStock = product.stock < 15 && product.stock > 0;
-
-          return (
-            <Card key={product.id} className="overflow-hidden">
-              <div className="flex items-start gap-3 p-3 md:gap-4 md:p-4">
-                {/* Select + Image */}
-                <div className="flex items-start gap-2">
-                  <Checkbox
-                    checked={selectedProductIds.has(product.id)}
-                    onCheckedChange={() => toggleSelect(product.id)}
-                    aria-label="Select product"
-                  />
-                  <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0">
-                    <img
-                      src={product.image || "/placeholder.svg"}
-                      alt={product.name}
-                      className="w-full h-full object-cover rounded-md"
-                    />
-                    {lowStock && (
-                      <Badge
-                        variant="outline"
-                        className="absolute -bottom-2 left-0 bg-yellow-50 px-1.5 py-0.5 text-[10px]"
-                      >
-                        Low
-                      </Badge>
-                    )}
-                  </div>
-                </div>
-
-                {/* Details */}
-                <div className="flex flex-1 items-start">
-                  <div className="flex-1 space-y-2">
-                    {/* Header: SL No, Name, Category */}
-                    <div className="flex items-center gap-2">
-                      <Badge
-                        variant="secondary"
-                        className="px-2 py-0.5 text-[10px] md:text-xs bg-blue-50 text-[#00BFFF]"
-                      >
-                        #{String(idx + 1).padStart(2, "0")}
-                      </Badge>
-                      <CardTitle className="text-base md:text-sm lg:text-base leading-tight truncate">
-                        {product.name}
-                      </CardTitle>
-                      <span className="ml-2 text-xs text-muted-foreground truncate hidden sm:inline">
-                        • {product.category}
-                      </span>
-                    </div>
-
-                    {/* Specs snapshot (placeholder) */}
-                    <div className="text-xs text-muted-foreground hidden lg:block">
-                      MOQ: — • Lead: — • Sample: —
-                    </div>
-
-                    {/* Price + Rating */}
-                    <div className="flex items-center justify-between">
-                      <span className="text-base md:text-lg font-semibold">
-                        {product.price}
-                      </span>
-                      <div className="flex items-center gap-1 text-xs md:text-sm">
-                        <Star className="h-3.5 w-3.5 md:h-4 md:w-4 fill-yellow-400 text-yellow-400" />
-                        <span className="font-medium">{product.rating}</span>
-                        <span className="text-muted-foreground">
-                          ({product.reviews})
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Meta: Stock, Sold, Updated */}
-                    <div className="flex flex-wrap items-center gap-2 text-xs">
-                      <span className="px-2 py-0.5 rounded bg-muted">
-                        Stock: {product.stock}
-                      </span>
-                      <span className="px-2 py-0.5 rounded bg-muted">
-                        Sold: {product.sold}
-                      </span>
-                      <span className="px-2 py-0.5 rounded bg-muted hidden md:inline">
-                        Updated{" "}
-                        {new Date(product.lastUpdated).toLocaleDateString()}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Status + Actions */}
-                  <div className="flex flex-col items-end gap-2 ml-3">
-                    <Badge
-                      variant={statusInfo.variant}
-                      className="px-2 py-0.5 text-xs whitespace-nowrap"
-                    >
-                      {statusInfo.label}
-                    </Badge>
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          className="h-8 w-8 data-[state=open]:bg-accent"
-                        >
-                          <MoreHorizontal className="h-4 w-4" />
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end" className="w-52">
-                        <DropdownMenuLabel>Manage</DropdownMenuLabel>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem
-                          onClick={() => {
-                            setActiveProduct(product);
-                            setInventoryOpen(true);
-                          }}
-                        >
-                          Manage Inventory
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                          onClick={() => {
-                            setActiveProduct(product);
-                            setPricingOpen(true);
-                          }}
-                        >
-                          Set Pricing Tiers
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                          onClick={() => {
-                            setActiveProduct(product);
-                            setMoqLeadOpen(true);
-                          }}
-                        >
-                          Set MOQ & Lead Time
-                        </DropdownMenuItem>
-                        <DropdownMenuItem
-                          onClick={() => {
-                            setActiveProduct(product);
-                            setSampleSettingsOpen(true);
-                          }}
-                        >
-                          Sample Settings
-                        </DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>Publish</DropdownMenuItem>
-                        <DropdownMenuItem>Unpublish</DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem className="flex items-center gap-2">
-                          <Edit className="h-4 w-4" /> Edit
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="flex items-center gap-2">
-                          <Eye className="h-4 w-4" /> View
-                        </DropdownMenuItem>
-                        <DropdownMenuItem className="text-red-600 focus:text-red-600 flex items-center gap-2">
-                          <Trash2 className="h-4 w-4" /> Delete
-                        </DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          );
-        })}
-      </div>
-
-      {/* Load More */}
-      <div className="text-center">
-        <Button variant="outline">Load More Products</Button>
-      </div>
-
-      {/* Manage Inventory */}
-      <Dialog open={inventoryOpen} onOpenChange={setInventoryOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle>Manage Inventory</DialogTitle>
-            <DialogDescription>
-              {activeProduct?.name || "Update stock levels"}
-            </DialogDescription>
-          </DialogHeader>
-          <div className="space-y-3">
-            <div className="space-y-2">
-              <Label htmlFor="inv-stock">Stock Quantity</Label>
-              <Input id="inv-stock" type="number" placeholder="0" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="inv-sku">SKU (optional)</Label>
-              <Input id="inv-sku" placeholder="SKU-001" />
-            </div>
-            <div className="flex gap-2">
-              <Button className="flex-1">Save</Button>
-              <Button
-                variant="outline"
-                className="flex-1"
-                onClick={() => setInventoryOpen(false)}
-              >
-                Cancel
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* Pricing Tiers */}
-      <Dialog open={pricingOpen} onOpenChange={setPricingOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle>Pricing Tiers</DialogTitle>
-            <DialogDescription>
-              Set tiered unit prices by quantity
-            </DialogDescription>
-          </DialogHeader>
-          <div className="space-y-3">
-            <div className="grid gap-3 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label>Min Qty</Label>
-                <Input type="number" placeholder="100" />
-              </div>
-              <div className="space-y-2">
-                <Label>Unit Price</Label>
-                <Input type="number" placeholder="9.90" />
-              </div>
-            </div>
-            <div className="grid gap-3 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label>Min Qty</Label>
-                <Input type="number" placeholder="500" />
-              </div>
-              <div className="space-y-2">
-                <Label>Unit Price</Label>
-                <Input type="number" placeholder="8.50" />
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <Button className="flex-1">Save</Button>
-              <Button
-                variant="outline"
-                className="flex-1"
-                onClick={() => setPricingOpen(false)}
-              >
-                Cancel
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* MOQ & Lead Time */}
-      <Dialog open={moqLeadOpen} onOpenChange={setMoqLeadOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle>MOQ & Lead Time</DialogTitle>
-            <DialogDescription>
-              Set minimum order quantity and production lead time
-            </DialogDescription>
-          </DialogHeader>
-          <div className="space-y-3">
-            <div className="grid gap-3 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label>Minimum Order Quantity</Label>
-                <Input type="number" placeholder="100" />
-              </div>
-              <div className="space-y-2">
-                <Label>Lead Time (days)</Label>
-                <Input type="number" placeholder="20" />
-              </div>
-            </div>
-            <div className="flex gap-2">
-              <Button className="flex-1">Save</Button>
-              <Button
-                variant="outline"
-                className="flex-1"
-                onClick={() => setMoqLeadOpen(false)}
-              >
-                Cancel
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* Sample Settings */}
-      <Dialog open={sampleSettingsOpen} onOpenChange={setSampleSettingsOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle>Sample Settings</DialogTitle>
-            <DialogDescription>
-              Define sample policy and costs
-            </DialogDescription>
-          </DialogHeader>
-          <div className="space-y-3">
-            <div className="grid gap-3 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label>Sample Cost</Label>
-                <Input type="number" placeholder="15.00" />
-              </div>
-              <div className="space-y-2">
-                <Label>Sample Lead (days)</Label>
-                <Input type="number" placeholder="5" />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label>Notes</Label>
-              <Textarea
-                rows={3}
-                placeholder="Refundable on order? Packaging?"
-              />
-            </div>
-            <div className="flex gap-2">
-              <Button className="flex-1">Save</Button>
-              <Button
-                variant="outline"
-                className="flex-1"
-                onClick={() => setSampleSettingsOpen(false)}
-              >
-                Cancel
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
+          )}
+        </CardContent>
+      </Card>
     </div>
   );
 }

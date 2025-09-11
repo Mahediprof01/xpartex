@@ -863,6 +863,7 @@ export const createSupplierColumns = (
   },
 ];
 
+
 // Sample Columns - for sample-buyer module
 export const createSampleColumns = (
   onViewDetails: (sample: SampleRequest) => void,
@@ -1455,6 +1456,7 @@ export const createWishlistColumns = (
   },
 ];
 
+
 // Product columns configuration
 export const createProductColumns = (
   onViewDetails: (product: Product) => void,
@@ -1468,7 +1470,7 @@ export const createProductColumns = (
     cell: ({ row }) => {
       const product = row.original;
       const lowStock = product.stock < 15 && product.stock > 0;
-
+      
       return (
         <div className="flex items-center gap-3">
           <div className="relative w-12 h-12 flex-shrink-0">
@@ -1488,9 +1490,7 @@ export const createProductColumns = (
           </div>
           <div className="min-w-0">
             <div className="font-medium text-sm truncate">{product.name}</div>
-            <div className="text-xs text-muted-foreground">
-              {product.category}
-            </div>
+            <div className="text-xs text-muted-foreground">{product.category}</div>
           </div>
         </div>
       );
@@ -1501,7 +1501,9 @@ export const createProductColumns = (
     header: "Price",
     cell: ({ row }) => {
       const product = row.original;
-      return <div className="font-semibold text-lg">{product.price}</div>;
+      return (
+        <div className="font-semibold text-lg">{product.price}</div>
+      );
     },
   },
   {
@@ -1512,18 +1514,14 @@ export const createProductColumns = (
       const stockLevel = product.stock;
       const isLowStock = stockLevel < 15 && stockLevel > 0;
       const isOutOfStock = stockLevel === 0;
-
+      
       return (
         <div className="flex flex-col">
-          <span
-            className={`font-medium ${
-              isOutOfStock
-                ? "text-red-600"
-                : isLowStock
-                ? "text-orange-600"
-                : "text-green-600"
-            }`}
-          >
+          <span className={`font-medium ${
+            isOutOfStock ? 'text-red-600' : 
+            isLowStock ? 'text-orange-600' : 
+            'text-green-600'
+          }`}>
             {stockLevel} units
           </span>
           <span className="text-xs text-muted-foreground">
@@ -1555,30 +1553,14 @@ export const createProductColumns = (
     cell: ({ row }) => {
       const product = row.original;
       const statusConfigs = {
-        active: {
-          label: "Active",
-          variant: "default" as const,
-          color: "text-green-600",
-        },
-        out_of_stock: {
-          label: "Out of Stock",
-          variant: "destructive" as const,
-          color: "text-red-600",
-        },
-        draft: {
-          label: "Draft",
-          variant: "secondary" as const,
-          color: "text-gray-600",
-        },
-        paused: {
-          label: "Paused",
-          variant: "outline" as const,
-          color: "text-yellow-600",
-        },
+        active: { label: "Active", variant: "default" as const, color: "text-green-600" },
+        out_of_stock: { label: "Out of Stock", variant: "destructive" as const, color: "text-red-600" },
+        draft: { label: "Draft", variant: "secondary" as const, color: "text-gray-600" },
+        paused: { label: "Paused", variant: "outline" as const, color: "text-yellow-600" },
       };
-
+      
       const config = statusConfigs[product.status];
-
+      
       return (
         <Badge variant={config.variant} className="whitespace-nowrap">
           {config.label}
@@ -1625,7 +1607,7 @@ export const createProductColumns = (
               <Package className="mr-2 h-4 w-4" />
               {product.status === "active" ? "Unpublish" : "Publish"}
             </DropdownMenuItem>
-            <DropdownMenuItem
+            <DropdownMenuItem 
               onClick={() => onDelete(product)}
               className="text-red-600 focus:text-red-600"
             >

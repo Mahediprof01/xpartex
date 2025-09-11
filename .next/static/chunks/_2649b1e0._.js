@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_b0715148._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_2649b1e0._.js", {
 
 "[project]/components/ui/card.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -364,505 +364,234 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/components/Modal.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/components/ui/dialog.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "Modal": (()=>Modal),
-    "default": (()=>__TURBOPACK__default__export__)
+    "Dialog": (()=>Dialog),
+    "DialogClose": (()=>DialogClose),
+    "DialogContent": (()=>DialogContent),
+    "DialogDescription": (()=>DialogDescription),
+    "DialogFooter": (()=>DialogFooter),
+    "DialogHeader": (()=>DialogHeader),
+    "DialogOverlay": (()=>DialogOverlay),
+    "DialogPortal": (()=>DialogPortal),
+    "DialogTitle": (()=>DialogTitle),
+    "DialogTrigger": (()=>DialogTrigger)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as XIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
 ;
-const sizeClasses = {
-    sm: "max-w-sm",
-    md: "max-w-md",
-    lg: "max-w-lg",
-    xl: "max-w-xl",
-    full: "max-w-full mx-4"
-};
-const Modal = ({ isOpen, onClose, title, children, size = "md", showCloseButton = true, closeOnOverlayClick = true, className, headerClassName, contentClassName, footerActions })=>{
-    _s();
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Modal.useEffect": ()=>{
-            const handleEscape = {
-                "Modal.useEffect.handleEscape": (event)=>{
-                    if (event.key === "Escape") {
-                        onClose();
-                    }
-                }
-            }["Modal.useEffect.handleEscape"];
-            if (isOpen) {
-                document.addEventListener("keydown", handleEscape);
-                document.body.style.overflow = "hidden";
-            }
-            return ({
-                "Modal.useEffect": ()=>{
-                    document.removeEventListener("keydown", handleEscape);
-                    document.body.style.overflow = "unset";
-                }
-            })["Modal.useEffect"];
-        }
-    }["Modal.useEffect"], [
-        isOpen,
-        onClose
-    ]);
-    if (!isOpen) return null;
-    const handleOverlayClick = (e)=>{
-        if (closeOnOverlayClick && e.target === e.currentTarget) {
-            onClose();
-        }
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed inset-0 z-50 flex items-center justify-center",
+function Dialog({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+        "data-slot": "dialog",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 12,
+        columnNumber: 10
+    }, this);
+}
+_c = Dialog;
+function DialogTrigger({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Trigger"], {
+        "data-slot": "dialog-trigger",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 18,
+        columnNumber: 10
+    }, this);
+}
+_c1 = DialogTrigger;
+function DialogPortal({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Portal"], {
+        "data-slot": "dialog-portal",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 24,
+        columnNumber: 10
+    }, this);
+}
+_c2 = DialogPortal;
+function DialogClose({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Close"], {
+        "data-slot": "dialog-close",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 30,
+        columnNumber: 10
+    }, this);
+}
+_c3 = DialogClose;
+function DialogOverlay({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Overlay"], {
+        "data-slot": "dialog-overlay",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 38,
+        columnNumber: 5
+    }, this);
+}
+_c4 = DialogOverlay;
+function DialogContent({ className, children, showCloseButton = true, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogPortal, {
+        "data-slot": "dialog-portal",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed inset-0 bg-black/50 backdrop-blur-sm",
-                onClick: handleOverlayClick
-            }, void 0, false, {
-                fileName: "[project]/components/Modal.tsx",
-                lineNumber: 72,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogOverlay, {}, void 0, false, {
+                fileName: "[project]/components/ui/dialog.tsx",
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative bg-white rounded-lg shadow-xl w-full", sizeClasses[size], className),
-                onClick: (e)=>e.stopPropagation(),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Content"], {
+                "data-slot": "dialog-content",
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg", className),
+                ...props,
                 children: [
-                    (title || showCloseButton) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center justify-between p-6 border-b border-gray-200", headerClassName),
+                    children,
+                    showCloseButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Close"], {
+                        "data-slot": "dialog-close",
+                        className: "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
                         children: [
-                            title && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg font-semibold text-gray-900",
-                                children: title
-                            }, void 0, false, {
-                                fileName: "[project]/components/Modal.tsx",
-                                lineNumber: 93,
-                                columnNumber: 15
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__["XIcon"], {}, void 0, false, {
+                                fileName: "[project]/components/ui/dialog.tsx",
+                                lineNumber: 74,
+                                columnNumber: 13
                             }, this),
-                            showCloseButton && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                variant: "ghost",
-                                size: "icon",
-                                onClick: onClose,
-                                className: "h-8 w-8 rounded-full",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                        className: "h-4 w-4"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Modal.tsx",
-                                        lineNumber: 102,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "sr-only",
-                                        children: "Close"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/Modal.tsx",
-                                        lineNumber: 103,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/Modal.tsx",
-                                lineNumber: 96,
-                                columnNumber: 15
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "sr-only",
+                                children: "Close"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ui/dialog.tsx",
+                                lineNumber: 75,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/components/Modal.tsx",
-                        lineNumber: 88,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("p-6", contentClassName),
-                        children: children
-                    }, void 0, false, {
-                        fileName: "[project]/components/Modal.tsx",
-                        lineNumber: 110,
-                        columnNumber: 9
-                    }, this),
-                    footerActions && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-end gap-3 p-6 border-t border-gray-200",
-                        children: footerActions
-                    }, void 0, false, {
-                        fileName: "[project]/components/Modal.tsx",
-                        lineNumber: 116,
+                        fileName: "[project]/components/ui/dialog.tsx",
+                        lineNumber: 70,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/components/Modal.tsx",
-                lineNumber: 78,
+                fileName: "[project]/components/ui/dialog.tsx",
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/components/Modal.tsx",
-        lineNumber: 70,
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 58,
         columnNumber: 5
     }, this);
-};
-_s(Modal, "OD7bBpZva5O2jO+Puf00hKivP7c=");
-_c = Modal;
-const __TURBOPACK__default__export__ = Modal;
-var _c;
-__turbopack_context__.k.register(_c, "Modal");
+}
+_c5 = DialogContent;
+function DialogHeader({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "dialog-header",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-2 text-center sm:text-left", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 85,
+        columnNumber: 5
+    }, this);
+}
+_c6 = DialogHeader;
+function DialogFooter({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        "data-slot": "dialog-footer",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col-reverse gap-2 sm:flex-row sm:justify-end", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 95,
+        columnNumber: 5
+    }, this);
+}
+_c7 = DialogFooter;
+function DialogTitle({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Title"], {
+        "data-slot": "dialog-title",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-lg leading-none font-semibold", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 111,
+        columnNumber: 5
+    }, this);
+}
+_c8 = DialogTitle;
+function DialogDescription({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Description"], {
+        "data-slot": "dialog-description",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground text-sm", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/dialog.tsx",
+        lineNumber: 124,
+        columnNumber: 5
+    }, this);
+}
+_c9 = DialogDescription;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+__turbopack_context__.k.register(_c, "Dialog");
+__turbopack_context__.k.register(_c1, "DialogTrigger");
+__turbopack_context__.k.register(_c2, "DialogPortal");
+__turbopack_context__.k.register(_c3, "DialogClose");
+__turbopack_context__.k.register(_c4, "DialogOverlay");
+__turbopack_context__.k.register(_c5, "DialogContent");
+__turbopack_context__.k.register(_c6, "DialogHeader");
+__turbopack_context__.k.register(_c7, "DialogFooter");
+__turbopack_context__.k.register(_c8, "DialogTitle");
+__turbopack_context__.k.register(_c9, "DialogDescription");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/store/customOrderStore.js [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/components/ui/label.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zustand/esm/react.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zustand/esm/middleware.mjs [app-client] (ecmascript)");
-;
-;
-const useCustomOrderStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["persist"])((set, get)=>({
-        customOrders: [],
-        addCustomOrder: (orderData)=>{
-            const newOrder = {
-                id: `CUST-${Date.now()}`,
-                date: new Date().toISOString().split('T')[0],
-                status: "bidding_active",
-                trackingNumber: null,
-                samples: {
-                    requested: false,
-                    status: "not_requested",
-                    supplier: null,
-                    cost: 0
-                },
-                bids: [],
-                ...orderData
-            };
-            set((state)=>({
-                    customOrders: [
-                        newOrder,
-                        ...state.customOrders
-                    ]
-                }));
-            return newOrder.id;
-        },
-        updateCustomOrder: (orderId, updates)=>{
-            set((state)=>({
-                    customOrders: state.customOrders.map((order)=>order.id === orderId ? {
-                            ...order,
-                            ...updates
-                        } : order)
-                }));
-        },
-        getCustomOrder: (orderId)=>{
-            return get().customOrders.find((order)=>order.id === orderId);
-        },
-        getCustomOrdersByBuyer: (buyerName)=>{
-            return get().customOrders.filter((order)=>order.buyer === buyerName);
-        },
-        deleteCustomOrder: (orderId)=>{
-            set((state)=>({
-                    customOrders: state.customOrders.filter((order)=>order.id !== orderId)
-                }));
-        }
-    }), {
-    name: "xpartex-custom-orders",
-    partialize: (state)=>({
-            customOrders: state.customOrders
-        })
-}));
-const __TURBOPACK__default__export__ = useCustomOrderStore;
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/store/formDataStore.js [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zustand/esm/react.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zustand/esm/middleware.mjs [app-client] (ecmascript)");
-;
-;
-const useFormDataStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zustand$2f$esm$2f$middleware$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["persist"])((set, get)=>({
-        // Stored form data for different form types
-        customOrderData: null,
-        sampleRequestData: null,
-        // Store custom order form data
-        setCustomOrderData: (data)=>{
-            set({
-                customOrderData: data
-            });
-        },
-        // Store sample request form data
-        setSampleRequestData: (data)=>{
-            set({
-                sampleRequestData: data
-            });
-        },
-        // Get stored custom order data
-        getCustomOrderData: ()=>{
-            return get().customOrderData;
-        },
-        // Get stored sample request data
-        getSampleRequestData: ()=>{
-            return get().sampleRequestData;
-        },
-        // Clear custom order data
-        clearCustomOrderData: ()=>{
-            set({
-                customOrderData: null
-            });
-        },
-        // Clear sample request data
-        clearSampleRequestData: ()=>{
-            set({
-                sampleRequestData: null
-            });
-        },
-        // Clear all form data
-        clearAllFormData: ()=>{
-            set({
-                customOrderData: null,
-                sampleRequestData: null
-            });
-        }
-    }), {
-    name: "xpartex-form-data",
-    partialize: (state)=>({
-            customOrderData: state.customOrderData,
-            sampleRequestData: state.sampleRequestData
-        })
-}));
-const __TURBOPACK__default__export__ = useFormDataStore;
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/components/SignupPromptModal.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "Label": (()=>Label)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-client] (ecmascript) <export default as AlertTriangle>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user-plus.js [app-client] (ecmascript) <export default as UserPlus>");
-;
-var _s = __turbopack_context__.k.signature();
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-label/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
 "use client";
 ;
 ;
 ;
-const SignupPromptModal = ({ isOpen, onClose, formType, redirectUrl })=>{
-    _s();
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    if (!isOpen) return null;
-    const handleSignupRedirect = ()=>{
-        const currentUrl = window.location.pathname;
-        const params = new URLSearchParams();
-        params.set("redirect", currentUrl);
-        params.set("formType", formType);
-        if (redirectUrl) {
-            params.set("redirectUrl", redirectUrl);
-        }
-        onClose();
-        router.push(`/signup?${params.toString()}`);
-    };
-    const handleLoginRedirect = ()=>{
-        const currentUrl = window.location.pathname;
-        const params = new URLSearchParams();
-        params.set("redirect", currentUrl);
-        params.set("formType", formType);
-        if (redirectUrl) {
-            params.set("redirectUrl", redirectUrl);
-        }
-        onClose();
-        router.push(`/login?${params.toString()}`);
-    };
-    const formTypeLabel = formType === "custom-order" ? "Custom Order" : "Sample Request";
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4",
-            onClick: onClose,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white rounded-2xl shadow-xl w-full max-w-md p-6 space-y-6",
-                onClick: (e)=>e.stopPropagation(),
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center space-y-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-center",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
-                                        className: "w-8 h-8 text-orange-600"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/SignupPromptModal.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/SignupPromptModal.tsx",
-                                    lineNumber: 68,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/SignupPromptModal.tsx",
-                                lineNumber: 67,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-semibold text-gray-900 mb-2",
-                                        children: "Sign Up Required"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/SignupPromptModal.tsx",
-                                        lineNumber: 73,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-600 text-sm leading-relaxed",
-                                        children: [
-                                            "To submit your ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "font-medium",
-                                                children: formTypeLabel
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/SignupPromptModal.tsx",
-                                                lineNumber: 77,
-                                                columnNumber: 32
-                                            }, this),
-                                            ", you need to have an account. Your form data will be saved and restored after signup."
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/SignupPromptModal.tsx",
-                                        lineNumber: 76,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/SignupPromptModal.tsx",
-                                lineNumber: 72,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/SignupPromptModal.tsx",
-                        lineNumber: 66,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                onClick: handleSignupRedirect,
-                                className: "w-full bg-blue-600 hover:bg-blue-700 text-white",
-                                size: "lg",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"], {
-                                        className: "w-4 h-4 mr-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/SignupPromptModal.tsx",
-                                        lineNumber: 90,
-                                        columnNumber: 15
-                                    }, this),
-                                    "Create Account"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/SignupPromptModal.tsx",
-                                lineNumber: 85,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                onClick: handleLoginRedirect,
-                                variant: "outline",
-                                className: "w-full",
-                                size: "lg",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                        className: "w-4 h-4 mr-2"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/SignupPromptModal.tsx",
-                                        lineNumber: 100,
-                                        columnNumber: 15
-                                    }, this),
-                                    "Already have an account? Sign In"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/SignupPromptModal.tsx",
-                                lineNumber: 94,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/SignupPromptModal.tsx",
-                        lineNumber: 84,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pt-2 border-t border-gray-100",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                            onClick: onClose,
-                            variant: "ghost",
-                            className: "w-full text-gray-500 hover:text-gray-700",
-                            size: "sm",
-                            children: "Continue filling form (submit later)"
-                        }, void 0, false, {
-                            fileName: "[project]/components/SignupPromptModal.tsx",
-                            lineNumber: 107,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/SignupPromptModal.tsx",
-                        lineNumber: 106,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/SignupPromptModal.tsx",
-                lineNumber: 61,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
-            fileName: "[project]/components/SignupPromptModal.tsx",
-            lineNumber: 56,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-};
-_s(SignupPromptModal, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
-    ];
-});
-_c = SignupPromptModal;
-const __TURBOPACK__default__export__ = SignupPromptModal;
+function Label({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+        "data-slot": "label",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/components/ui/label.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_c = Label;
+;
 var _c;
-__turbopack_context__.k.register(_c, "SignupPromptModal");
+__turbopack_context__.k.register(_c, "Label");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -894,439 +623,6 @@ _c = Textarea;
 ;
 var _c;
 __turbopack_context__.k.register(_c, "Textarea");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/components/custom-card/CustomOrderForm.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$authStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/store/authStore.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/store/customOrderStore.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$formDataStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/store/formDataStore.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SignupPromptModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/SignupPromptModal.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/textarea.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/select.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dollar$2d$sign$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__DollarSign$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/dollar-sign.js [app-client] (ecmascript) <export default as DollarSign>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-;
-const CustomOrderForm = ({ onClose, productInfo })=>{
-    _s();
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const { isAuthenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$authStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
-    const { addCustomOrder } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
-    const { getCustomOrderData, setCustomOrderData, clearCustomOrderData } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$formDataStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
-    const [showSignupModal, setShowSignupModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [products, setProducts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
-        productInfo?.title || ""
-    ]);
-    const [newProduct, setNewProduct] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    // Initialize form data from stored data or defaults
-    const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
-        "CustomOrderForm.useState": ()=>{
-            const savedData = getCustomOrderData();
-            if (savedData) {
-                return savedData;
-            }
-            return {
-                buyer: "Your Company Name",
-                items: 1,
-                budget: "",
-                requirements: "",
-                deadline: "",
-                products: [
-                    productInfo?.title || ""
-                ]
-            };
-        }
-    }["CustomOrderForm.useState"]);
-    // Update products state when form data changes
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "CustomOrderForm.useEffect": ()=>{
-            if (formData.products && formData.products.length > 0) {
-                setProducts(formData.products);
-            }
-        }
-    }["CustomOrderForm.useEffect"], [
-        formData.products
-    ]);
-    // Save form data whenever it changes
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "CustomOrderForm.useEffect": ()=>{
-            setCustomOrderData(formData);
-        }
-    }["CustomOrderForm.useEffect"], [
-        formData,
-        setCustomOrderData
-    ]);
-    const handleChange = (e)=>{
-        const { name, value } = e.target;
-        setFormData((prev)=>({
-                ...prev,
-                [name]: value
-            }));
-    };
-    const addProduct = ()=>{
-        if (newProduct.trim()) {
-            const updatedProducts = [
-                ...products,
-                newProduct.trim()
-            ];
-            setProducts(updatedProducts);
-            setFormData((prev)=>({
-                    ...prev,
-                    items: prev.items + 1,
-                    products: updatedProducts
-                }));
-            setNewProduct("");
-        }
-    };
-    const removeProduct = (index)=>{
-        const updatedProducts = [
-            ...products
-        ];
-        updatedProducts.splice(index, 1);
-        setProducts(updatedProducts);
-        setFormData((prev)=>({
-                ...prev,
-                items: prev.items - 1,
-                products: updatedProducts
-            }));
-    };
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-        if (!isAuthenticated) {
-            // Show signup modal instead of redirecting immediately
-            setShowSignupModal(true);
-            return;
-        }
-        // Add the custom order
-        const orderData = {
-            ...formData,
-            budget: parseFloat(formData.budget)
-        };
-        addCustomOrder(orderData);
-        // Clear stored form data after successful submission
-        clearCustomOrderData();
-        // Close the modal
-        onClose();
-        // Show success message or redirect to the orders page
-        router.push(`/dashboard/orders`);
-    };
-    const handleCloseSignupModal = ()=>{
-        setShowSignupModal(false);
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                onSubmit: handleSubmit,
-                className: "space-y-6",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1",
-                                        children: "Your Company/Business Name"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 133,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                        name: "buyer",
-                                        value: formData.buyer,
-                                        onChange: handleChange,
-                                        placeholder: "Enter your company name",
-                                        required: true
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 136,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                lineNumber: 132,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1",
-                                        children: "Products"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 146,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap gap-2 mb-2",
-                                        children: products.map((product, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
-                                                variant: "outline",
-                                                className: "py-1.5 pl-2 pr-1",
-                                                children: [
-                                                    product,
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                        type: "button",
-                                                        onClick: ()=>removeProduct(index),
-                                                        className: "ml-1 text-gray-500 hover:text-gray-700",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                                            className: "h-3 w-3"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                            lineNumber: 158,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                        lineNumber: 153,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, index, true, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 151,
-                                                columnNumber: 17
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 149,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                                value: newProduct,
-                                                onChange: (e)=>setNewProduct(e.target.value),
-                                                placeholder: "Add product",
-                                                className: "flex-1"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 164,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                type: "button",
-                                                variant: "outline",
-                                                onClick: addProduct,
-                                                size: "sm",
-                                                children: "Add"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 170,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 163,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                lineNumber: 145,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1",
-                                        children: "Budget"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 182,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dollar$2d$sign$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__DollarSign$3e$__["DollarSign"], {
-                                                className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 186,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                                name: "budget",
-                                                type: "number",
-                                                value: formData.budget,
-                                                onChange: handleChange,
-                                                placeholder: "Enter your budget",
-                                                className: "pl-10",
-                                                required: true
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 187,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 185,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                lineNumber: 181,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1",
-                                        children: "Deadline"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 200,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 204,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                                name: "deadline",
-                                                type: "date",
-                                                value: formData.deadline,
-                                                onChange: handleChange,
-                                                className: "pl-10",
-                                                required: true
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                                lineNumber: 205,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 203,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                lineNumber: 199,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-1",
-                                        children: "Requirements & Specifications"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 217,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
-                                        name: "requirements",
-                                        value: formData.requirements,
-                                        onChange: handleChange,
-                                        placeholder: "Describe your requirements, materials, quality, etc.",
-                                        rows: 4,
-                                        required: true
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                        lineNumber: 220,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                                lineNumber: 216,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                        lineNumber: 131,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pt-2",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                            type: "submit",
-                            className: "w-full",
-                            children: "Submit Custom Order"
-                        }, void 0, false, {
-                            fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                            lineNumber: 232,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                        lineNumber: 231,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                lineNumber: 130,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$SignupPromptModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                isOpen: showSignupModal,
-                onClose: handleCloseSignupModal,
-                formType: "custom-order"
-            }, void 0, false, {
-                fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                lineNumber: 239,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true);
-};
-_s(CustomOrderForm, "vnnqjBAfDw7QJ+pmLGNqyqXQWTQ=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$authStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$formDataStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
-    ];
-});
-_c = CustomOrderForm;
-const __TURBOPACK__default__export__ = CustomOrderForm;
-var _c;
-__turbopack_context__.k.register(_c, "CustomOrderForm");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -3122,12 +2418,12 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
-                        lineNumber: 880,
+                        lineNumber: 881,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 879,
+                    lineNumber: 880,
                     columnNumber: 9
                 }, this);
             }
@@ -3145,7 +2441,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 898,
+                            lineNumber: 899,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3153,13 +2449,13 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             children: sample.specifications
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 899,
+                            lineNumber: 900,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 897,
+                    lineNumber: 898,
                     columnNumber: 9
                 }, this);
             }
@@ -3173,7 +2469,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: row.getValue("supplier")
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 910,
+                    lineNumber: 911,
                     columnNumber: 14
                 }, this);
             }
@@ -3192,14 +2488,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 925,
+                            lineNumber: 926,
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 924,
+                    lineNumber: 925,
                     columnNumber: 9
                 }, this);
             }
@@ -3215,7 +2511,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: priorityInfo?.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 939,
+                    lineNumber: 940,
                     columnNumber: 9
                 }, this);
             }
@@ -3230,7 +2526,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: quantity.toLocaleString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 948,
+                    lineNumber: 949,
                     columnNumber: 14
                 }, this);
             }
@@ -3248,7 +2544,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 957,
+                    lineNumber: 958,
                     columnNumber: 9
                 }, this);
             }
@@ -3263,7 +2559,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 967,
+                    lineNumber: 968,
                     columnNumber: 9
                 }, this);
             }
@@ -3278,7 +2574,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: deadline ? new Date(deadline).toLocaleDateString() : "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 979,
+                    lineNumber: 980,
                     columnNumber: 9
                 }, this);
             }
@@ -3298,7 +2594,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                         children: "Rate"
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
-                        lineNumber: 994,
+                        lineNumber: 995,
                         columnNumber: 11
                     }, this);
                 }
@@ -3310,7 +2606,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 className: "h-3 w-3 fill-yellow-400 text-yellow-400"
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1008,
+                                lineNumber: 1009,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3318,13 +2614,13 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                 children: rating.toFixed(1)
                             }, void 0, false, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1009,
+                                lineNumber: 1010,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/columns.tsx",
-                        lineNumber: 1007,
+                        lineNumber: 1008,
                         columnNumber: 11
                     }, this);
                 }
@@ -3333,7 +2629,7 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                     children: "N/A"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1014,
+                    lineNumber: 1015,
                     columnNumber: 14
                 }, this);
             }
@@ -3356,25 +2652,25 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1027,
+                                        lineNumber: 1028,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1028,
+                                        lineNumber: 1029,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1026,
+                                lineNumber: 1027,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1025,
+                            lineNumber: 1026,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3387,14 +2683,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1033,
+                                            lineNumber: 1034,
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1032,
+                                    lineNumber: 1033,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3403,14 +2699,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1037,
+                                            lineNumber: 1038,
                                             columnNumber: 15
                                         }, this),
                                         "Contact Supplier"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1036,
+                                    lineNumber: 1037,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3419,14 +2715,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1041,
+                                            lineNumber: 1042,
                                             columnNumber: 15
                                         }, this),
                                         "Download Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1040,
+                                    lineNumber: 1041,
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onEdit && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3436,14 +2732,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1046,
+                                            lineNumber: 1047,
                                             columnNumber: 17
                                         }, this),
                                         "Edit Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1045,
+                                    lineNumber: 1046,
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "delivered" && !sample.feedback && onRate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3453,14 +2749,14 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1052,
+                                            lineNumber: 1053,
                                             columnNumber: 17
                                         }, this),
                                         "Rate Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1051,
+                                    lineNumber: 1052,
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "pending_approval" && onDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3471,26 +2767,26 @@ const createSampleColumns = (onViewDetails, onEdit, onDelete, onRate)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1061,
+                                            lineNumber: 1062,
                                             columnNumber: 17
                                         }, this),
                                         "Cancel Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1057,
+                                    lineNumber: 1058,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1031,
+                            lineNumber: 1032,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1024,
+                    lineNumber: 1025,
                     columnNumber: 9
                 }, this);
             }
@@ -3511,12 +2807,12 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                         children: sample.id
                     }, void 0, false, {
                         fileName: "[project]/components/columns.tsx",
-                        lineNumber: 1085,
+                        lineNumber: 1086,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1084,
+                    lineNumber: 1085,
                     columnNumber: 9
                 }, this);
             }
@@ -3534,7 +2830,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyer || "John Doe"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1103,
+                            lineNumber: 1104,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3542,13 +2838,13 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.buyerCompany || "Fashion Corp"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1106,
+                            lineNumber: 1107,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1102,
+                    lineNumber: 1103,
                     columnNumber: 9
                 }, this);
             }
@@ -3566,7 +2862,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productName
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1120,
+                            lineNumber: 1121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3574,13 +2870,13 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: sample.productCategory || "Apparel"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1121,
+                            lineNumber: 1122,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1119,
+                    lineNumber: 1120,
                     columnNumber: 9
                 }, this);
             }
@@ -3599,14 +2895,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1140,
+                            lineNumber: 1141,
                             columnNumber: 26
                         }, this),
                         statusInfo?.label || status
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1139,
+                    lineNumber: 1140,
                     columnNumber: 9
                 }, this);
             }
@@ -3626,14 +2922,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             className: "h-3 w-3 mr-1"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1156,
+                            lineNumber: 1157,
                             columnNumber: 28
                         }, this),
                         priorityInfo?.label
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1155,
+                    lineNumber: 1156,
                     columnNumber: 9
                 }, this);
             }
@@ -3651,7 +2947,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1167,
+                    lineNumber: 1168,
                     columnNumber: 14
                 }, this);
             }
@@ -3669,7 +2965,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1176,
+                    lineNumber: 1177,
                     columnNumber: 9
                 }, this);
             }
@@ -3684,7 +2980,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: new Date(requestDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1188,
+                    lineNumber: 1189,
                     columnNumber: 9
                 }, this);
             }
@@ -3700,7 +2996,7 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                     children: "-"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1201,
+                    lineNumber: 1202,
                     columnNumber: 16
                 }, this);
                 const deadlineDate = new Date(deadline);
@@ -3714,13 +3010,13 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                             children: "(Overdue)"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1214,
+                            lineNumber: 1215,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1208,
+                    lineNumber: 1209,
                     columnNumber: 9
                 }, this);
             }
@@ -3743,25 +3039,25 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1229,
+                                        lineNumber: 1230,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1230,
+                                        lineNumber: 1231,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1228,
+                                lineNumber: 1229,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1227,
+                            lineNumber: 1228,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -3774,14 +3070,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1235,
+                                            lineNumber: 1236,
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1234,
+                                    lineNumber: 1235,
                                     columnNumber: 13
                                 }, this),
                                 sample.status === "pending_approval" && onApproveReject && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3791,14 +3087,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1241,
+                                            lineNumber: 1242,
                                             columnNumber: 17
                                         }, this),
                                         "Review Request"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1240,
+                                    lineNumber: 1241,
                                     columnNumber: 15
                                 }, this),
                                 sample.status === "approved" && onShip && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3808,14 +3104,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1248,
+                                            lineNumber: 1249,
                                             columnNumber: 17
                                         }, this),
                                         "Ship Sample"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1247,
+                                    lineNumber: 1248,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3824,14 +3120,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1254,
+                                            lineNumber: 1255,
                                             columnNumber: 15
                                         }, this),
                                         "Contact Buyer"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1253,
+                                    lineNumber: 1254,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3840,14 +3136,14 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1259,
+                                            lineNumber: 1260,
                                             columnNumber: 15
                                         }, this),
                                         "Generate Invoice"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1258,
+                                    lineNumber: 1259,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -3856,26 +3152,26 @@ const createSellerSampleColumns = (onViewDetails, onApproveReject, onShip)=>[
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1264,
+                                            lineNumber: 1265,
                                             columnNumber: 15
                                         }, this),
                                         "Track Package"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1263,
+                                    lineNumber: 1264,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1233,
+                            lineNumber: 1234,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1226,
+                    lineNumber: 1227,
                     columnNumber: 9
                 }, this);
             }
@@ -3899,7 +3195,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1303,
+                                    lineNumber: 1304,
                                     columnNumber: 13
                                 }, this),
                                 item.discount && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3909,18 +3205,18 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.discount
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1310,
+                                        lineNumber: 1311,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1309,
+                                    lineNumber: 1310,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1302,
+                            lineNumber: 1303,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3935,12 +3231,12 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1322,
+                                        lineNumber: 1323,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1317,
+                                    lineNumber: 1318,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3951,24 +3247,24 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: item.category
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1325,
+                                        lineNumber: 1326,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1324,
+                                    lineNumber: 1325,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1316,
+                            lineNumber: 1317,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1301,
+                    lineNumber: 1302,
                     columnNumber: 9
                 }, this);
             }
@@ -3983,7 +3279,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: seller
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1339,
+                    lineNumber: 1340,
                     columnNumber: 14
                 }, this);
             }
@@ -4001,7 +3297,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.price
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1349,
+                            lineNumber: 1350,
                             columnNumber: 11
                         }, this),
                         item.originalPrice !== item.price && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4009,13 +3305,13 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             children: item.originalPrice
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1351,
+                            lineNumber: 1352,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1348,
+                    lineNumber: 1349,
                     columnNumber: 9
                 }, this);
             }
@@ -4035,7 +3331,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     className: "h-4 w-4 fill-yellow-400 text-yellow-400"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1367,
+                                    lineNumber: 1368,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4043,13 +3339,13 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                     children: item.rating
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1368,
+                                    lineNumber: 1369,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1366,
+                            lineNumber: 1367,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4061,13 +3357,13 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1370,
+                            lineNumber: 1371,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1365,
+                    lineNumber: 1366,
                     columnNumber: 9
                 }, this);
             }
@@ -4082,7 +3378,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: inStock ? "In Stock" : "Out of Stock"
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1383,
+                    lineNumber: 1384,
                     columnNumber: 9
                 }, this);
             }
@@ -4097,7 +3393,7 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                     children: new Date(addedDate).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1399,
+                    lineNumber: 1400,
                     columnNumber: 9
                 }, this);
             }
@@ -4120,25 +3416,25 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1415,
+                                        lineNumber: 1416,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1416,
+                                        lineNumber: 1417,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1414,
+                                lineNumber: 1415,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1413,
+                            lineNumber: 1414,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4151,14 +3447,14 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1421,
+                                            lineNumber: 1422,
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1420,
+                                    lineNumber: 1421,
                                     columnNumber: 13
                                 }, this),
                                 item.inStock && onAddToCart && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4168,14 +3464,14 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1427,
+                                            lineNumber: 1428,
                                             columnNumber: 17
                                         }, this),
                                         "Add to Cart"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1426,
+                                    lineNumber: 1427,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4184,14 +3480,14 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1433,
+                                            lineNumber: 1434,
                                             columnNumber: 15
                                         }, this),
                                         "Contact Seller"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1432,
+                                    lineNumber: 1433,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4200,14 +3496,14 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1438,
+                                            lineNumber: 1439,
                                             columnNumber: 15
                                         }, this),
                                         "Share Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1437,
+                                    lineNumber: 1438,
                                     columnNumber: 13
                                 }, this),
                                 onRemoveFromWishlist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4218,26 +3514,26 @@ const createWishlistColumns = (onViewDetails, onRemoveFromWishlist, onAddToCart)
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1447,
+                                            lineNumber: 1448,
                                             columnNumber: 17
                                         }, this),
                                         "Remove from Wishlist"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1443,
+                                    lineNumber: 1444,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1419,
+                            lineNumber: 1420,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1412,
+                    lineNumber: 1413,
                     columnNumber: 9
                 }, this);
             }
@@ -4262,7 +3558,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                     className: "w-full h-full object-cover rounded-md"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1475,
+                                    lineNumber: 1477,
                                     columnNumber: 13
                                 }, this),
                                 lowStock && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
@@ -4271,13 +3567,13 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                     children: "Low"
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1481,
+                                    lineNumber: 1483,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1474,
+                            lineNumber: 1476,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4288,7 +3584,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                     children: product.name
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1490,
+                                    lineNumber: 1492,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4296,19 +3592,19 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                     children: product.category
                                 }, void 0, false, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1491,
+                                    lineNumber: 1493,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1489,
+                            lineNumber: 1491,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1473,
+                    lineNumber: 1475,
                     columnNumber: 9
                 }, this);
             }
@@ -4323,8 +3619,8 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                     children: product.price
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1504,
-                    columnNumber: 14
+                    lineNumber: 1505,
+                    columnNumber: 9
                 }, this);
             }
         },
@@ -4340,14 +3636,14 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                     className: "flex flex-col",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: `font-medium ${isOutOfStock ? "text-red-600" : isLowStock ? "text-orange-600" : "text-green-600"}`,
+                            className: `font-medium ${isOutOfStock ? 'text-red-600' : isLowStock ? 'text-orange-600' : 'text-green-600'}`,
                             children: [
                                 stockLevel,
                                 " units"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1518,
+                            lineNumber: 1520,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4358,13 +3654,13 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1529,
+                            lineNumber: 1527,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1517,
+                    lineNumber: 1519,
                     columnNumber: 9
                 }, this);
             }
@@ -4381,7 +3677,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                             className: "h-4 w-4 fill-yellow-400 text-yellow-400"
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1543,
+                            lineNumber: 1541,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4389,7 +3685,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                             children: product.rating
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1544,
+                            lineNumber: 1542,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4401,13 +3697,13 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1545,
+                            lineNumber: 1543,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1542,
+                    lineNumber: 1540,
                     columnNumber: 9
                 }, this);
             }
@@ -4446,7 +3742,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                     children: config.label
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1583,
+                    lineNumber: 1565,
                     columnNumber: 9
                 }, this);
             }
@@ -4461,7 +3757,7 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                     children: new Date(product.lastUpdated).toLocaleDateString()
                 }, void 0, false, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1595,
+                    lineNumber: 1577,
                     columnNumber: 9
                 }, this);
             }
@@ -4484,25 +3780,25 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                         children: "Open menu"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1611,
+                                        lineNumber: 1593,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/columns.tsx",
-                                        lineNumber: 1612,
+                                        lineNumber: 1594,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/columns.tsx",
-                                lineNumber: 1610,
+                                lineNumber: 1592,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1609,
+                            lineNumber: 1591,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -4515,14 +3811,14 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1617,
+                                            lineNumber: 1599,
                                             columnNumber: 15
                                         }, this),
                                         "View Details"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1616,
+                                    lineNumber: 1598,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4532,14 +3828,14 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1621,
+                                            lineNumber: 1603,
                                             columnNumber: 15
                                         }, this),
                                         "Edit Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1620,
+                                    lineNumber: 1602,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4549,14 +3845,14 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1625,
+                                            lineNumber: 1607,
                                             columnNumber: 15
                                         }, this),
                                         product.status === "active" ? "Unpublish" : "Publish"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1624,
+                                    lineNumber: 1606,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
@@ -4567,26 +3863,26 @@ const createProductColumns = (onViewDetails, onEdit, onDelete, onToggleStatus)=>
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/columns.tsx",
-                                            lineNumber: 1632,
+                                            lineNumber: 1614,
                                             columnNumber: 15
                                         }, this),
                                         "Delete Product"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/columns.tsx",
-                                    lineNumber: 1628,
+                                    lineNumber: 1610,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/columns.tsx",
-                            lineNumber: 1615,
+                            lineNumber: 1597,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/columns.tsx",
-                    lineNumber: 1608,
+                    lineNumber: 1590,
                     columnNumber: 9
                 }, this);
             }
@@ -4597,29 +3893,34 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/app/dashboard/orders/page.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/app/dashboard/products/page.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>OrdersPage)
+    "default": (()=>ProductsPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/badge.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/select.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/dialog.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/label.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/textarea.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$data$2d$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/data-table.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-client] (ecmascript) <export default as Plus>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Modal.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$custom$2d$card$2f$CustomOrderForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/custom-card/CustomOrderForm.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$data$2d$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/data-table.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/package.js [app-client] (ecmascript) <export default as Package>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-client] (ecmascript) <export default as TrendingUp>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.js [app-client] (ecmascript) <export default as AlertTriangle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$columns$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/columns.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/store/customOrderStore.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -4635,645 +3936,1352 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-// Keep small, clear mock data mapped into a single orders array used by the table.
-const customOrders = [
+;
+;
+const products = [
     {
-        id: "CUST-001",
-        date: "2024-01-15",
-        items: 3,
-        budget: 200.0,
-        status: "bidding_closed",
-        trackingNumber: "TRK123456789",
-        products: [
-            "Classic Denim Jacket",
-            "Slim Fit Chinos",
-            "Cotton T-Shirt"
-        ],
-        requirements: "High-quality denim, sustainable materials, bulk order for retail",
-        deadline: "2024-02-15",
-        samples: {
-            requested: true,
-            status: "approved",
-            supplier: "UrbanWear Co.",
-            cost: 25.0
-        },
-        bids: [
-            {
-                supplier: "UrbanWear Co.",
-                price: 189.97,
-                status: "accepted"
-            }
-        ]
+        id: "PROD-001",
+        name: "Classic Denim Jacket",
+        category: "Jackets",
+        price: "$79.99",
+        stock: 45,
+        sold: 234,
+        rating: 4.8,
+        reviews: 156,
+        status: "active",
+        image: "/denim-jacket.webp",
+        dateAdded: "2024-01-15",
+        lastUpdated: "2025-08-27"
     },
     {
-        id: "CUST-002",
-        date: "2024-01-12",
-        items: 2,
-        budget: 150.0,
-        status: "bidding_active",
-        trackingNumber: null,
-        products: [
-            "Organic Cotton Hoodie",
-            "Linen Summer Dress"
-        ],
-        requirements: "100% organic materials, eco-friendly packaging",
-        deadline: "2024-02-10",
-        samples: {
-            requested: true,
-            status: "pending",
-            supplier: null,
-            cost: 0
-        },
-        bids: [
-            {
-                supplier: "GreenTextiles",
-                price: 139.98,
-                status: "pending"
-            }
-        ]
-    }
-];
-const retailOrders = [
-    {
-        id: "RETAIL-001",
-        date: "2024-01-08",
-        customer: "John Doe",
-        items: 2,
-        total: "$119.98",
-        status: "delivered",
-        trackingNumber: "TRK456789123",
-        products: [
-            "Floral Maxi Dress",
-            "Lightweight Cardigan"
-        ],
-        shippingAddress: "123 Main St, City, State 12345"
+        id: "PROD-002",
+        name: "Organic Cotton Hoodie",
+        category: "Hoodies",
+        price: "$59.99",
+        stock: 12,
+        sold: 89,
+        rating: 4.6,
+        reviews: 67,
+        status: "active",
+        image: "/cotton-hoodie.webp",
+        dateAdded: "2024-01-10",
+        lastUpdated: "2025-08-27"
     },
     {
-        id: "RETAIL-002",
-        date: "2024-01-05",
-        customer: "Jane Smith",
-        items: 1,
-        total: "$89.99",
-        status: "shipped",
-        trackingNumber: "TRK789123456",
-        products: [
-            "Faux Fur Coat"
-        ],
-        shippingAddress: "456 Oak Ave, Town, State 67890"
+        id: "PROD-003",
+        name: "Linen Summer Dress",
+        category: "Dresses",
+        price: "$69.99",
+        stock: 0,
+        sold: 156,
+        rating: 4.7,
+        reviews: 89,
+        status: "out_of_stock",
+        image: "/linen-dress.jpg",
+        dateAdded: "2024-01-05",
+        lastUpdated: "2025-08-27"
+    },
+    {
+        id: "PROD-004",
+        name: "Slim Fit Chinos",
+        category: "Pants",
+        price: "$49.99",
+        stock: 28,
+        sold: 67,
+        rating: 4.9,
+        reviews: 45,
+        status: "active",
+        image: "/slim-fit-chinos.jpeg",
+        dateAdded: "2024-01-01",
+        lastUpdated: "2025-08-27"
+    },
+    {
+        id: "PROD-005",
+        name: "Wool Blend Overcoat",
+        category: "Coats",
+        price: "$129.99",
+        stock: 8,
+        sold: 34,
+        rating: 4.9,
+        reviews: 23,
+        status: "active",
+        image: "/wool-overcoat.jpg",
+        dateAdded: "2024-01-12",
+        lastUpdated: "2025-08-27"
+    },
+    {
+        id: "PROD-006",
+        name: "Silk Blouse",
+        category: "Tops",
+        price: "$89.99",
+        stock: 15,
+        sold: 78,
+        rating: 4.5,
+        reviews: 56,
+        status: "active",
+        image: "/silk-blouse.jpg",
+        dateAdded: "2024-01-08",
+        lastUpdated: "2025-08-27"
+    },
+    {
+        id: "PROD-007",
+        name: "Athletic Leggings",
+        category: "Activewear",
+        price: "$39.99",
+        stock: 32,
+        sold: 145,
+        rating: 4.7,
+        reviews: 98,
+        status: "active",
+        image: "/athletic-leggings.jpg",
+        dateAdded: "2024-01-03",
+        lastUpdated: "2025-08-27"
+    },
+    {
+        id: "PROD-008",
+        name: "Floral Maxi Dress",
+        category: "Dresses",
+        price: "$89.99",
+        stock: 5,
+        sold: 23,
+        rating: 4.6,
+        reviews: 18,
+        status: "active",
+        image: "/floral-maxi-dress.jpg",
+        dateAdded: "2024-01-20",
+        lastUpdated: "2025-08-27"
     }
 ];
-// Helper to normalize both custom and retail orders into a single table-friendly shape
-const normalizeOrders = (customs, retails, extraCustoms = [])=>{
-    const fromCustom = [
-        ...customs,
-        ...extraCustoms
-    ].map((o)=>({
-            id: o.id,
-            product: o.products ? o.products.join(", ") : "Custom Order",
-            supplier: o.bids && o.bids[0] && o.bids[0].supplier || o.samples && o.samples.supplier || "-",
-            status: o.status === "bidding_active" ? "pending" : o.status === "bidding_closed" ? "confirmed" : "pending",
-            fulfillmentStatus: o.trackingNumber ? "shipped" : "processing",
-            quantity: o.items || 0,
-            price: o.bids && o.bids[0] ? Number(o.bids[0].price) : Number(o.budget || 0),
-            orderDate: o.date,
-            estimatedDelivery: o.deadline || new Date().toISOString(),
-            trackingNumber: o.trackingNumber || null,
-            raw: o,
-            // allow the raw order to override the declared type if present (supports 'wholesale')
-            type: o.type || "custom"
-        }));
-    const fromRetail = retails.map((r)=>({
-            id: r.id,
-            product: r.products ? r.products.join(", ") : "Retail Order",
-            supplier: "Retail",
-            status: r.status,
-            fulfillmentStatus: r.status,
-            quantity: r.items || 0,
-            price: Number(String(r.total || "").replace(/[^0-9.-]+/g, "")) || 0,
-            orderDate: r.date,
-            estimatedDelivery: r.date,
-            trackingNumber: r.trackingNumber || null,
-            raw: r,
-            type: r.type || "retail"
-        }));
-    return [
-        ...fromCustom,
-        ...fromRetail
-    ];
+const categories = [
+    "All Categories",
+    "Jackets",
+    "Hoodies",
+    "Dresses",
+    "Pants",
+    "Coats",
+    "Tops",
+    "Activewear",
+    "Shirts",
+    "Skirts",
+    "Accessories"
+];
+const statuses = [
+    "All Statuses",
+    "Active",
+    "Out of Stock",
+    "Draft",
+    "Paused"
+];
+const statusConfig = {
+    active: {
+        label: "Active",
+        variant: "default",
+        color: "text-green-600"
+    },
+    out_of_stock: {
+        label: "Out of Stock",
+        variant: "destructive",
+        color: "text-red-600"
+    },
+    draft: {
+        label: "Draft",
+        variant: "secondary",
+        color: "text-gray-600"
+    },
+    paused: {
+        label: "Paused",
+        variant: "outline",
+        color: "text-yellow-600"
+    }
 };
-function OrdersPage() {
+function ProductsPage() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const { customOrders: userCustomOrders = [] } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])();
-    const [isCustomOrderModalOpen, setIsCustomOrderModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isAddProductOpen, setIsAddProductOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [filterStatus, setFilterStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
-    const [filterType, setFilterType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
-    const [filterOrderType, setFilterOrderType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("all");
+    const [filterCategory, setFilterCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All Categories");
+    const [filterStatus, setFilterStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All Statuses");
     const [sortBy, setSortBy] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("newest");
-    const allOrders = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
-        "OrdersPage.useMemo[allOrders]": ()=>normalizeOrders(customOrders, retailOrders, userCustomOrders)
-    }["OrdersPage.useMemo[allOrders]"], [
-        userCustomOrders
-    ]);
-    const filtered = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
-        "OrdersPage.useMemo[filtered]": ()=>{
-            const q = searchQuery.trim().toLowerCase();
-            let list = allOrders.filter({
-                "OrdersPage.useMemo[filtered].list": (o)=>{
-                    const matchesQ = !q || o.id.toLowerCase().includes(q) || o.product.toLowerCase().includes(q) || (o.supplier || "").toLowerCase().includes(q);
-                    const matchesStatus = filterStatus === "all" || o.status === filterStatus || o.fulfillmentStatus === filterStatus;
-                    const matchesType = filterType === "all" || o.type === filterType;
-                    const matchesOrderType = filterOrderType === "all" || o.type === filterOrderType;
-                    return matchesQ && matchesStatus && matchesType && matchesOrderType;
-                }
-            }["OrdersPage.useMemo[filtered].list"]);
-            // simple sorts
-            if (sortBy === "newest") {
-                list.sort({
-                    "OrdersPage.useMemo[filtered]": (a, b)=>new Date(b.orderDate) - new Date(a.orderDate)
-                }["OrdersPage.useMemo[filtered]"]);
-            } else if (sortBy === "oldest") {
-                list.sort({
-                    "OrdersPage.useMemo[filtered]": (a, b)=>new Date(a.orderDate) - new Date(b.orderDate)
-                }["OrdersPage.useMemo[filtered]"]);
-            } else if (sortBy === "amount-high") {
-                list.sort({
-                    "OrdersPage.useMemo[filtered]": (a, b)=>b.price - a.price
-                }["OrdersPage.useMemo[filtered]"]);
-            } else if (sortBy === "amount-low") {
-                list.sort({
-                    "OrdersPage.useMemo[filtered]": (a, b)=>a.price - b.price
-                }["OrdersPage.useMemo[filtered]"]);
-            }
-            return list;
+    // Filter and sort logic
+    const filteredProducts = products.filter((product)=>{
+        const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) || product.category.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchesCategory = filterCategory === "All Categories" || product.category === filterCategory;
+        const matchesStatus = filterStatus === "All Statuses" || filterStatus === "Active" && product.status === "active" || filterStatus === "Out of Stock" && product.status === "out_of_stock" || filterStatus === "Draft" && product.status === "draft" || filterStatus === "Paused" && product.status === "paused";
+        return matchesSearch && matchesCategory && matchesStatus;
+    }).sort((a, b)=>{
+        switch(sortBy){
+            case "newest":
+                return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
+            case "oldest":
+                return new Date(a.lastUpdated).getTime() - new Date(b.lastUpdated).getTime();
+            case "price-low":
+                return parseFloat(a.price.replace("$", "")) - parseFloat(b.price.replace("$", ""));
+            case "price-high":
+                return parseFloat(b.price.replace("$", "")) - parseFloat(a.price.replace("$", ""));
+            case "rating":
+                return b.rating - a.rating;
+            case "name":
+                return a.name.localeCompare(b.name);
+            case "stock-low":
+                return a.stock - b.stock;
+            case "stock-high":
+                return b.stock - a.stock;
+            default:
+                return 0;
         }
-    }["OrdersPage.useMemo[filtered]"], [
-        allOrders,
-        searchQuery,
-        filterStatus,
-        filterType,
-        sortBy
-    ]);
-    const columns = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
-        "OrdersPage.useMemo[columns]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$columns$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createOrderColumns"])({
-                "OrdersPage.useMemo[columns]": (order)=>router.push(`/dashboard/orders/${order.id}`)
-            }["OrdersPage.useMemo[columns]"])
-    }["OrdersPage.useMemo[columns]"], [
-        router
-    ]);
+    });
+    // Calculate statistics
+    const totalProducts = products.length;
+    const activeProducts = products.filter((p)=>p.status === "active").length;
+    const lowStockProducts = products.filter((p)=>p.stock < 15).length;
+    const averageRating = products.reduce((sum, p)=>sum + p.rating, 0) / products.length;
+    // Check if any filters are active
+    const hasActiveFilters = searchQuery || filterCategory !== "All Categories" || filterStatus !== "All Statuses" || sortBy !== "newest";
+    // Clear all filters
+    const clearFilters = ()=>{
+        setSearchQuery("");
+        setFilterCategory("All Categories");
+        setFilterStatus("All Statuses");
+        setSortBy("newest");
+    };
+    // Column handlers
+    const handleViewDetails = (product)=>{
+        router.push(`/dashboard/products/${product.id}`);
+    };
+    const handleEditProduct = (product)=>{
+        // TODO: Implement edit functionality
+        console.log("Edit product:", product.id);
+    };
+    const handleDeleteProduct = (product)=>{
+        // TODO: Implement delete functionality
+        console.log("Delete product:", product.id);
+    };
+    const handleToggleStatus = (product)=>{
+        // TODO: Implement status toggle functionality
+        console.log("Toggle status:", product.id);
+    };
+    // Create table columns
+    const columns = (0, __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$columns$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createProductColumns"])(handleViewDetails, handleEditProduct, handleDeleteProduct, handleToggleStatus);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "space-y-6",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between",
+                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-1/2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                    className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 296,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                    placeholder: "Search products, categories...",
+                                    className: "pl-10",
+                                    value: searchQuery,
+                                    onChange: (e)=>setSearchQuery(e.target.value)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 297,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 295,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 294,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
+                        open: isAddProductOpen,
+                        onOpenChange: setIsAddProductOpen,
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-2xl font-bold text-foreground",
-                                children: "My Orders"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTrigger"], {
+                                asChild: true,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
+                                            className: "h-4 w-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 308,
+                                            columnNumber: 15
+                                        }, this),
+                                        "Add Product"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 307,
+                                    columnNumber: 13
+                                }, this)
                             }, void 0, false, {
-                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                lineNumber: 156,
+                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                lineNumber: 306,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-muted-foreground",
-                                children: "Manage your custom manufacturing orders and retail purchases"
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                lineNumber: 157,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
+                                className: "max-w-2xl bg-white p-6 rounded-lg",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                                children: "Add New Product"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 314,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                                children: "Create a new clothing product listing for your store"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 315,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                        lineNumber: 313,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "grid gap-4 md:grid-cols-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                htmlFor: "productName",
+                                                                children: "Product Name"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 322,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                                id: "productName",
+                                                                placeholder: "Enter product name"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 323,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 321,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                htmlFor: "category",
+                                                                children: "Category"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 326,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                                            placeholder: "Select category"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                            lineNumber: 329,
+                                                                            columnNumber: 23
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                        lineNumber: 328,
+                                                                        columnNumber: 21
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "jackets",
+                                                                                children: "Jackets"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 332,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "hoodies",
+                                                                                children: "Hoodies"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 333,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "dresses",
+                                                                                children: "Dresses"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 334,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "pants",
+                                                                                children: "Pants"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 335,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "coats",
+                                                                                children: "Coats"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 336,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "tops",
+                                                                                children: "Tops"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 337,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "activewear",
+                                                                                children: "Activewear"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 338,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "shirts",
+                                                                                children: "Shirts"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 339,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "skirts",
+                                                                                children: "Skirts"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 340,
+                                                                                columnNumber: 23
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                                value: "accessories",
+                                                                                children: "Accessories"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                                lineNumber: 341,
+                                                                                columnNumber: 23
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                        lineNumber: 331,
+                                                                        columnNumber: 21
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 327,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 325,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 320,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "grid gap-4 md:grid-cols-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                htmlFor: "price",
+                                                                children: "Price"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 349,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                                id: "price",
+                                                                type: "number",
+                                                                placeholder: "0.00"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 350,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 348,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "space-y-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                htmlFor: "stock",
+                                                                children: "Stock Quantity"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 353,
+                                                                columnNumber: 19
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                                id: "stock",
+                                                                type: "number",
+                                                                placeholder: "0"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 354,
+                                                                columnNumber: 19
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 352,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 347,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "space-y-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                        htmlFor: "description",
+                                                        children: "Description"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 359,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
+                                                        id: "description",
+                                                        placeholder: "Describe your clothing product...",
+                                                        rows: 3
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 360,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 358,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex gap-2 pt-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                        className: "flex-1",
+                                                        children: "Create Product"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 368,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                        variant: "outline",
+                                                        onClick: ()=>setIsAddProductOpen(false),
+                                                        children: "Cancel"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 369,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 367,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                        lineNumber: 319,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                lineNumber: 312,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 155,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                        className: "flex items-center gap-2",
-                        onClick: ()=>setIsCustomOrderModalOpen(true),
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
-                                className: "h-4 w-4"
-                            }, void 0, false, {
-                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                lineNumber: 160,
-                                columnNumber: 11
-                            }, this),
-                            " Place Custom Order"
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 159,
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 305,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/dashboard/orders/page.jsx",
-                lineNumber: 154,
+                fileName: "[project]/app/dashboard/products/page.jsx",
+                lineNumber: 293,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid gap-4 md:grid-cols-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
-                            children: "Filters"
-                        }, void 0, false, {
-                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                            lineNumber: 166,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 165,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col md:flex-row gap-3 items-center",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative w-72",
+                                    className: `absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 394,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                            className: "absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Total Products"
                                         }, void 0, false, {
-                                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                                            lineNumber: 171,
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 398,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                            value: searchQuery,
-                                            onChange: (e)=>setSearchQuery(e.target.value),
-                                            className: "pl-10",
-                                            placeholder: "Search orders by id, product or supplier..."
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__["Package"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 402,
+                                                columnNumber: 17
+                                            }, this)
                                         }, void 0, false, {
-                                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                                            lineNumber: 172,
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 399,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 170,
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 397,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-48",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                        value: filterType,
-                                        onValueChange: setFilterType,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                className: "w-full",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                                    placeholder: "All Types"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                    lineNumber: 177,
-                                                    columnNumber: 51
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 177,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "all",
-                                                        children: "Order Types"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 179,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "custom",
-                                                        children: "Custom"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 180,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "retail",
-                                                        children: "Retail"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 181,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "wholesale",
-                                                        children: "Wholesale"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 182,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 178,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                        lineNumber: 176,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 175,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-48",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                        value: filterStatus,
-                                        onValueChange: setFilterStatus,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                className: "w-full",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                                    placeholder: "All Statuses"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                    lineNumber: 189,
-                                                    columnNumber: 51
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 189,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "all",
-                                                        children: "All Statuses"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 191,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "pending",
-                                                        children: "Pending"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 192,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "processing",
-                                                        children: "Processing"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 193,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "shipped",
-                                                        children: "Shipped"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 194,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "delivered",
-                                                        children: "Delivered"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 195,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "confirmed",
-                                                        children: "Confirmed"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 196,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 190,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                        lineNumber: 188,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 187,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-48",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
-                                        value: sortBy,
-                                        onValueChange: setSortBy,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
-                                                className: "w-full",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
-                                                    placeholder: "Sort"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                    lineNumber: 203,
-                                                    columnNumber: 51
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 203,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "newest",
-                                                        children: "Newest First"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 205,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "oldest",
-                                                        children: "Oldest First"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 206,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "amount-high",
-                                                        children: "Amount: High to Low"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 207,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
-                                                        value: "amount-low",
-                                                        children: "Amount: Low to High"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                        lineNumber: 208,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard/orders/page.jsx",
-                                                lineNumber: 204,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                                        lineNumber: 202,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 201,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold",
+                                            children: totalProducts
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 406,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: "In inventory"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 407,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 405,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                            lineNumber: 169,
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 393,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 168,
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 383,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.05
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 423,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Active Listings"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 427,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 431,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 428,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 426,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-green-600",
+                                            children: activeProducts
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 435,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: "Published products"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 438,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 434,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 422,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 412,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.1
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 454,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Low Stock"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 458,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 462,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 459,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 457,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-orange-600",
+                                            children: lowStockProducts
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 466,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: "Need restocking"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 469,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 465,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 453,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 443,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 8
+                        },
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            type: "tween",
+                            ease: "easeOut",
+                            duration: 0.45,
+                            delay: 0.15
+                        },
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 485,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                    className: "flex flex-row items-center justify-between space-y-0 pb-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                            className: "text-sm font-medium",
+                                            children: "Avg Rating"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 489,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                                className: "h-4 w-4"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 493,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 490,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 488,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-2xl font-bold text-blue-600",
+                                            children: averageRating.toFixed(1)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 497,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-muted-foreground",
+                                            children: "Product quality"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 500,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 496,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 484,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 474,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/dashboard/orders/page.jsx",
-                lineNumber: 164,
+                fileName: "[project]/app/dashboard/products/page.jsx",
+                lineNumber: 382,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "border-none",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                            className: "text-lg",
+                            children: "Filter Products"
+                        }, void 0, false, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 509,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 508,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-wrap items-center gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-4 items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-48",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                                value: filterCategory,
+                                                onValueChange: setFilterCategory,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                        className: "bg-white w-full",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                            placeholder: "All Categories"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                                            lineNumber: 520,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 519,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                        className: "bg-white",
+                                                        children: categories.map((category)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: category,
+                                                                children: category
+                                                            }, category, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 524,
+                                                                columnNumber: 23
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 522,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 515,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 514,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-48",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                                value: filterStatus,
+                                                onValueChange: setFilterStatus,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                        className: "bg-white w-full",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                            placeholder: "All Statuses"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                                            lineNumber: 535,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 534,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                        className: "bg-white",
+                                                        children: statuses.map((status)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: status,
+                                                                children: status
+                                                            }, status, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 539,
+                                                                columnNumber: 23
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 537,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 533,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 532,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-44",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Select"], {
+                                                value: sortBy,
+                                                onValueChange: setSortBy,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectTrigger"], {
+                                                        className: "bg-white w-full",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectValue"], {
+                                                            placeholder: "Sort by"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                                            lineNumber: 550,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 549,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectContent"], {
+                                                        className: "bg-white",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "newest",
+                                                                children: "Recently Updated"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 553,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "oldest",
+                                                                children: "Oldest First"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 554,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "price-low",
+                                                                children: "Price: Low to High"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 555,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "price-high",
+                                                                children: "Price: High to Low"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 556,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "rating",
+                                                                children: "Highest Rated"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 557,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "name",
+                                                                children: "Name A-Z"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 558,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "stock-low",
+                                                                children: "Stock: Low to High"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 559,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SelectItem"], {
+                                                                value: "stock-high",
+                                                                children: "Stock: High to Low"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                                lineNumber: 560,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/app/dashboard/products/page.jsx",
+                                                        lineNumber: 552,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                                lineNumber: 548,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/dashboard/products/page.jsx",
+                                            lineNumber: 547,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 513,
+                                    columnNumber: 13
+                                }, this),
+                                hasActiveFilters && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    variant: "outline",
+                                    onClick: clearFilters,
+                                    children: "Clear Filters"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 566,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 512,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 511,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard/products/page.jsx",
+                lineNumber: 507,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
-                            children: "Orders"
-                        }, void 0, false, {
-                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                            lineNumber: 218,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 217,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                className: "text-lg",
+                                children: "Product Inventory"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                lineNumber: 577,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
+                                children: "Click on any product to view detailed information and manage settings"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard/products/page.jsx",
+                                lineNumber: 578,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 576,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
-                        children: filtered.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$data$2d$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DataTable"], {
+                        children: filteredProducts.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$data$2d$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DataTable"], {
                             columns: columns,
-                            data: filtered
+                            data: filteredProducts
                         }, void 0, false, {
-                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                            lineNumber: 222,
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 584,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "py-12 text-center",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$package$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Package$3e$__["Package"], {
                                     className: "h-16 w-16 text-muted-foreground mx-auto mb-4"
                                 }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 225,
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 587,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-lg font-semibold mb-2",
-                                    children: "No orders found"
+                                    children: "No products found"
                                 }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 226,
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 588,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-muted-foreground mb-4",
-                                    children: "Try adjusting your filters or create a new order"
+                                    children: "Try adjusting your search criteria or add new products to your inventory"
                                 }, void 0, false, {
-                                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                                    lineNumber: 227,
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 589,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    onClick: clearFilters,
+                                    children: "Clear Filters"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard/products/page.jsx",
+                                    lineNumber: 592,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/app/dashboard/orders/page.jsx",
-                            lineNumber: 224,
+                            fileName: "[project]/app/dashboard/products/page.jsx",
+                            lineNumber: 586,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/dashboard/orders/page.jsx",
-                        lineNumber: 220,
+                        fileName: "[project]/app/dashboard/products/page.jsx",
+                        lineNumber: 582,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/dashboard/orders/page.jsx",
-                lineNumber: 216,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Modal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                isOpen: isCustomOrderModalOpen,
-                onClose: ()=>setIsCustomOrderModalOpen(false),
-                title: "Place Custom Order",
-                size: "lg",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$custom$2d$card$2f$CustomOrderForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    onClose: ()=>setIsCustomOrderModalOpen(false),
-                    productInfo: {
-                        title: "",
-                        id: ""
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/app/dashboard/orders/page.jsx",
-                    lineNumber: 239,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/dashboard/orders/page.jsx",
-                lineNumber: 233,
+                fileName: "[project]/app/dashboard/products/page.jsx",
+                lineNumber: 575,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/app/dashboard/orders/page.jsx",
-        lineNumber: 153,
+        fileName: "[project]/app/dashboard/products/page.jsx",
+        lineNumber: 291,
         columnNumber: 5
     }, this);
 }
-_s(OrdersPage, "IG54VphbbrOgWUYXG1k14AjKfS0=", false, function() {
+_s(ProductsPage, "+8Szu9RJN4SiltTaAmXLpE16qBo=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
-_c = OrdersPage;
+_c = ProductsPage;
 var _c;
-__turbopack_context__.k.register(_c, "OrdersPage");
+__turbopack_context__.k.register(_c, "ProductsPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
 }]);
 
-//# sourceMappingURL=_b0715148._.js.map
+//# sourceMappingURL=_2649b1e0._.js.map
