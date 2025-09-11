@@ -32,20 +32,36 @@ const menuItems = {
     { href: "/dashboard/suppliers", label: "Suppliers", icon: Building2 },
     { href: "/dashboard/wishlist", label: "Wishlist", icon: Heart },
     { href: "/dashboard/messaging", label: "Messages", icon: MessageSquare },
-    { href: "/dashboard/analytics", label: "Buyer Analytics", icon: BarChart3 },
+    {
+      href: "/dashboard/buyer-analytics",
+      label: "Buyer Analytics",
+      icon: BarChart3,
+    },
   ],
   sellerManagement: [
     { href: "/dashboard/products", label: "Products", icon: Package },
     { href: "/dashboard/quotes", label: "Quote Requests", icon: Target },
     { href: "/dashboard/seller-orders", label: "Orders", icon: ListOrdered },
-    { href: "/dashboard/sample-seller", label: "Sample Management", icon: Award },
+    {
+      href: "/dashboard/sample-seller",
+      label: "Sample Management",
+      icon: Award,
+    },
     { href: "/dashboard/messaging", label: "Messages", icon: MessageSquare },
     { href: "/dashboard/earnings", label: "Earnings", icon: DollarSign },
-    { href: "/dashboard/analytics", label: "Seller Analytics", icon: BarChart3 },
+    {
+      href: "/dashboard/seller-analytics",
+      label: "Seller Analytics",
+      icon: BarChart3,
+    },
   ],
 };
 
-export function SidebarContent({ onItemClick, collapsed = false, onToggleCollapse }) {
+export function SidebarContent({
+  onItemClick,
+  collapsed = false,
+  onToggleCollapse,
+}) {
   const { user, logout } = useAuthStore();
   const pathname = usePathname();
   const [expandedSections, setExpandedSections] = useState({
@@ -54,9 +70,9 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
   });
 
   const toggleSection = (section) => {
-    setExpandedSections(prev => ({
+    setExpandedSections((prev) => ({
       ...prev,
-      [section]: !prev[section]
+      [section]: !prev[section],
     }));
   };
 
@@ -71,26 +87,31 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
     const isExpanded = expandedSections[sectionKey];
 
     return (
-      <div className={`mb-4 ${collapsed ? 'px-2' : ''}`}>
+      <div className={`mb-4 ${collapsed ? "px-2" : ""}`}>
         <button
           onClick={() => !collapsed && toggleSection(sectionKey)}
           className="group flex items-center justify-between w-full px-3 py-2 text-sm font-semibold text-gray-400 hover:text-white hover:bg-sidebar-accent rounded-lg transition-all duration-300"
           disabled={collapsed}
         >
           <div className="flex items-center gap-2">
-            <Icon className={`h-4 w-4 transition-colors ${isExpanded ? 'text-sky-700' : 'text-sky-500 group-hover:text-sky-600'}`} />
+            <Icon
+              className={`h-4 w-4 transition-colors ${
+                isExpanded
+                  ? "text-sky-700"
+                  : "text-sky-500 group-hover:text-sky-600"
+              }`}
+            />
             {!collapsed && <span>{title}</span>}
           </div>
-          {!collapsed && (
-            isExpanded ? (
+          {!collapsed &&
+            (isExpanded ? (
               <ChevronDown className="h-4 w-4 text-sidebar-foreground" />
             ) : (
               <ChevronRight className="h-4 w-4 text-sidebar-foreground" />
-            )
-          )}
+            ))}
         </button>
         {(isExpanded || collapsed) && (
-          <ul className={`mt-2 space-y-1 ${collapsed ? '' : 'ml-4'}`}>
+          <ul className={`mt-2 space-y-1 ${collapsed ? "" : "ml-4"}`}>
             {items.map((item) => (
               <li key={item.href}>
                 <NavLink
@@ -115,22 +136,22 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
     <div className="flex flex-col h-full bg-[#323C55] text-gray-400">
       {/* Branding + collapse button (logo centered) */}
       <div className="relative p-6 border-b border-dotted border-sidebar-border flex-shrink-0">
-  <div className="flex items-center justify-start gap-3 min-w-0 pl-4">
+        <div className="flex items-center justify-start gap-3 min-w-0 pl-4">
           {collapsed ? null : (
-            <img 
-              src="/logo.png" 
-              alt="Xpartex" 
-              className="w-32 h-8 object-contain" 
+            <img
+              src="/logo.png"
+              alt="Xpartex"
+              className="w-32 h-8 object-contain"
               onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'block';
+                e.target.style.display = "none";
+                e.target.nextSibling.style.display = "block";
               }}
             />
           )}
           {!collapsed && (
-            <span 
-              className="text-xl font-bold text-sky-700 hidden" 
-              style={{display: 'none'}}
+            <span
+              className="text-xl font-bold text-sky-700 hidden"
+              style={{ display: "none" }}
             >
               Xpartex
             </span>
@@ -204,6 +225,11 @@ export function SidebarContent({ onItemClick, collapsed = false, onToggleCollaps
   );
 }
 
-export default function DashboardSidebar({ collapsed = false, onToggleCollapse }) {
-  return <SidebarContent collapsed={collapsed} onToggleCollapse={onToggleCollapse} />;
+export default function DashboardSidebar({
+  collapsed = false,
+  onToggleCollapse,
+}) {
+  return (
+    <SidebarContent collapsed={collapsed} onToggleCollapse={onToggleCollapse} />
+  );
 }

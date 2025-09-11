@@ -330,9 +330,9 @@ function ApprovalDialog({ sample, isOpen, onClose, onSubmit }) {
           <div className="flex gap-3 pt-4">
             <Button
               type="submit"
-              className={`flex-1 ${
+              className={`flex-1 bg-gradient-to-r from-green-500 to-cyan-500 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out${
                 decision === "approve"
-                  ? "bg-green-600 hover:bg-green-700"
+                  ? "bg-green-600 hover:bg-green-700 text-white"
                   : decision === "reject"
                   ? "bg-red-600 hover:bg-red-700"
                   : ""
@@ -488,7 +488,7 @@ function ShippingDialog({ sample, isOpen, onClose, onSubmit }) {
           <div className="flex gap-2 pt-4">
             <Button
               type="submit"
-              className="flex-1 bg-blue-600 hover:bg-blue-700"
+              className="flex-1 bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out"
             >
               <Truck className="h-4 w-4 mr-2" />
               Ship Sample
@@ -623,7 +623,7 @@ export default function SampleSellerDetailPage() {
         <div className="flex items-center gap-2">
           {sample.status === "pending_approval" && (
             <Button
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-green-600 hover:bg-green-700 text-white"
               size="sm"
               onClick={() => setIsApprovalDialogOpen(true)}
             >
@@ -633,7 +633,7 @@ export default function SampleSellerDetailPage() {
           )}
           {sample.status === "approved" && (
             <Button
-              className="bg-blue-600 hover:bg-blue-700"
+              className="bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out"
               size="sm"
               onClick={() => setIsShippingDialogOpen(true)}
             >
@@ -1144,7 +1144,7 @@ export default function SampleSellerDetailPage() {
             <CardContent className="space-y-3">
               {sample.status === "pending_approval" && (
                 <Button
-                  className="w-full justify-start bg-green-600 hover:bg-green-700"
+                  className="w-full justify-start bg-green-600 hover:bg-green-700 text-white"
                   onClick={() => setIsApprovalDialogOpen(true)}
                 >
                   <CheckCircle className="h-4 w-4 mr-2" />
@@ -1153,7 +1153,7 @@ export default function SampleSellerDetailPage() {
               )}
               {sample.status === "approved" && (
                 <Button
-                  className="w-full justify-start bg-blue-600 hover:bg-blue-700"
+                  className="w-full justify-start bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out"
                   onClick={() => setIsShippingDialogOpen(true)}
                 >
                   <Truck className="h-4 w-4 mr-2" />
