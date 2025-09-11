@@ -37,6 +37,7 @@ import {
   ShoppingBag,
 } from "lucide-react";
 import { useState, useMemo } from "react";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { DataTable } from "../../../components/ui/data-table";
 import { createOrderColumns } from "../../../components/columns";
@@ -279,20 +280,11 @@ const FilterSection = ({ type }) => (
   <Card>
     <CardHeader>
       <CardTitle className="text-lg">
-        Filter {type === "custom" ? "Custom" : "Retail"} Orders
+        {type === "custom" ? "Filter Received Orders" : "Filter Retail Orders"}
       </CardTitle>
     </CardHeader>
     <CardContent>
       <div className="flex flex-col sm:flex-row gap-4">
-        <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            placeholder={`Search ${
-              type === "custom" ? "custom orders" : "retail orders"
-            }...`}
-            className="pl-10"
-          />
-        </div>
         <Select defaultValue="all">
           <SelectTrigger className="w-full sm:w-48">
             <SelectValue placeholder="Filter by status" />
@@ -338,6 +330,7 @@ const FilterSection = ({ type }) => (
 
 export default function SellerOrdersPage() {
   const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
   const [bidForm, setBidForm] = useState({
     orderId: null,
     price: "",
@@ -420,68 +413,105 @@ export default function SellerOrdersPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">
-            Seller Dashboard
-          </h1>
-          <p className="text-muted-foreground">
-            Manage your bids and retail orders
-          </p>
+      <div className="flex items-center">
+        <div className="w-full md:w-96 min-w-0">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search bids and orders..."
+              className="pl-10"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
       {/* Stats Overview */}
       <div className="grid gap-4 md:grid-cols-4">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Active Bids</CardTitle>
-            <Users className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {submittedBids.filter((b) => b.status === "pending").length}
-            </div>
-            <p className="text-xs text-muted-foreground">Awaiting response</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Active Bids</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+                <Users className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                {submittedBids.filter((b) => b.status === "pending").length}
+              </div>
+              <p className="text-xs text-muted-foreground">Awaiting response</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Accepted Bids</CardTitle>
-            <Award className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">
-              {submittedBids.filter((b) => b.status === "accepted").length}
-            </div>
-            <p className="text-xs text-muted-foreground">Won contracts</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.05 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Accepted Bids</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}>
+                <Award className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                {submittedBids.filter((b) => b.status === "accepted").length}
+              </div>
+              <p className="text-xs text-muted-foreground">Won contracts</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              Available Orders
-            </CardTitle>
-            <Target className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{availableOrders.length}</div>
-            <p className="text-xs text-muted-foreground">Open for bidding</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.1 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Available Orders</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}>
+                <Target className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{availableOrders.length}</div>
+              <p className="text-xs text-muted-foreground">Open for bidding</p>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
-            <TrendingUp className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">$2,847.50</div>
-            <p className="text-xs text-muted-foreground">From accepted bids</p>
-          </CardContent>
-        </Card>
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "tween", ease: "easeOut", duration: 0.45, delay: 0.15 }}
+        >
+          <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <div className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
+              <div className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}>
+                <TrendingUp className="h-4 w-4" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">$2,847.50</div>
+              <p className="text-xs text-muted-foreground">From accepted bids</p>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
 
       {/* Main Content Tabs */}
@@ -516,9 +546,9 @@ export default function SellerOrdersPage() {
 
           <div className="space-y-4">
             <Card>
-              <CardHeader>
-                <CardTitle>Orders</CardTitle>
-              </CardHeader>
+                <CardHeader>
+                  <CardTitle>Received Orders</CardTitle>
+                </CardHeader>
               <CardContent className="p-0">
                 <div className="bg-white rounded-lg overflow-hidden">
                   <div className="p-4">
@@ -536,9 +566,9 @@ export default function SellerOrdersPage() {
 
           <div className="space-y-4">
             <Card>
-              <CardHeader>
-                <CardTitle>Orders</CardTitle>
-              </CardHeader>
+                  <CardHeader>
+                    <CardTitle>Received Orders</CardTitle>
+                  </CardHeader>
               <CardContent className="p-0">
                 <div className="bg-white rounded-lg overflow-hidden">
                   <div className="p-4">

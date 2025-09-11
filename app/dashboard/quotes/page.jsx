@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -19,14 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../../../components/ui/select";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "../../../components/ui/dialog";
+import Modal from "../../../components/Modal";
 import { Label } from "../../../components/ui/label";
 import { Checkbox } from "../../../components/ui/checkbox";
 import {
@@ -502,6 +496,7 @@ const QuoteCard = ({ quote, onRespond, onViewDetails, onContact }) => {
 };
 
 export default function QuotesPage() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [filterStatus, setFilterStatus] = useState("all");
   const [filterCategory, setFilterCategory] = useState("all");
@@ -509,6 +504,17 @@ export default function QuotesPage() {
   const [sortBy, setSortBy] = useState("deadline");
   const [selectedQuote, setSelectedQuote] = useState(null);
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
+  // Form state for Submit Quote modal
+  const [unitPrice, setUnitPrice] = useState("");
+  const [totalPrice, setTotalPrice] = useState("");
+  const [leadTimeInput, setLeadTimeInput] = useState("");
+  const [minOrderQtyInput, setMinOrderQtyInput] = useState("");
+  const [quoteNotesInput, setQuoteNotesInput] = useState("");
+  const [additionalServicesInput, setAdditionalServicesInput] = useState({
+    provideSamples: false,
+    customization: false,
+    extendedWarranty: false,
+  });
 
   const filteredQuotes = quoteRequests.filter((quote) => {
     const matchesSearch =
@@ -542,13 +548,20 @@ export default function QuotesPage() {
   });
 
   const handleRespond = (quote) => {
-    setSelectedQuote(quote);
-    setIsQuoteModalOpen(true);
+  setSelectedQuote(quote);
+  // reset form fields
+  setUnitPrice("");
+  setTotalPrice("");
+  setLeadTimeInput("");
+  setMinOrderQtyInput("");
+  setQuoteNotesInput("");
+  setAdditionalServicesInput({ provideSamples: false, customization: false, extendedWarranty: false });
+  setIsQuoteModalOpen(true);
   };
 
   const handleViewDetails = (quote) => {
-  setSelectedQuote(quote);
-  setIsQuoteModalOpen(true);
+    // Navigate to quote details page
+    router.push(`/dashboard/quotes/${quote.id}`);
   };
 
   const handleContact = (quote) => {
@@ -589,21 +602,36 @@ export default function QuotesPage() {
         </div>
 
         <div className="flex items-center gap-3 ml-4">
-          <Button variant="outline" size="sm">
-            <Download className="h-4 w-4 mr-2" />
-            submit Quote
+          <Button
+            onClick={() => {
+              // Open modal for new quote submission
+              setSelectedQuote(null);
+              // reset form fields for new submission
+              setUnitPrice("");
+              setTotalPrice("");
+              setLeadTimeInput("");
+              setMinOrderQtyInput("");
+              setQuoteNotesInput("");
+              setAdditionalServicesInput({ provideSamples: false, customization: false, extendedWarranty: false });
+              setIsQuoteModalOpen(true);
+            }}
+            className="flex items-center gap-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.03] transition-transform duration-250 ease-out will-change-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300"
+          >
+            <Send className="h-4 w-4 text-white" />
+            <span className="font-medium">Submit Quote</span>
           </Button>
         </div>
       </div>
 
       {/* Quote Stats */}
       <div className="grid gap-4 md:grid-cols-5">
-        <Card>
+        <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              Total Requests
-            </CardTitle>
-            <Target className="h-4 w-4 text-muted-foreground" />
+            <CardTitle className="text-sm font-medium">Total Requests</CardTitle>
+            <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+              <Target className="h-4 w-4" />
+            </div>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{quoteRequests.length}</div>
@@ -611,54 +639,58 @@ export default function QuotesPage() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div className={`absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Pending</CardTitle>
-            <Clock className="h-4 w-4 text-muted-foreground" />
+            <div className={`p-2 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white shadow-lg`}>
+              <Clock className="h-4 w-4" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-yellow-600">
-              {stats.pending}
-            </div>
+            <div className="text-2xl font-bold text-yellow-600">{stats.pending}</div>
             <p className="text-xs text-muted-foreground">Awaiting response</p>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div className={`absolute inset-0 bg-gradient-to-br from-orange-400 to-red-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Responded</CardTitle>
-            <Send className="h-4 w-4 text-muted-foreground" />
+            <div className={`p-2 rounded-lg bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg`}>
+              <Send className="h-4 w-4" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-blue-600">
-              {stats.responded}
-            </div>
+            <div className="text-2xl font-bold text-blue-600">{stats.responded}</div>
             <p className="text-xs text-muted-foreground">Quote submitted</p>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div className={`absolute inset-0 bg-gradient-to-br from-green-400 to-teal-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Accepted</CardTitle>
-            <CheckCircle className="h-4 w-4 text-muted-foreground" />
+            <div className={`p-2 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 text-white shadow-lg`}>
+              <CheckCircle className="h-4 w-4" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">
-              {stats.accepted}
-            </div>
+            <div className="text-2xl font-bold text-green-600">{stats.accepted}</div>
             <p className="text-xs text-muted-foreground">Orders won</p>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+          <div className={`absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-500 opacity-5 group-hover:opacity-10 transition-opacity`} />
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Rejected</CardTitle>
-            <AlertTriangle className="h-4 w-4 text-muted-foreground" />
+            <div className={`p-2 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 text-white shadow-lg`}>
+              <AlertTriangle className="h-4 w-4" />
+            </div>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-red-600">
-              {stats.rejected}
-            </div>
+            <div className="text-2xl font-bold text-red-600">{stats.rejected}</div>
             <p className="text-xs text-muted-foreground">Quotes declined</p>
           </CardContent>
         </Card>
@@ -667,69 +699,68 @@ export default function QuotesPage() {
       {/* Search and Filters */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Search & Filter Quotes</CardTitle>
+          <CardTitle className="text-lg">Filter Quotes</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-            <div className="lg:col-span-2">
-              
-            </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex gap-4 items-center">
+              <div className="w-48">
+                <Select value={filterStatus} onValueChange={setFilterStatus}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="All Statuses" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="all">All Statuses</SelectItem>
+                    <SelectItem value="pending">Pending</SelectItem>
+                    <SelectItem value="responded">Responded</SelectItem>
+                    <SelectItem value="accepted">Accepted</SelectItem>
+                    <SelectItem value="rejected">Rejected</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-            <Select value={filterStatus} onValueChange={setFilterStatus}>
-              <SelectTrigger>
-                <SelectValue placeholder="Status" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Statuses</SelectItem>
-                <SelectItem value="pending">Pending</SelectItem>
-                <SelectItem value="responded">Responded</SelectItem>
-                <SelectItem value="accepted">Accepted</SelectItem>
-                <SelectItem value="rejected">Rejected</SelectItem>
-              </SelectContent>
-            </Select>
+              <div className="w-48">
+                <Select value={filterCategory} onValueChange={setFilterCategory}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="All Categories" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="all">All Categories</SelectItem>
+                    <SelectItem value="Apparel">Apparel</SelectItem>
+                    <SelectItem value="Electronics">Electronics</SelectItem>
+                    <SelectItem value="Furniture">Furniture</SelectItem>
+                    <SelectItem value="Machinery">Machinery</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-            <Select value={filterCategory} onValueChange={setFilterCategory}>
-              <SelectTrigger>
-                <SelectValue placeholder="Category" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Categories</SelectItem>
-                <SelectItem value="Apparel">Apparel</SelectItem>
-                <SelectItem value="Electronics">Electronics</SelectItem>
-                <SelectItem value="Furniture">Furniture</SelectItem>
-                <SelectItem value="Machinery">Machinery</SelectItem>
-              </SelectContent>
-            </Select>
+              <div className="w-44">
+                <Select value={filterPriority} onValueChange={setFilterPriority}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="All Priorities" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="all">All Priorities</SelectItem>
+                    <SelectItem value="high">High</SelectItem>
+                    <SelectItem value="medium">Medium</SelectItem>
+                    <SelectItem value="low">Low</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-            <Select value={filterPriority} onValueChange={setFilterPriority}>
-              <SelectTrigger>
-                <SelectValue placeholder="Priority" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Priorities</SelectItem>
-                <SelectItem value="high">High</SelectItem>
-                <SelectItem value="medium">Medium</SelectItem>
-                <SelectItem value="low">Low</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div className="flex items-center justify-between mt-4">
-            <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="w-48">
-                <SelectValue placeholder="Sort by" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="deadline">Deadline (Earliest)</SelectItem>
-                <SelectItem value="priority">Priority (High to Low)</SelectItem>
-                <SelectItem value="budget">Budget (High to Low)</SelectItem>
-                <SelectItem value="date">Request Date (Newest)</SelectItem>
-              </SelectContent>
-            </Select>
-
-            <div className="text-sm text-muted-foreground">
-              {filteredQuotes.length} quote
-              {filteredQuotes.length !== 1 ? "s" : ""} found
+              <div className="w-48">
+                <Select value={sortBy} onValueChange={setSortBy}>
+                  <SelectTrigger className="bg-white w-full">
+                    <SelectValue placeholder="Deadline (Earliest)" />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white">
+                    <SelectItem value="deadline">Deadline (Earliest)</SelectItem>
+                    <SelectItem value="priority">Priority (High to Low)</SelectItem>
+                    <SelectItem value="budget">Budget (High to Low)</SelectItem>
+                    <SelectItem value="date">Request Date (Newest)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
           </div>
         </CardContent>
@@ -745,13 +776,6 @@ export default function QuotesPage() {
           <DataTable columns={createQuoteColumns(handleViewDetails, handleRespond)} data={sortedQuotes} />
         </CardContent>
       </Card>
-
-      {/* Load More */}
-      {filteredQuotes.length > 0 && (
-        <div className="text-center">
-          <Button variant="outline">Load More Quotes</Button>
-        </div>
-      )}
 
       {/* No Results */}
       {filteredQuotes.length === 0 && (
@@ -778,87 +802,104 @@ export default function QuotesPage() {
         </Card>
       )}
 
-      {/* Submit Quote Modal */}
-      <Dialog open={isQuoteModalOpen} onOpenChange={setIsQuoteModalOpen}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle>Submit Quote for {selectedQuote?.product}</DialogTitle>
-            <DialogDescription>
-              Provide your competitive quote and terms for this RFQ
-            </DialogDescription>
-          </DialogHeader>
+      {/* Submit Quote Modal (match Orders modal design) */}
+      <Modal
+        isOpen={isQuoteModalOpen}
+        onClose={() => setIsQuoteModalOpen(false)}
+        title={selectedQuote ? `Submit Quote for ${selectedQuote.product}` : "Submit Quote"}
+        size="lg"
+        headerClassName="bg-gradient-to-r from-sky-600 to-cyan-500 text-white !border-0"
+        contentClassName="bg-white/95"
+        className="rounded-xl shadow-2xl"
+        footerActions={null}
+      >
+        <div className="space-y-4">
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="space-y-2">
+              <Label htmlFor="unitPrice">Unit Price *</Label>
+              <Input
+                id="unitPrice"
+                type="number"
+                placeholder="0.00"
+                value={unitPrice}
+                onChange={(e) => {
+                  const v = e.target.value;
+                  setUnitPrice(v);
+                  const qty = selectedQuote?.quantity || 0;
+                  const num = parseFloat(v);
+                  if (!isNaN(num) && qty) {
+                    setTotalPrice((num * qty).toFixed(2));
+                  } else {
+                    setTotalPrice("");
+                  }
+                }}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="totalPrice">Total Price</Label>
+              <Input id="totalPrice" type="number" placeholder="0.00" readOnly value={totalPrice} />
+            </div>
+          </div>
 
-          {selectedQuote && (
-            <div className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="space-y-2">
-                  <Label htmlFor="unitPrice">Unit Price *</Label>
-                  <Input id="unitPrice" type="number" placeholder="0.00" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="totalPrice">Total Price</Label>
-                  <Input
-                    id="totalPrice"
-                    type="number"
-                    placeholder="0.00"
-                    readOnly
-                  />
-                </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="space-y-2">
+              <Label htmlFor="leadTime">Lead Time *</Label>
+              <Input id="leadTime" placeholder="e.g., 15-20 days" value={leadTimeInput} onChange={(e) => setLeadTimeInput(e.target.value)} />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="minOrder">Min. Order Quantity</Label>
+              <Input id="minOrder" type="number" placeholder="100" value={minOrderQtyInput} onChange={(e) => setMinOrderQtyInput(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="quoteNotes">Quote Notes</Label>
+            <Textarea id="quoteNotes" placeholder="Explain your quote, quality guarantees, additional services..." rows={4} value={quoteNotesInput} onChange={(e) => setQuoteNotesInput(e.target.value)} />
+          </div>
+
+          <div className="space-y-2">
+            <Label>Additional Services</Label>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Checkbox id="samples" checked={additionalServicesInput.provideSamples} onCheckedChange={(val) => setAdditionalServicesInput((s) => ({ ...s, provideSamples: !!val }))} />
+                <Label htmlFor="samples">Provide samples</Label>
               </div>
-
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="space-y-2">
-                  <Label htmlFor="leadTime">Lead Time *</Label>
-                  <Input id="leadTime" placeholder="e.g., 15-20 days" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="minOrder">Min. Order Quantity</Label>
-                  <Input id="minOrder" type="number" placeholder="100" />
-                </div>
+              <div className="flex items-center space-x-2">
+                <Checkbox id="customization" checked={additionalServicesInput.customization} onCheckedChange={(val) => setAdditionalServicesInput((s) => ({ ...s, customization: !!val }))} />
+                <Label htmlFor="customization">Customization available</Label>
               </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="quoteNotes">Quote Notes</Label>
-                <Textarea
-                  id="quoteNotes"
-                  placeholder="Explain your quote, quality guarantees, additional services..."
-                  rows={4}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label>Additional Services</Label>
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="samples" />
-                    <Label htmlFor="samples">Provide samples</Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="customization" />
-                    <Label htmlFor="customization">
-                      Customization available
-                    </Label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="warranty" />
-                    <Label htmlFor="warranty">Extended warranty</Label>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex gap-2 pt-4">
-                <Button className="flex-1">Submit Quote</Button>
-                <Button
-                  variant="outline"
-                  onClick={() => setIsQuoteModalOpen(false)}
-                >
-                  Cancel
-                </Button>
+              <div className="flex items-center space-x-2">
+                <Checkbox id="warranty" checked={additionalServicesInput.extendedWarranty} onCheckedChange={(val) => setAdditionalServicesInput((s) => ({ ...s, extendedWarranty: !!val }))} />
+                <Label htmlFor="warranty">Extended warranty</Label>
               </div>
             </div>
-          )}
-        </DialogContent>
-      </Dialog>
+          </div>
+
+          <div className="flex gap-2 pt-4">
+            <Button
+              className="flex-1 bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl"
+              onClick={() => {
+                // Temporary submit: log and close
+                console.log('Submit Quote', {
+                  forQuote: selectedQuote?.id || null,
+                  unitPrice,
+                  totalPrice,
+                  leadTime: leadTimeInput,
+                  minOrderQty: minOrderQtyInput,
+                  quoteNotes: quoteNotesInput,
+                  additionalServices: additionalServicesInput,
+                });
+                setIsQuoteModalOpen(false);
+              }}
+            >
+              Submit Quote
+            </Button>
+            <Button variant="outline" onClick={() => setIsQuoteModalOpen(false)}>
+              Cancel
+            </Button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Bell, Search, Menu } from "lucide-react";
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./ui/sheet";
@@ -16,8 +17,8 @@ export default function DashboardHeader({ collapsed = false }) {
   return (
     <div className="w-full h-full">
       <div className="flex items-center justify-between h-full px-6">
-        {/* Left section: Mobile menu + Search */}
-        <div className="flex items-center gap-4 flex-1">
+  {/* Left section: Mobile menu + Search + Nav Links */}
+  <div className="flex items-center gap-4 flex-1">
           {/* Mobile Menu Trigger */}
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -30,6 +31,15 @@ export default function DashboardHeader({ collapsed = false }) {
               <SidebarContent onItemClick={() => setIsMobileMenuOpen(false)} />
             </SheetContent>
           </Sheet>
+          {/* Desktop nav links (kept subtle and responsive) */}
+          <div className="hidden md:flex items-center gap-4 ml-2">
+            <Link href="/dashboard" className="text-sm font-medium text-gray-700 hover:text-sky-600">
+              Dashboard
+            </Link>
+            <Link href="/help" className="text-sm font-medium text-gray-700 hover:text-sky-600">
+              Help
+            </Link>
+          </div>
         </div>
 
         {/* Right section: Actions + Profile */}

@@ -1666,7 +1666,7 @@ const Modal = ({ isOpen, onClose, title, children, size = "md", showCloseButton 
                         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex items-center justify-between p-6 border-b border-gray-200", headerClassName),
                         children: [
                             title && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg font-semibold text-gray-900",
+                                className: "text-lg font-semibold text-current",
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/components/Modal.tsx",
@@ -2357,9 +2357,9 @@ const CustomOrderForm = ({ onClose, productInfo })=>{
     const { addCustomOrder } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$customOrderStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
     const { getCustomOrderData, setCustomOrderData, clearCustomOrderData } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$store$2f$formDataStore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
     const [showSignupModal, setShowSignupModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [products, setProducts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([
-        productInfo?.title || ""
-    ]);
+    const [products, setProducts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>productInfo?.title ? [
+            productInfo.title
+        ] : []);
     const [newProduct, setNewProduct] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     // Initialize form data from stored data or defaults
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(()=>{
@@ -2369,13 +2369,13 @@ const CustomOrderForm = ({ onClose, productInfo })=>{
         }
         return {
             buyer: "Your Company Name",
-            items: 1,
+            items: productInfo?.title ? 1 : 0,
             budget: "",
             requirements: "",
             deadline: "",
-            products: [
-                productInfo?.title || ""
-            ]
+            products: productInfo?.title ? [
+                productInfo.title
+            ] : []
         };
     });
     // Update products state when form data changes
@@ -2693,7 +2693,7 @@ const CustomOrderForm = ({ onClose, productInfo })=>{
                         className: "pt-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                             type: "submit",
-                            className: "w-full",
+                            className: "w-full bg-gradient-to-r from-sky-500 to-cyan-400 text-white shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-300",
                             children: "Submit Custom Order"
                         }, void 0, false, {
                             fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
@@ -2717,7 +2717,7 @@ const CustomOrderForm = ({ onClose, productInfo })=>{
                 formType: "custom-order"
             }, void 0, false, {
                 fileName: "[project]/components/custom-card/CustomOrderForm.tsx",
-                lineNumber: 239,
+                lineNumber: 242,
                 columnNumber: 7
             }, this)
         ]
